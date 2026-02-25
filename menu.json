@@ -1,0 +1,54 @@
+{
+  "menu": [
+    {
+      "id": "pola-kalimat",
+      "label": "Pola Kalimat",
+      "sub": "Struktur dasar",
+      "icon": "icons/pola-kalimat.png",
+      "warna": "#FDEAEA"
+    },
+    {
+      "id": "kata-kerja",
+      "label": "Kata Kerja",
+      "sub": "Verba & konjugasi",
+      "icon": "icons/kata-kerja.png",
+      "warna": "#FEF0E6"
+    },
+    {
+      "id": "kosakata",
+      "label": "Kosakata",
+      "sub": "Kamus harian",
+      "icon": "icons/kosakata.png",
+      "warna": "#E8F0FE"
+    },
+    {
+      "id": "partikel",
+      "label": "Partikel",
+      "sub": "は・が・を・に...",
+      "icon": "icons/partikel.png",
+      "warna": "#E8F8EE"
+    },
+    {
+      "id": "kuis",
+      "label": "Kuis",
+      "sub": "Latihan soal",
+      "icon": "icons/kuis.png",
+      "warna": "#F0EAFE"
+    },
+    {
+      "id": "statistik",
+      "label": "Statistik",
+      "sub": "Progres belajar",
+      "icon": "icons/statistik.png",
+      "warna": "#FEF9E6"
+    },
+    {
+      "id": "pengaturan",
+      "label": "Pengaturan",
+      "sub": "Tema, bahasa, dan preferensi",
+      "icon": "icons/pengaturan.png",
+      "warna": "#F0F0F0",
+      "lebar_penuh": true
+    }
+  ]
+}
