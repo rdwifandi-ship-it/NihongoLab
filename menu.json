@@ -4,7 +4,8 @@
       "id": "pola-kalimat",
       "label": "Pola Kalimat",
       "sub": "Struktur dasar",
-      "icon": "pola-kalimat.png",
+      "icon": "icons/pola-kalimat.png",
+      "emoji": "📐",
       "warna": "#FDEAEA"
     },
     {
@@ -12,6 +13,7 @@
       "label": "Kata Kerja",
       "sub": "Verba & konjugasi",
       "icon": "icons/kata-kerja.png",
+      "emoji": "⚡",
       "warna": "#FEF0E6"
     },
     {
@@ -19,6 +21,7 @@
       "label": "Kosakata",
       "sub": "Kamus harian",
       "icon": "icons/kosakata.png",
+      "emoji": "📖",
       "warna": "#E8F0FE"
     },
     {
@@ -26,6 +29,7 @@
       "label": "Partikel",
       "sub": "は・が・を・に...",
       "icon": "icons/partikel.png",
+      "emoji": "🔗",
       "warna": "#E8F8EE"
     },
     {
@@ -33,6 +37,7 @@
       "label": "Kuis",
       "sub": "Latihan soal",
       "icon": "icons/kuis.png",
+      "emoji": "🎯",
       "warna": "#F0EAFE"
     },
     {
@@ -40,6 +45,7 @@
       "label": "Statistik",
       "sub": "Progres belajar",
       "icon": "icons/statistik.png",
+      "emoji": "📊",
       "warna": "#FEF9E6"
     },
     {
@@ -47,6 +53,7 @@
       "label": "Pengaturan",
       "sub": "Tema, bahasa, dan preferensi",
       "icon": "icons/pengaturan.png",
+      "emoji": "⚙️",
       "warna": "#F0F0F0",
       "lebar_penuh": true
     }
