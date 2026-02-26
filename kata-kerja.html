@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kata Kerja – NihongoLab</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --red: #E8201A;
+      --dark: #111111;
+      --white: #FFFFFF;
+      --gray: #F2F2F2;
+      --gray2: #E8E8E8;
+      --text: #1a1a1a;
+      --sub: #888;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--gray);
+      max-width: 480px;
+      margin: 0 auto;
+      min-height: 100vh;
+    }
+
+    /* ===== HEADER ===== */
+    .header {
+      background: var(--dark);
+      padding: 20px 20px 18px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .btn-back {
+      width: 38px; height: 38px;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.1);
+      border: none;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: background 0.2s;
+    }
+    .btn-back:hover { background: rgba(255,255,255,0.2); }
+    .header-text { flex: 1; }
+    .header-title {
+      font-size: 18px;
+      font-weight: 800;
+      color: white;
+      line-height: 1;
+    }
+    .header-sub {
+      font-size: 12px;
+      color: rgba(255,255,255,0.45);
+      margin-top: 3px;
+      font-family: 'Noto Sans JP', sans-serif;
+    }
+    .header-count {
+      background: var(--red);
+      color: white;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 20px;
+      white-space: nowrap;
+    }
+
+    /* ===== SEARCH BAR ===== */
+    .search-wrap {
+      background: var(--dark);
+      padding: 0 16px 16px;
+    }
+    .search-box {
+      display: flex;
+      align-items: center;
+      background: rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 10px 14px;
+      gap: 10px;
+      border: 1.5px solid transparent;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .search-box:focus-within {
+      border-color: var(--red);
+      background: rgba(255,255,255,0.15);
+    }
+    .search-icon { font-size: 16px; opacity: 0.5; }
+    .search-input {
+      flex: 1;
+      background: none;
+      border: none;
+      outline: none;
+      color: white;
+      font-size: 14px;
+      font-family: 'Outfit', sans-serif;
+    }
+    .search-input::placeholder { color: rgba(255,255,255,0.35); }
+    .search-clear {
+      background: none;
+      border: none;
+      color: rgba(255,255,255,0.4);
+      font-size: 16px;
+      cursor: pointer;
+      padding: 0;
+      display: none;
+    }
+    .search-clear.visible { display: block; }
+
+    /* ===== LIST PAGE ===== */
+    #page-list { display: block; }
+    #page-detail { display: none; }
+
+    .list-wrap { padding: 16px 16px; }
+
+    /* Filter chips */
+    .filter-wrap {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+      margin-bottom: 14px;
+      scrollbar-width: none;
+    }
+    .filter-wrap::-webkit-scrollbar { display: none; }
+    .filter-chip {
+      background: white;
+      border: 1.5px solid var(--gray2);
+      border-radius: 20px;
+      padding: 5px 14px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--sub);
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.2s;
+      flex-shrink: 0;
+    }
+    .filter-chip.active {
+      background: var(--red);
+      border-color: var(--red);
+      color: white;
+    }
+
+    /* No result */
+    .no-result {
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--sub);
+    }
+    .no-result .emoji { font-size: 40px; margin-bottom: 12px; }
+    .no-result p { font-size: 14px; }
+
+    .kata-card {
+      background: white;
+      border-radius: 16px;
+      padding: 16px 20px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      border: 1.5px solid transparent;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      animation: fadeUp 0.3s ease both;
+    }
+    .kata-card:hover {
+      border-color: var(--red);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+    .kata-card:active { transform: scale(0.98); }
+
+    .kata-jp-small {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--text);
+      width: 56px;
+      text-align: center;
+      flex-shrink: 0;
+      line-height: 1;
+    }
+    .kata-divider {
+      width: 1px;
+      height: 36px;
+      background: var(--gray2);
+      flex-shrink: 0;
+    }
+    .kata-info { flex: 1; min-width: 0; }
+    .kata-romaji {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 2px;
+    }
+    .kata-arti {
+      font-size: 12px;
+      color: var(--sub);
+    }
+    .kata-group {
+      font-size: 10px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 6px;
+      flex-shrink: 0;
+    }
+    .group-1 { background: #FDEAEA; color: var(--red); }
+    .group-2 { background: #E8F0FE; color: #1967D2; }
+    .group-3 { background: #E8F8EE; color: #1E8E3E; }
+    .kata-arrow { color: var(--gray2); font-size: 16px; }
+    .kata-card:hover .kata-arrow { color: var(--red); }
+
+    /* ===== DETAIL PAGE ===== */
+    .detail-wrap { padding: 20px 16px 40px; }
+
+    /* Hero */
+    .kata-hero {
+      background: var(--dark);
+      border-radius: 20px;
+      padding: 28px 24px;
+      margin-bottom: 20px;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+    .kata-hero::before {
+      content: '動';
+      position: absolute;
+      right: -15px; top: -15px;
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 100px;
+      font-weight: 700;
+      color: rgba(255,255,255,0.04);
+      line-height: 1;
+    }
+    .kata-hero-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: var(--red);
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .kata-hero-jp {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 56px;
+      font-weight: 700;
+      color: white;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+    .kata-hero-romaji {
+      font-size: 18px;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+    .kata-hero-arti {
+      font-size: 15px;
+      color: rgba(255,255,255,0.4);
+    }
+    .kata-hero-badge {
+      display: inline-block;
+      margin-top: 14px;
+      padding: 4px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    /* Section block */
+    .section-block {
+      background: white;
+      border-radius: 16px;
+      padding: 18px 20px;
+      margin-bottom: 14px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    .section-block-title {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: var(--red);
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .section-block-title::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: #F0E8E8;
+    }
+
+    /* Konjugasi */
+    .konjugasi-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+    .konjugasi-item {
+      background: #FAFAFA;
+      border-radius: 10px;
+      padding: 10px 12px;
+      border-left: 3px solid var(--gray2);
+    }
+    .konjugasi-item.highlight { border-left-color: var(--red); background: #FFF5F5; }
+    .konjugasi-label {
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--sub);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 4px;
+    }
+    .konjugasi-jp {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 2px;
+    }
+    .konjugasi-romaji {
+      font-size: 11px;
+      color: var(--sub);
+    }
+
+    /* Contoh */
+    .contoh-item {
+      border-left: 3px solid var(--red);
+      padding: 12px 14px;
+      background: #FAFAFA;
+      border-radius: 0 12px 12px 0;
+      margin-bottom: 10px;
+    }
+    .contoh-item:last-child { margin-bottom: 0; }
+    .contoh-jp {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 17px;
+      color: var(--text);
+      margin-bottom: 4px;
+      font-weight: 700;
+    }
+    .contoh-romaji { font-size: 12px; color: var(--sub); margin-bottom: 8px; }
+    .terjemahan-wrap { display: flex; flex-wrap: wrap; gap: 6px; }
+    .terjemahan-chip {
+      background: white;
+      border: 1px solid var(--gray2);
+      border-radius: 20px;
+      padding: 3px 10px;
+      font-size: 12px;
+      color: #555;
+    }
+    .terjemahan-chip:first-child {
+      background: var(--red);
+      color: white;
+      border-color: var(--red);
+    }
+
+    /* Nav */
+    .nav-wrap { display: flex; gap: 10px; margin-top: 20px; }
+    .btn-nav {
+      flex: 1;
+      background: white;
+      border: 1.5px solid var(--gray2);
+      border-radius: 14px;
+      padding: 14px;
+      cursor: pointer;
+      text-align: center;
+      transition: all 0.2s;
+      font-family: 'Outfit', sans-serif;
+    }
+    .btn-nav:hover { border-color: var(--red); }
+    .btn-nav .nav-label { font-size: 11px; color: var(--sub); margin-bottom: 3px; }
+    .btn-nav .nav-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text);
+      font-family: 'Noto Sans JP', sans-serif;
+    }
+    .btn-nav:hover .nav-title { color: var(--red); }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(14px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .slide-in { animation: fadeUp 0.3s ease both; }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <button class="btn-back" onclick="goBack()">←</button>
+  <div class="header-text">
+    <div class="header-title" id="header-title">Kata Kerja</div>
+    <div class="header-sub" id="header-sub">動詞</div>
+  </div>
+  <div class="header-count" id="header-count">0 kata</div>
+</div>
+
+<!-- SEARCH (hanya di halaman list) -->
+<div class="search-wrap" id="search-wrap">
+  <div class="search-box">
+    <span class="search-icon">🔍</span>
+    <input class="search-input" id="search-input" type="text"
+      placeholder="Cari kata kerja, arti, romaji..."/>
+    <button class="search-clear" id="search-clear" onclick="clearSearch()">✕</button>
+  </div>
+</div>
+
+<!-- LIST PAGE -->
+<div id="page-list">
+  <div class="list-wrap">
+    <div class="filter-wrap" id="filter-wrap"></div>
+    <div id="list-wrap">
+      <div style="text-align:center;padding:40px;color:#999;font-size:14px">Memuat data...</div>
+    </div>
+  </div>
+</div>
+
+<!-- DETAIL PAGE -->
+<div id="page-detail">
+  <div class="detail-wrap" id="detail-wrap"></div>
+</div>
+
+<script>
+  // ===== DUMMY DATA =====
+  const dummyData = {
+    judul: "Kata Kerja",
+    judul_jp: "動詞",
+    data: [
+      {
+        id: 1,
+        jp: "食べる",
+        romaji: "taberu",
+        arti: "makan",
+        grup: "2",
+        konjugasi: [
+          { label: "Kamus", jp: "食べる", romaji: "taberu" },
+          { label: "Sopan", jp: "食べます", romaji: "tabemasu" },
+          { label: "Negatif", jp: "食べない", romaji: "tabenai" },
+          { label: "Negatif Sopan", jp: "食べません", romaji: "tabemasen" },
+          { label: "Lampau", jp: "食べた", romaji: "tabeta" },
+          { label: "Lampau Sopan", jp: "食べました", romaji: "tabemashita" },
+          { label: "Bentuk て", jp: "食べて", romaji: "tabete" },
+          { label: "Keinginan", jp: "食べたい", romaji: "tabetai" }
+        ],
+        contoh: [
+          {
+            kalimat: "毎日ご飯を食べます",
+            romaji: "Mainichi gohan wo tabemasu",
+            terjemahan: ["Saya makan nasi setiap hari", "Tiap hari aku makan nasi"]
+          },
+          {
+            kalimat: "寿司を食べたいです",
+            romaji: "Sushi wo tabetai desu",
+            terjemahan: ["Saya ingin makan sushi", "Pengen banget makan sushi"]
+          },
+          {
+            kalimat: "朝ごはんを食べましたか",
+            romaji: "Asagohan wo tabemashita ka",
+            terjemahan: ["Sudah sarapan?", "Kamu sudah makan pagi?"]
+          }
+        ]
+      },
+      {
+        id: 2,
+        jp: "飲む",
+        romaji: "nomu",
+        arti: "minum",
+        grup: "1",
+        konjugasi: [
+          { label: "Kamus", jp: "飲む", romaji: "nomu" },
+          { label: "Sopan", jp: "飲みます", romaji: "nomimasu" },
+          { label: "Negatif", jp: "飲まない", romaji: "nomanai" },
+          { label: "Negatif Sopan", jp: "飲みません", romaji: "nomimasen" },
+          { label: "Lampau", jp: "飲んだ", romaji: "nonda" },
+          { label: "Lampau Sopan", jp: "飲みました", romaji: "nomimashita" },
+          { label: "Bentuk て", jp: "飲んで", romaji: "nonde" },
+          { label: "Keinginan", jp: "飲みたい", romaji: "nomitai" }
+        ],
+        contoh: [
+          {
+            kalimat: "水を飲みます",
+            romaji: "Mizu wo nomimasu",
+            terjemahan: ["Saya minum air", "Aku minum air putih"]
+          },
+          {
+            kalimat: "コーヒーを飲みたいです",
+            romaji: "Koohii wo nomitai desu",
+            terjemahan: ["Saya ingin minum kopi", "Pengen minum kopi"]
+          }
+        ]
+      },
+      {
+        id: 3,
+        jp: "行く",
+        romaji: "iku",
+        arti: "pergi",
+        grup: "1",
+        konjugasi: [
+          { label: "Kamus", jp: "行く", romaji: "iku" },
+          { label: "Sopan", jp: "行きます", romaji: "ikimasu" },
+          { label: "Negatif", jp: "行かない", romaji: "ikanai" },
+          { label: "Negatif Sopan", jp: "行きません", romaji: "ikimasen" },
+          { label: "Lampau", jp: "行った", romaji: "itta" },
+          { label: "Lampau Sopan", jp: "行きました", romaji: "ikimashita" },
+          { label: "Bentuk て", jp: "行って", romaji: "itte" },
+          { label: "Keinginan", jp: "行きたい", romaji: "ikitai" }
+        ],
+        contoh: [
+          {
+            kalimat: "学校に行きます",
+            romaji: "Gakkou ni ikimasu",
+            terjemahan: ["Saya pergi ke sekolah", "Aku berangkat ke sekolah"]
+          },
+          {
+            kalimat: "日本に行きたいです",
+            romaji: "Nihon ni ikitai desu",
+            terjemahan: ["Saya ingin pergi ke Jepang", "Pengen banget ke Jepang"]
+          },
+          {
+            kalimat: "昨日どこに行きましたか",
+            romaji: "Kinou doko ni ikimashita ka",
+            terjemahan: ["Kemarin kamu pergi ke mana?", "Kamu ke mana kemarin?"]
+          }
+        ]
+      },
+      {
+        id: 4,
+        jp: "来る",
+        romaji: "kuru",
+        arti: "datang",
+        grup: "3",
+        konjugasi: [
+          { label: "Kamus", jp: "来る", romaji: "kuru" },
+          { label: "Sopan", jp: "来ます", romaji: "kimasu" },
+          { label: "Negatif", jp: "来ない", romaji: "konai" },
+          { label: "Negatif Sopan", jp: "来ません", romaji: "kimasen" },
+          { label: "Lampau", jp: "来た", romaji: "kita" },
+          { label: "Lampau Sopan", jp: "来ました", romaji: "kimashita" },
+          { label: "Bentuk て", jp: "来て", romaji: "kite" },
+          { label: "Keinginan", jp: "来たい", romaji: "kitai" }
+        ],
+        contoh: [
+          {
+            kalimat: "友達が来ます",
+            romaji: "Tomodachi ga kimasu",
+            terjemahan: ["Teman saya datang", "Temanku akan datang"]
+          },
+          {
+            kalimat: "明日来てください",
+            romaji: "Ashita kite kudasai",
+            terjemahan: ["Tolong datang besok", "Besok datang ya"]
+          }
+        ]
+      },
+      {
+        id: 5,
+        jp: "する",
+        romaji: "suru",
+        arti: "melakukan",
+        grup: "3",
+        konjugasi: [
+          { label: "Kamus", jp: "する", romaji: "suru" },
+          { label: "Sopan", jp: "します", romaji: "shimasu" },
+          { label: "Negatif", jp: "しない", romaji: "shinai" },
+          { label: "Negatif Sopan", jp: "しません", romaji: "shimasen" },
+          { label: "Lampau", jp: "した", romaji: "shita" },
+          { label: "Lampau Sopan", jp: "しました", romaji: "shimashita" },
+          { label: "Bentuk て", jp: "して", romaji: "shite" },
+          { label: "Keinginan", jp: "したい", romaji: "shitai" }
+        ],
+        contoh: [
+          {
+            kalimat: "宿題をします",
+            romaji: "Shukudai wo shimasu",
+            terjemahan: ["Saya mengerjakan PR", "Aku ngerjain tugas"]
+          },
+          {
+            kalimat: "何をしましたか",
+            romaji: "Nani wo shimashita ka",
+            terjemahan: ["Kamu melakukan apa?", "Tadi ngapain?", "Kamu ngapain tadi?"]
+          }
+        ]
+      },
+      {
+        id: 6,
+        jp: "見る",
+        romaji: "miru",
+        arti: "melihat",
+        grup: "2",
+        konjugasi: [
+          { label: "Kamus", jp: "見る", romaji: "miru" },
+          { label: "Sopan", jp: "見ます", romaji: "mimasu" },
+          { label: "Negatif", jp: "見ない", romaji: "minai" },
+          { label: "Negatif Sopan", jp: "見ません", romaji: "mimasen" },
+          { label: "Lampau", jp: "見た", romaji: "mita" },
+          { label: "Lampau Sopan", jp: "見ました", romaji: "mimashita" },
+          { label: "Bentuk て", jp: "見て", romaji: "mite" },
+          { label: "Keinginan", jp: "見たい", romaji: "mitai" }
+        ],
+        contoh: [
+          {
+            kalimat: "映画を見ます",
+            romaji: "Eiga wo mimasu",
+            terjemahan: ["Saya menonton film", "Aku nonton film"]
+          },
+          {
+            kalimat: "テレビを見ながら食べます",
+            romaji: "Terebi wo minagara tabemasu",
+            terjemahan: ["Saya makan sambil menonton TV", "Aku makan sambil nonton TV"]
+          }
+        ]
+      }
+    ]
+  };
+
+  let filteredData = [...dummyData.data];
+  let activeFilter = 'semua';
+
+  // ===== RENDER FILTER CHIPS =====
+  function renderFilters() {
+    const wrap = document.getElementById('filter-wrap');
+    const groups = ['semua', '1', '2', '3'];
+    const labels = { semua: 'Semua', '1': 'Grup 1', '2': 'Grup 2', '3': 'Grup 3 (Tidak beraturan)' };
+    wrap.innerHTML = groups.map(g => `
+      <div class="filter-chip ${g === activeFilter ? 'active' : ''}" onclick="setFilter('${g}')">
+        ${labels[g]}
+      </div>
+    `).join('');
+  }
+
+  function setFilter(group) {
+    activeFilter = group;
+    renderFilters();
+    applyFilter();
+  }
+
+  // ===== SEARCH =====
+  document.getElementById('search-input').addEventListener('input', function() {
+    document.getElementById('search-clear').classList.toggle('visible', this.value.length > 0);
+    applyFilter();
+  });
+
+  function clearSearch() {
+    document.getElementById('search-input').value = '';
+    document.getElementById('search-clear').classList.remove('visible');
+    applyFilter();
+  }
+
+  function applyFilter() {
+    const q = document.getElementById('search-input').value.toLowerCase().trim();
+    filteredData = dummyData.data.filter(item => {
+      const matchGroup = activeFilter === 'semua' || item.grup === activeFilter;
+      const matchSearch = !q ||
+        item.jp.includes(q) ||
+        item.romaji.toLowerCase().includes(q) ||
+        item.arti.toLowerCase().includes(q);
+      return matchGroup && matchSearch;
+    });
+    renderList();
+  }
+
+  // ===== RENDER LIST =====
+  function renderList() {
+    document.getElementById('header-count').textContent = filteredData.length + ' kata';
+    const wrap = document.getElementById('list-wrap');
+
+    if (filteredData.length === 0) {
+      wrap.innerHTML = `
+        <div class="no-result">
+          <div class="emoji">🔍</div>
+          <p>Tidak ada kata kerja yang ditemukan</p>
+        </div>`;
+      return;
+    }
+
+    const grupColor = { '1': 'group-1', '2': 'group-2', '3': 'group-3' };
+    const grupLabel = { '1': 'Grup 1', '2': 'Grup 2', '3': 'Grup 3' };
+
+    wrap.innerHTML = '';
+    filteredData.forEach((item, i) => {
+      const card = document.createElement('div');
+      card.className = 'kata-card';
+      card.style.animationDelay = (i * 0.05) + 's';
+      card.innerHTML = `
+        <div class="kata-jp-small">${item.jp}</div>
+        <div class="kata-divider"></div>
+        <div class="kata-info">
+          <div class="kata-romaji">${item.romaji}</div>
+          <div class="kata-arti">${item.arti}</div>
+        </div>
+        <span class="kata-group ${grupColor[item.grup]}">${grupLabel[item.grup]}</span>
+        <span class="kata-arrow">›</span>
+      `;
+      const originalIndex = dummyData.data.indexOf(item);
+      card.onclick = () => showDetail(originalIndex);
+      wrap.appendChild(card);
+    });
+  }
+
+  // ===== RENDER DETAIL =====
+  function showDetail(index) {
+    const item = dummyData.data[index];
+    const total = dummyData.data.length;
+
+    document.getElementById('header-title').textContent = 'Detail Kata Kerja';
+    document.getElementById('header-sub').textContent = item.jp;
+    document.getElementById('header-count').textContent = `${index + 1}/${total}`;
+    document.getElementById('search-wrap').style.display = 'none';
+
+    const grupColor = { '1': '#FDEAEA', '2': '#E8F0FE', '3': '#E8F8EE' };
+    const grupTextColor = { '1': '#E8201A', '2': '#1967D2', '3': '#1E8E3E' };
+    const grupLabel = { '1': 'Kata Kerja Grup 1', '2': 'Kata Kerja Grup 2', '3': 'Kata Kerja Tidak Beraturan' };
+
+    // Konjugasi
+    const konjugasiHtml = item.konjugasi.map((k, i) => `
+      <div class="konjugasi-item ${i < 2 ? 'highlight' : ''}">
+        <div class="konjugasi-label">${k.label}</div>
+        <div class="konjugasi-jp">${k.jp}</div>
+        <div class="konjugasi-romaji">${k.romaji}</div>
+      </div>
+    `).join('');
+
+    // Contoh
+    const contohHtml = item.contoh.map(c => `
+      <div class="contoh-item">
+        <div class="contoh-jp">${c.kalimat}</div>
+        <div class="contoh-romaji">${c.romaji}</div>
+        <div class="terjemahan-wrap">
+          ${c.terjemahan.map(t => `<span class="terjemahan-chip">${t}</span>`).join('')}
+        </div>
+      </div>
+    `).join('');
+
+    // Nav
+    const prev = index > 0 ? dummyData.data[index - 1] : null;
+    const next = index < total - 1 ? dummyData.data[index + 1] : null;
+    const navHtml = `
+      <div class="nav-wrap">
+        <button class="btn-nav" onclick="${prev ? 'showDetail(' + (index - 1) + ')' : ''}"
+          style="${!prev ? 'opacity:0.3;cursor:default' : ''}">
+          <div class="nav-label">← Sebelumnya</div>
+          <div class="nav-title">${prev ? prev.jp : '—'}</div>
+        </button>
+        <button class="btn-nav" onclick="${next ? 'showDetail(' + (index + 1) + ')' : ''}"
+          style="${!next ? 'opacity:0.3;cursor:default' : ''}">
+          <div class="nav-label">Berikutnya →</div>
+          <div class="nav-title">${next ? next.jp : '—'}</div>
+        </button>
+      </div>
+    `;
+
+    document.getElementById('detail-wrap').innerHTML = `
+      <div class="slide-in">
+        <div class="kata-hero">
+          <div class="kata-hero-label">Kata Kerja</div>
+          <div class="kata-hero-jp">${item.jp}</div>
+          <div class="kata-hero-romaji">${item.romaji}</div>
+          <div class="kata-hero-arti">${item.arti}</div>
+          <span class="kata-hero-badge" style="background:${grupColor[item.grup]};color:${grupTextColor[item.grup]}">
+            ${grupLabel[item.grup]}
+          </span>
+        </div>
+
+        <div class="section-block">
+          <div class="section-block-title">Konjugasi</div>
+          <div class="konjugasi-grid">${konjugasiHtml}</div>
+        </div>
+
+        <div class="section-block">
+          <div class="section-block-title">Contoh Kalimat</div>
+          ${contohHtml}
+        </div>
+
+        ${navHtml}
+      </div>
+    `;
+
+    document.getElementById('page-list').style.display = 'none';
+    document.getElementById('page-detail').style.display = 'block';
+    window.scrollTo(0, 0);
+  }
+
+  // ===== BACK =====
+  function goBack() {
+    const isDetail = document.getElementById('page-detail').style.display === 'block';
+    if (isDetail) {
+      document.getElementById('page-list').style.display = 'block';
+      document.getElementById('page-detail').style.display = 'none';
+      document.getElementById('search-wrap').style.display = 'block';
+      document.getElementById('header-title').textContent = dummyData.judul;
+      document.getElementById('header-sub').textContent = dummyData.judul_jp;
+      document.getElementById('header-count').textContent = filteredData.length + ' kata';
+      window.scrollTo(0, 0);
+    } else {
+      window.location.href = 'index.html';
+    }
+  }
+
+  // ===== INIT =====
+  renderFilters();
+  renderList();
+</script>
+</body>
+</html>

@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pola Kalimat – NihongoLab</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --red: #E8201A;
+      --dark: #111111;
+      --white: #FFFFFF;
+      --gray: #F2F2F2;
+      --gray2: #E8E8E8;
+      --text: #1a1a1a;
+      --sub: #888;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--gray);
+      max-width: 480px;
+      margin: 0 auto;
+      min-height: 100vh;
+    }
+
+    /* ===== HEADER ===== */
+    .header {
+      background: var(--dark);
+      padding: 20px 20px 18px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .btn-back {
+      width: 38px; height: 38px;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.1);
+      border: none;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: background 0.2s;
+    }
+    .btn-back:hover { background: rgba(255,255,255,0.2); }
+    .header-text { flex: 1; }
+    .header-title {
+      font-size: 18px;
+      font-weight: 800;
+      color: white;
+      line-height: 1;
+    }
+    .header-sub {
+      font-size: 12px;
+      color: rgba(255,255,255,0.45);
+      margin-top: 3px;
+      font-family: 'Noto Sans JP', sans-serif;
+    }
+    .header-count {
+      background: var(--red);
+      color: white;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 20px;
+    }
+
+    /* ===== LIST PAGE ===== */
+    #page-list { display: block; }
+    #page-detail { display: none; }
+
+    .list-wrap { padding: 20px 16px; }
+
+    .pola-card {
+      background: white;
+      border-radius: 16px;
+      padding: 18px 20px;
+      margin-bottom: 12px;
+      cursor: pointer;
+      border: 1.5px solid transparent;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      animation: fadeUp 0.35s ease both;
+    }
+    .pola-card:hover {
+      border-color: var(--red);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+    .pola-card:active { transform: scale(0.98); }
+
+    .pola-number {
+      width: 36px; height: 36px;
+      background: #FDEAEA;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--red);
+      flex-shrink: 0;
+    }
+    .pola-info { flex: 1; min-width: 0; }
+    .pola-pattern {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 3px;
+    }
+    .pola-arti {
+      font-size: 12px;
+      color: var(--sub);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .pola-arrow {
+      color: var(--gray2);
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+    .pola-card:hover .pola-arrow { color: var(--red); }
+
+    /* ===== DETAIL PAGE ===== */
+    .detail-wrap { padding: 20px 16px 40px; }
+
+    /* Pattern hero */
+    .pattern-hero {
+      background: var(--dark);
+      border-radius: 20px;
+      padding: 28px 24px;
+      margin-bottom: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+    .pattern-hero::before {
+      content: '文型';
+      position: absolute;
+      right: -10px; top: -10px;
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 80px;
+      font-weight: 700;
+      color: rgba(255,255,255,0.04);
+      line-height: 1;
+    }
+    .pattern-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: var(--red);
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .pattern-main {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 26px;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 6px;
+      line-height: 1.3;
+    }
+    .pattern-romaji {
+      font-size: 14px;
+      color: rgba(255,255,255,0.5);
+    }
+
+    /* Section block */
+    .section-block {
+      background: white;
+      border-radius: 16px;
+      padding: 18px 20px;
+      margin-bottom: 14px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    .section-block-title {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: var(--red);
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .section-block-title::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: #F0E8E8;
+    }
+
+    /* Penggunaan */
+    .penggunaan-text {
+      font-size: 14px;
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    /* Partikel tags */
+    .partikel-wrap { display: flex; flex-wrap: wrap; gap: 8px; }
+    .partikel-tag {
+      background: #FDEAEA;
+      border: 1.5px solid #F5C6C6;
+      border-radius: 10px;
+      padding: 6px 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .partikel-jp {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--red);
+    }
+    .partikel-romaji {
+      font-size: 12px;
+      color: var(--sub);
+    }
+
+    /* Contoh kalimat */
+    .contoh-item {
+      border-left: 3px solid var(--red);
+      padding: 12px 14px;
+      background: #FAFAFA;
+      border-radius: 0 12px 12px 0;
+      margin-bottom: 10px;
+    }
+    .contoh-item:last-child { margin-bottom: 0; }
+    .contoh-jp {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 17px;
+      color: var(--text);
+      margin-bottom: 6px;
+      font-weight: 700;
+    }
+    .contoh-romaji {
+      font-size: 12px;
+      color: var(--sub);
+      margin-bottom: 8px;
+    }
+    .terjemahan-wrap { display: flex; flex-wrap: wrap; gap: 6px; }
+    .terjemahan-chip {
+      background: white;
+      border: 1px solid var(--gray2);
+      border-radius: 20px;
+      padding: 3px 10px;
+      font-size: 12px;
+      color: #555;
+    }
+    .terjemahan-chip:first-child {
+      background: var(--red);
+      color: white;
+      border-color: var(--red);
+    }
+
+    /* Navigasi prev/next */
+    .nav-wrap {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .btn-nav {
+      flex: 1;
+      background: white;
+      border: 1.5px solid var(--gray2);
+      border-radius: 14px;
+      padding: 14px;
+      cursor: pointer;
+      text-align: center;
+      transition: all 0.2s;
+      font-family: 'Outfit', sans-serif;
+    }
+    .btn-nav:hover {
+      border-color: var(--red);
+      color: var(--red);
+    }
+    .btn-nav .nav-label { font-size: 11px; color: var(--sub); margin-bottom: 3px; }
+    .btn-nav .nav-title { font-size: 13px; font-weight: 700; color: var(--text); }
+    .btn-nav:hover .nav-title { color: var(--red); }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(14px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .slide-in {
+      animation: fadeUp 0.3s ease both;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<div class="header">
+  <button class="btn-back" id="btn-back" onclick="goBack()">←</button>
+  <div class="header-text">
+    <div class="header-title" id="header-title">Pola Kalimat</div>
+    <div class="header-sub" id="header-sub">文型</div>
+  </div>
+  <div class="header-count" id="header-count">0 pola</div>
+</div>
+
+<!-- ===== LIST PAGE ===== -->
+<div id="page-list">
+  <div class="list-wrap" id="list-wrap">
+    <div style="text-align:center;padding:40px;color:#999;font-size:14px">Memuat data...</div>
+  </div>
+</div>
+
+<!-- ===== DETAIL PAGE ===== -->
+<div id="page-detail">
+  <div class="detail-wrap" id="detail-wrap"></div>
+</div>
+
+<script>
+  // ===== DUMMY DATA (nanti diganti baca dari JSON) =====
+  const dummyData = {
+    judul: "Pola Kalimat",
+    judul_jp: "文型",
+    data: [
+      {
+        id: 1,
+        pola: "〜は〜です",
+        romaji: "~ wa ~ desu",
+        arti: "~ adalah ~",
+        penggunaan: "Digunakan untuk menyatakan identitas, profesi, atau keadaan seseorang maupun sesuatu. Ini adalah pola paling dasar dalam bahasa Jepang.",
+        partikel: [
+          { jp: "は", romaji: "wa" },
+          { jp: "です", romaji: "desu" }
+        ],
+        contoh: [
+          {
+            kalimat: "私は学生です",
+            romaji: "Watashi wa gakusei desu",
+            terjemahan: ["Saya adalah pelajar", "Aku seorang pelajar", "Saya seorang siswa"]
+          },
+          {
+            kalimat: "これは本です",
+            romaji: "Kore wa hon desu",
+            terjemahan: ["Ini adalah buku", "Ini sebuah buku"]
+          },
+          {
+            kalimat: "田中さんは先生です",
+            romaji: "Tanaka-san wa sensei desu",
+            terjemahan: ["Pak Tanaka adalah guru", "Tanaka adalah seorang guru"]
+          }
+        ]
+      },
+      {
+        id: 2,
+        pola: "〜が好きです",
+        romaji: "~ ga suki desu",
+        arti: "Suka ~",
+        penggunaan: "Digunakan untuk mengungkapkan rasa suka terhadap sesuatu atau seseorang. Partikel が digunakan untuk menandai objek yang disukai.",
+        partikel: [
+          { jp: "が", romaji: "ga" },
+          { jp: "好き", romaji: "suki" }
+        ],
+        contoh: [
+          {
+            kalimat: "私は寿司が好きです",
+            romaji: "Watashi wa sushi ga suki desu",
+            terjemahan: ["Saya suka sushi", "Aku suka sushi", "Sushi itu kesukaanku"]
+          },
+          {
+            kalimat: "猫が好きです",
+            romaji: "Neko ga suki desu",
+            terjemahan: ["Saya suka kucing", "Aku menyukai kucing"]
+          }
+        ]
+      },
+      {
+        id: 3,
+        pola: "〜たいです",
+        romaji: "~ tai desu",
+        arti: "Ingin melakukan ~",
+        penggunaan: "Digunakan untuk mengungkapkan keinginan melakukan sesuatu. Dibentuk dari kata kerja bentuk masu tanpa ます, lalu ditambah たいです.",
+        partikel: [
+          { jp: "たい", romaji: "tai" },
+          { jp: "です", romaji: "desu" }
+        ],
+        contoh: [
+          {
+            kalimat: "日本に行きたいです",
+            romaji: "Nihon ni ikitai desu",
+            terjemahan: ["Saya ingin pergi ke Jepang", "Aku ingin ke Jepang", "Ingin rasanya pergi ke Jepang"]
+          },
+          {
+            kalimat: "ラーメンを食べたいです",
+            romaji: "Raamen wo tabetai desu",
+            terjemahan: ["Saya ingin makan ramen", "Pengen banget makan ramen"]
+          },
+          {
+            kalimat: "日本語を話したいです",
+            romaji: "Nihongo wo hanashitai desu",
+            terjemahan: ["Saya ingin berbicara bahasa Jepang", "Aku ingin bisa ngomong Jepang"]
+          }
+        ]
+      },
+      {
+        id: 4,
+        pola: "〜てください",
+        romaji: "~ te kudasai",
+        arti: "Tolong lakukan ~",
+        penggunaan: "Digunakan untuk meminta atau memerintah seseorang melakukan sesuatu dengan sopan. Dibentuk dari kata kerja bentuk て ditambah ください.",
+        partikel: [
+          { jp: "て", romaji: "te" },
+          { jp: "ください", romaji: "kudasai" }
+        ],
+        contoh: [
+          {
+            kalimat: "ゆっくり話してください",
+            romaji: "Yukkuri hanashite kudasai",
+            terjemahan: ["Tolong bicara pelan-pelan", "Mohon berbicara lebih lambat", "Bicaranya pelan-pelan ya"]
+          },
+          {
+            kalimat: "ここに座ってください",
+            romaji: "Koko ni suwatte kudasai",
+            terjemahan: ["Tolong duduk di sini", "Silakan duduk di sini"]
+          }
+        ]
+      },
+      {
+        id: 5,
+        pola: "〜ましょう",
+        romaji: "~ mashou",
+        arti: "Mari kita ~ / Ayo ~",
+        penggunaan: "Digunakan untuk mengajak seseorang melakukan sesuatu bersama-sama. Bentuk yang lebih santai adalah 〜よう.",
+        partikel: [
+          { jp: "ましょう", romaji: "mashou" }
+        ],
+        contoh: [
+          {
+            kalimat: "一緒に食べましょう",
+            romaji: "Issho ni tabemashou",
+            terjemahan: ["Mari kita makan bersama", "Ayo makan bareng", "Yuk makan sama-sama"]
+          },
+          {
+            kalimat: "日本語を勉強しましょう",
+            romaji: "Nihongo wo benkyou shimashou",
+            terjemahan: ["Mari belajar bahasa Jepang", "Ayo kita belajar Jepang"]
+          }
+        ]
+      }
+    ]
+  };
+
+  let currentIndex = 0;
+
+  // ===== RENDER LIST =====
+  function renderList(data) {
+    document.getElementById('header-title').textContent = data.judul;
+    document.getElementById('header-sub').textContent = data.judul_jp;
+    document.getElementById('header-count').textContent = data.data.length + ' pola';
+
+    const wrap = document.getElementById('list-wrap');
+    wrap.innerHTML = '';
+
+    data.data.forEach((item, i) => {
+      const card = document.createElement('div');
+      card.className = 'pola-card';
+      card.style.animationDelay = (i * 0.06) + 's';
+      card.innerHTML = `
+        <div class="pola-number">${i + 1}</div>
+        <div class="pola-info">
+          <div class="pola-pattern">${item.pola}</div>
+          <div class="pola-arti">${item.arti}</div>
+        </div>
+        <div class="pola-arrow">›</div>
+      `;
+      card.onclick = () => showDetail(i);
+      wrap.appendChild(card);
+    });
+  }
+
+  // ===== RENDER DETAIL =====
+  function showDetail(index) {
+    currentIndex = index;
+    const data = dummyData.data[index];
+    const total = dummyData.data.length;
+
+    document.getElementById('header-title').textContent = 'Detail Pola';
+    document.getElementById('header-sub').textContent = `${index + 1} dari ${total}`;
+    document.getElementById('header-count').textContent = dummyData.judul_jp;
+
+    // Partikel HTML
+    const partikelHtml = data.partikel.map(p => `
+      <div class="partikel-tag">
+        <span class="partikel-jp">${p.jp}</span>
+        <span class="partikel-romaji">${p.romaji}</span>
+      </div>
+    `).join('');
+
+    // Contoh HTML
+    const contohHtml = data.contoh.map(c => `
+      <div class="contoh-item">
+        <div class="contoh-jp">${c.kalimat}</div>
+        <div class="contoh-romaji">${c.romaji}</div>
+        <div class="terjemahan-wrap">
+          ${c.terjemahan.map(t => `<span class="terjemahan-chip">${t}</span>`).join('')}
+        </div>
+      </div>
+    `).join('');
+
+    // Navigasi prev/next
+    const prevItem = index > 0 ? dummyData.data[index - 1] : null;
+    const nextItem = index < total - 1 ? dummyData.data[index + 1] : null;
+    const navHtml = `
+      <div class="nav-wrap">
+        <button class="btn-nav" onclick="${prevItem ? 'showDetail(' + (index-1) + ')' : ''}" 
+          style="${!prevItem ? 'opacity:0.3;cursor:default' : ''}">
+          <div class="nav-label">← Sebelumnya</div>
+          <div class="nav-title">${prevItem ? prevItem.pola : '—'}</div>
+        </button>
+        <button class="btn-nav" onclick="${nextItem ? 'showDetail(' + (index+1) + ')' : ''}"
+          style="${!nextItem ? 'opacity:0.3;cursor:default' : ''}">
+          <div class="nav-label">Berikutnya →</div>
+          <div class="nav-title">${nextItem ? nextItem.pola : '—'}</div>
+        </button>
+      </div>
+    `;
+
+    document.getElementById('detail-wrap').innerHTML = `
+      <div class="slide-in">
+        <div class="pattern-hero">
+          <div class="pattern-label">Pola Kalimat</div>
+          <div class="pattern-main">${data.pola}</div>
+          <div class="pattern-romaji">${data.romaji} — ${data.arti}</div>
+        </div>
+
+        <div class="section-block">
+          <div class="section-block-title">Penggunaan</div>
+          <div class="penggunaan-text">${data.penggunaan}</div>
+        </div>
+
+        <div class="section-block">
+          <div class="section-block-title">Partikel</div>
+          <div class="partikel-wrap">${partikelHtml}</div>
+        </div>
+
+        <div class="section-block">
+          <div class="section-block-title">Contoh Kalimat</div>
+          ${contohHtml}
+        </div>
+
+        ${navHtml}
+      </div>
+    `;
+
+    document.getElementById('page-list').style.display = 'none';
+    document.getElementById('page-detail').style.display = 'block';
+    window.scrollTo(0, 0);
+  }
+
+  // ===== BACK =====
+  function goBack() {
+    const isDetail = document.getElementById('page-detail').style.display === 'block';
+    if (isDetail) {
+      document.getElementById('page-list').style.display = 'block';
+      document.getElementById('page-detail').style.display = 'none';
+      document.getElementById('header-title').textContent = dummyData.judul;
+      document.getElementById('header-sub').textContent = dummyData.judul_jp;
+      document.getElementById('header-count').textContent = dummyData.data.length + ' pola';
+      window.scrollTo(0, 0);
+    } else {
+      window.location.href = 'index.html';
+    }
+  }
+
+  // ===== INIT =====
+  renderList(dummyData);
+</script>
+</body>
+</html>
