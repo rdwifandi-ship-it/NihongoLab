@@ -234,6 +234,13 @@
           `;
         }
 
+        if (item.halaman) {
+          card.style.cursor = 'pointer';
+          card.onclick = () => window.location.href = item.halaman;
+        } else {
+          card.style.opacity = '0.5';
+          card.style.cursor = 'not-allowed';
+        }
         grid.appendChild(card);
       });
     }
