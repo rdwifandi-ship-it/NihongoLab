@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kuis – NihongoLab</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --red: #E8201A;
+      --dark: #111111;
+      --gray: #F2F2F2;
+      --gray2: #E8E8E8;
+      --text: #1a1a1a;
+      --sub: #888;
+      --green: #1E8E3E;
+      --green-light: #E8F8EE;
+      --red-light: #FDEAEA;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--gray);
+      max-width: 480px;
+      margin: 0 auto;
+      min-height: 100vh;
+    }
+
+    /* HEADER */
+    .header {
+      background: var(--dark);
+      padding: 20px 20px 18px;
+      display: flex; align-items: center; gap: 14px;
+      position: sticky; top: 0; z-index: 100;
+    }
+    .btn-back {
+      width: 38px; height: 38px; border-radius: 10px;
+      background: rgba(255,255,255,0.1); border: none; color: white;
+      font-size: 18px; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; transition: background 0.2s;
+    }
+    .btn-back:hover { background: rgba(255,255,255,0.2); }
+    .header-text { flex: 1; }
+    .header-title { font-size: 18px; font-weight: 800; color: white; line-height: 1; }
+    .header-sub { font-size: 12px; color: rgba(255,255,255,0.45); margin-top: 3px; }
+
+    /* PAGES */
+    .page { display: none; }
+    .page.active { display: block; }
+
+    /* ====== PILIH KUIS ====== */
+    .pilih-wrap { padding: 20px 16px 40px; }
+    .pilih-title { font-size: 22px; font-weight: 800; color: var(--text); margin-bottom: 4px; }
+    .pilih-sub { font-size: 13px; color: var(--sub); margin-bottom: 20px; }
+
+    .kuis-card {
+      background: white; border-radius: 18px;
+      padding: 18px 20px; margin-bottom: 12px;
+      cursor: pointer; border: 2px solid transparent;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+      transition: all 0.2s;
+      display: flex; align-items: center; gap: 16px;
+      animation: fadeUp 0.3s ease both;
+    }
+    .kuis-card:hover { border-color: var(--red); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.1); }
+    .kuis-card:active { transform: scale(0.98); }
+    .kuis-icon {
+      width: 54px; height: 54px; border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 20px; font-weight: 700; flex-shrink: 0;
+    }
+    .kuis-info { flex: 1; }
+    .kuis-name { font-size: 16px; font-weight: 800; color: var(--text); margin-bottom: 2px; }
+    .kuis-desc { font-size: 12px; color: var(--sub); margin-bottom: 6px; }
+    .kuis-meta { display: flex; gap: 8px; align-items: center; }
+    .kuis-soal { font-size: 11px; font-weight: 700; background: var(--gray); color: var(--sub); padding: 2px 8px; border-radius: 6px; }
+    .kuis-skor { font-size: 11px; font-weight: 700; color: var(--green); }
+    .kuis-arrow { color: var(--gray2); font-size: 18px; }
+    .kuis-card:hover .kuis-arrow { color: var(--red); }
+
+    /* ====== PROGRESS ====== */
+    .progress-wrap { background: var(--dark); padding: 14px 20px; }
+    .progress-info { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+    .progress-label { font-size: 12px; color: rgba(255,255,255,0.5); }
+    .progress-num { font-size: 13px; font-weight: 700; color: white; }
+    .progress-bar-bg { background: rgba(255,255,255,0.1); border-radius: 10px; height: 6px; }
+    .progress-bar-fill { background: var(--red); border-radius: 10px; height: 6px; transition: width 0.4s ease; }
+
+    /* ====== SOAL WRAP ====== */
+    .soal-wrap { padding: 20px 16px 40px; }
+    .soal-tipe { font-size: 10px; font-weight: 700; letter-spacing: 2px; color: var(--red); text-transform: uppercase; margin-bottom: 12px; }
+    .soal-box { background: white; border-radius: 16px; padding: 20px; margin-bottom: 16px; box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
+    .soal-pertanyaan { font-size: 15px; color: var(--text); line-height: 1.6; margin-bottom: 8px; }
+    .soal-jp { font-family: 'Noto Sans JP', sans-serif; font-size: 28px; font-weight: 700; color: var(--text); line-height: 1.3; }
+    .soal-hint { font-size: 12px; color: var(--sub); margin-top: 6px; font-style: italic; }
+
+    /* ====== SUSUN ====== */
+    .susun-area {
+      min-height: 52px; background: #F8F8F8;
+      border: 2px dashed var(--gray2); border-radius: 12px;
+      padding: 10px; display: flex; flex-wrap: wrap; gap: 8px;
+      margin-bottom: 12px; transition: border-color 0.2s;
+      align-items: center;
+    }
+    .susun-placeholder { color: #ccc; font-size: 13px; }
+    .susun-area.has-answer { border-color: var(--red); border-style: solid; }
+    .pilihan-wrap { display: flex; flex-wrap: wrap; gap: 8px; }
+    .kata-chip {
+      background: white; border: 2px solid var(--gray2);
+      border-radius: 10px; padding: 8px 14px;
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 16px; font-weight: 700;
+      cursor: pointer; transition: all 0.15s; user-select: none;
+    }
+    .kata-chip:hover:not(.disabled) { border-color: var(--red); color: var(--red); }
+    .kata-chip.selected { background: var(--red); color: white; border-color: var(--red); }
+    .kata-chip.disabled { opacity: 0.4; cursor: default; pointer-events: none; }
+
+    /* ====== KETIK ====== */
+    .input-jawaban {
+      width: 100%; background: #F8F8F8;
+      border: 2px solid var(--gray2); border-radius: 12px;
+      padding: 14px 16px; font-size: 18px;
+      font-family: 'Noto Sans JP', sans-serif;
+      outline: none; transition: border-color 0.2s; color: var(--text);
+    }
+    .input-jawaban:focus { border-color: var(--red); background: white; }
+
+    /* ====== PILIHAN GANDA ====== */
+    .pilihan-ganda { display: flex; flex-direction: column; gap: 10px; }
+    .pilihan-btn {
+      background: white; border: 2px solid var(--gray2);
+      border-radius: 12px; padding: 14px 18px;
+      text-align: left; cursor: pointer;
+      font-size: 15px; font-family: 'Outfit', sans-serif;
+      color: var(--text); transition: all 0.15s;
+      display: flex; align-items: center; gap: 12px;
+    }
+    .pilihan-btn:hover:not(.disabled) { border-color: var(--red); color: var(--red); }
+    .pilihan-btn.benar { border-color: var(--green); background: var(--green-light); color: var(--green); }
+    .pilihan-btn.salah { border-color: #ddd; background: #f5f5f5; color: #bbb; }
+    .pilihan-btn.salah-dipilih { border-color: var(--red); background: var(--red-light); color: var(--red); opacity: 0.8; }
+    .pilihan-btn.disabled { cursor: default; }
+    .pilihan-huruf {
+      width: 28px; height: 28px; border-radius: 8px;
+      background: var(--gray); display: flex; align-items: center;
+      justify-content: center; font-size: 12px; font-weight: 800; flex-shrink: 0;
+    }
+    .pilihan-btn.benar .pilihan-huruf { background: var(--green); color: white; }
+    .pilihan-btn.salah-dipilih .pilihan-huruf { background: var(--red); color: white; }
+    .pilihan-teks { font-family: 'Noto Sans JP', sans-serif; font-size: 15px; }
+
+    /* ====== PARTIKEL ====== */
+    .kalimat-rumpang {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 26px; font-weight: 700; color: var(--text);
+      text-align: center; margin-bottom: 6px; line-height: 1.5;
+    }
+    .rumpang {
+      display: inline-block; min-width: 48px;
+      border-bottom: 3px solid var(--red);
+      color: var(--red); text-align: center; font-size: 26px;
+    }
+
+    /* ====== TOMBOL SUBMIT ====== */
+    .btn-submit {
+      width: 100%; background: var(--red); color: white;
+      border: none; border-radius: 14px; padding: 16px;
+      font-size: 16px; font-weight: 800; font-family: 'Outfit', sans-serif;
+      cursor: pointer; margin-top: 16px; transition: opacity 0.2s, transform 0.1s;
+    }
+    .btn-submit:hover { opacity: 0.9; }
+    .btn-submit:active { transform: scale(0.98); }
+    .btn-submit:disabled { background: var(--gray2); color: var(--sub); cursor: default; }
+
+    /* ====== FEEDBACK ====== */
+    .feedback-box { border-radius: 14px; padding: 16px 18px; margin-top: 14px; display: none; animation: fadeUp 0.3s ease; }
+    .feedback-box.benar { background: var(--green-light); border: 2px solid #A8D5B5; display: block; }
+    .feedback-box.salah { background: var(--red-light); border: 2px solid #F5C6C6; display: block; }
+    .feedback-header { font-size: 15px; font-weight: 800; margin-bottom: 4px; display: flex; align-items: center; gap: 6px; }
+    .feedback-box.benar .feedback-header { color: var(--green); }
+    .feedback-box.salah .feedback-header { color: var(--red); }
+    .feedback-jawaban { font-size: 13px; color: var(--sub); }
+    .feedback-jawaban span { font-family: 'Noto Sans JP', sans-serif; font-weight: 700; color: var(--text); }
+
+    /* ====== HASIL ====== */
+    .hasil-wrap { padding: 20px 16px 40px; }
+    .hasil-hero {
+      background: var(--dark); border-radius: 20px;
+      padding: 32px 24px; text-align: center;
+      margin-bottom: 20px; position: relative; overflow: hidden;
+    }
+    .hasil-hero::before {
+      content: attr(data-grade); position: absolute;
+      right: -10px; top: -10px; font-size: 120px; font-weight: 800;
+      color: rgba(255,255,255,0.05); line-height: 1;
+    }
+    .hasil-emoji { font-size: 60px; line-height: 1; margin-bottom: 8px; }
+    .hasil-grade-label { font-size: 28px; font-weight: 800; color: white; margin-bottom: 4px; }
+    .hasil-skor { font-size: 18px; color: rgba(255,255,255,0.5); margin-bottom: 16px; }
+    .hasil-pesan { font-size: 14px; color: rgba(255,255,255,0.4); }
+
+    .rincian-block { background: white; border-radius: 16px; padding: 18px 20px; margin-bottom: 14px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+    .rincian-title {
+      font-size: 11px; font-weight: 700; letter-spacing: 2px; color: var(--red);
+      text-transform: uppercase; margin-bottom: 14px;
+      display: flex; align-items: center; gap: 6px;
+    }
+    .rincian-title::after { content: ''; flex: 1; height: 1px; background: #F0E8E8; }
+    .rincian-row { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+    .rincian-row:last-child { margin-bottom: 0; }
+    .rincian-label { font-size: 13px; font-weight: 700; color: var(--text); width: 110px; flex-shrink: 0; }
+    .rincian-bar-bg { flex: 1; background: var(--gray); border-radius: 10px; height: 8px; }
+    .rincian-bar-fill { height: 8px; border-radius: 10px; background: var(--red); width: 0%; transition: width 0.7s ease; }
+    .rincian-pct { font-size: 12px; font-weight: 700; color: var(--red); width: 36px; text-align: right; }
+
+    .review-item {
+      background: white; border-radius: 14px; padding: 16px 18px;
+      margin-bottom: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      border-left: 4px solid var(--red);
+    }
+    .review-soal { font-size: 13px; color: var(--sub); margin-bottom: 6px; }
+    .review-benar { font-size: 14px; color: var(--green); font-weight: 700; display: flex; align-items: center; gap: 6px; }
+    .review-jp { font-family: 'Noto Sans JP', sans-serif; }
+
+    .btn-hasil {
+      width: 100%; border-radius: 14px; padding: 16px;
+      font-size: 16px; font-weight: 800; font-family: 'Outfit', sans-serif;
+      cursor: pointer; margin-top: 10px; transition: all 0.2s; border: 2px solid transparent;
+    }
+    .btn-ulangi { background: var(--red); color: white; border: none; }
+    .btn-ulangi:hover { opacity: 0.9; }
+    .btn-menu { background: white; color: var(--text); border-color: var(--gray2); }
+    .btn-menu:hover { border-color: var(--red); color: var(--red); }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(14px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <button class="btn-back" onclick="handleBack()">←</button>
+  <div class="header-text">
+    <div class="header-title" id="header-title">Kuis</div>
+    <div class="header-sub" id="header-sub">問題</div>
+  </div>
+</div>
+
+<!-- PILIH KUIS -->
+<div class="page active" id="page-pilih">
+  <div class="pilih-wrap">
+    <div class="pilih-title">Pilih Jenis Kuis</div>
+    <div class="pilih-sub">Masing-masing 25 soal acak dari database</div>
+    <div id="kuis-list"></div>
+  </div>
+</div>
+
+<!-- KUIS -->
+<div class="page" id="page-kuis">
+  <div class="progress-wrap">
+    <div class="progress-info">
+      <span class="progress-label" id="progress-label">Soal 1 dari 25</span>
+      <span class="progress-num" id="progress-skor">✓ 0 &nbsp; ✗ 0</span>
+    </div>
+    <div class="progress-bar-bg">
+      <div class="progress-bar-fill" id="progress-fill" style="width:0%"></div>
+    </div>
+  </div>
+  <div class="soal-wrap" id="soal-wrap"></div>
+</div>
+
+<!-- HASIL -->
+<div class="page" id="page-hasil">
+  <div class="hasil-wrap" id="hasil-wrap"></div>
+</div>
+
+<script>
+// ======= DATA DUMMY =======
+const DATA = {
+  pola: [
+    { tipe:'susun', arah:'id_jp', soal_id:'Saya adalah pelajar', jawaban_jp:['私','は','学生','です'], pilihan:['私','は','学生','です','医者','の','先生'] },
+    { tipe:'susun', arah:'id_jp', soal_id:'Saya suka sushi', jawaban_jp:['私','は','寿司','が','好き','です'], pilihan:['私','は','寿司','が','好き','です','を','食べる'] },
+    { tipe:'susun', arah:'id_jp', soal_id:'Mari kita makan bersama', jawaban_jp:['一緒','に','食べ','ましょう'], pilihan:['一緒','に','食べ','ましょう','います','を','が'] },
+    { tipe:'susun', arah:'id_jp', soal_id:'Tolong bicara pelan-pelan', jawaban_jp:['ゆっくり','話して','ください'], pilihan:['ゆっくり','話して','ください','います','ました'] },
+    { tipe:'susun', arah:'jp_id', soal_jp:'日本に行きたいです', jawaban_id:['Saya ingin pergi ke Jepang','Aku ingin ke Jepang','Pengen pergi ke Jepang'], pilihan:['Saya ingin pergi ke Jepang','Aku makan sushi','Saya suka kucing','Kita belajar bersama'] }
+  ],
+  kataKerja: [
+    { tipe:'ketik', soal_jp:'食べる', target:'食べます', instruksi:'→ Bentuk sopan' },
+    { tipe:'ketik', soal_jp:'飲む', target:'飲みました', instruksi:'→ Lampau sopan' },
+    { tipe:'ketik', soal_jp:'行く', target:'行きません', instruksi:'→ Negatif sopan' },
+    { tipe:'ketik', soal_jp:'見る', target:'見て', instruksi:'→ Bentuk て' },
+    { tipe:'ketik', soal_jp:'する', target:'したい', instruksi:'→ Bentuk keinginan' },
+    { tipe:'ketik', soal_jp:'来る', target:'来ます', instruksi:'→ Bentuk sopan' },
+    { tipe:'ketik', soal_jp:'食べる', target:'食べない', instruksi:'→ Bentuk negatif' },
+    { tipe:'ketik', soal_jp:'行く', target:'行った', instruksi:'→ Bentuk lampau' }
+  ],
+  kosakata: [
+    { tipe:'pilihan', arah:'jp_id', soal:'猫', jawaban:'kucing', pilihan:['kucing','anjing','burung','ikan'] },
+    { tipe:'pilihan', arah:'id_jp', soal:'buku', jawaban:'本', pilihan:['本','机','椅子','窓'] },
+    { tipe:'pilihan', arah:'jp_id', soal:'学校', jawaban:'sekolah', pilihan:['rumah','sekolah','kantor','toko'] },
+    { tipe:'pilihan', arah:'id_jp', soal:'hari ini', jawaban:'今日', pilihan:['昨日','明日','今日','今'] },
+    { tipe:'pilihan', arah:'jp_id', soal:'かわいい', jawaban:'imut / lucu', pilihan:['cantik','imut / lucu','besar','kecil'] },
+    { tipe:'pilihan', arah:'jp_id', soal:'駅', jawaban:'stasiun', pilihan:['bandara','stasiun','pelabuhan','terminal'] },
+    { tipe:'pilihan', arah:'id_jp', soal:'terima kasih', jawaban:'ありがとう', pilihan:['すみません','ありがとう','おはよう','さようなら'] },
+    { tipe:'pilihan', arah:'jp_id', soal:'明日', jawaban:'besok', pilihan:['kemarin','hari ini','besok','lusa'] }
+  ],
+  partikel: [
+    { tipe:'partikel', kalimat_parts:['私','___','学生です'], terjemahan:'Saya adalah pelajar', jawaban:'は', pilihan:['は','が','を','に'] },
+    { tipe:'partikel', kalimat_parts:['寿司','___','好きです'], terjemahan:'Saya suka sushi', jawaban:'が', pilihan:['は','が','を','で'] },
+    { tipe:'partikel', kalimat_parts:['本','___','読みます'], terjemahan:'Saya membaca buku', jawaban:'を', pilihan:['は','が','を','に'] },
+    { tipe:'partikel', kalimat_parts:['学校','___','行きます'], terjemahan:'Saya pergi ke sekolah', jawaban:'に', pilihan:['を','に','で','の'] },
+    { tipe:'partikel', kalimat_parts:['図書館','___','勉強します'], terjemahan:'Saya belajar di perpustakaan', jawaban:'で', pilihan:['は','に','で','を'] },
+    { tipe:'partikel', kalimat_parts:['友達','___','映画を見ました'], terjemahan:'Nonton film bersama teman', jawaban:'と', pilihan:['は','と','も','で'] },
+    { tipe:'partikel', kalimat_parts:['私','___','行きます'], terjemahan:'Saya juga pergi', jawaban:'も', pilihan:['は','が','も','を'] },
+    { tipe:'partikel', kalimat_parts:['私','___','本です'], terjemahan:'Ini buku saya', jawaban:'の', pilihan:['は','が','の','と'] }
+  ]
+};
+
+const KUIS_CONFIG = [
+  { id:'pola',      nama:'Pola Kalimat', desc:'Susun kata menjadi kalimat yang benar',       icon:'文型', warna:'#FDEAEA', warnaText:'#E8201A' },
+  { id:'kataKerja', nama:'Kata Kerja',   desc:'Konjugasikan kata kerja dengan tepat',         icon:'動詞', warna:'#FEF0E6', warnaText:'#E65C00' },
+  { id:'kosakata',  nama:'Kosakata',     desc:'Pilihan ganda JP↔ID',                          icon:'語彙', warna:'#E8F0FE', warnaText:'#1967D2' },
+  { id:'partikel',  nama:'Partikel',     desc:'Pilih partikel yang tepat untuk kalimat',      icon:'助詞', warna:'#E8F8EE', warnaText:'#1E8E3E' },
+  { id:'acak',      nama:'Soal Acak',    desc:'Campuran semua tipe soal secara merata',       icon:'🎲',   warna:'#F0EAFE', warnaText:'#7B1FA2' }
+];
+
+// ======= STATE =======
+let jenisKuis = '', soalList = [], soalIndex = 0;
+let skorBenar = 0, skorSalah = 0, reviewList = [];
+let susunDipilih = [], jawabanDikunci = false;
+let rincianAcak = { pola:[0,0], kataKerja:[0,0], kosakata:[0,0], partikel:[0,0] };
+let riwayat = {};
+try { riwayat = JSON.parse(localStorage.getItem('nihongo_riwayat') || '{}'); } catch(e) {}
+
+// ======= PILIH KUIS =======
+function renderPilih() {
+  document.getElementById('header-title').textContent = 'Kuis';
+  document.getElementById('header-sub').textContent = '問題';
+  const list = document.getElementById('kuis-list');
+  list.innerHTML = KUIS_CONFIG.map((k, i) => {
+    const s = riwayat[k.id];
+    const isEmoji = k.id === 'acak';
+    return `
+      <div class="kuis-card" style="animation-delay:${i*0.06}s" onclick="mulaiKuis('${k.id}')">
+        <div class="kuis-icon" style="background:${k.warna};color:${k.warnaText};font-size:${isEmoji?'26px':'18px'}">${k.icon}</div>
+        <div class="kuis-info">
+          <div class="kuis-name">${k.nama}</div>
+          <div class="kuis-desc">${k.desc}</div>
+          <div class="kuis-meta">
+            <span class="kuis-soal">25 soal</span>
+            ${s ? `<span class="kuis-skor">Terakhir: ${s.benar}/25</span>` : ''}
+          </div>
+        </div>
+        <span class="kuis-arrow">›</span>
+      </div>`;
+  }).join('');
+  showPage('page-pilih');
+}
+
+// ======= MULAI =======
+function mulaiKuis(jenis) {
+  jenisKuis = jenis;
+  soalIndex = 0; skorBenar = 0; skorSalah = 0;
+  reviewList = [];
+  rincianAcak = { pola:[0,0], kataKerja:[0,0], kosakata:[0,0], partikel:[0,0] };
+
+  if (jenis === 'acak') {
+    soalList = shuffle([
+      ...shuffle([...DATA.pola]).slice(0,6).map(s=>({...s,_kat:'pola'})),
+      ...shuffle([...DATA.kataKerja]).slice(0,6).map(s=>({...s,_kat:'kataKerja'})),
+      ...shuffle([...DATA.kosakata]).slice(0,7).map(s=>({...s,_kat:'kosakata'})),
+      ...shuffle([...DATA.partikel]).slice(0,6).map(s=>({...s,_kat:'partikel'}))
+    ]);
+  } else {
+    soalList = shuffle([...DATA[jenis]]).slice(0, 25);
+  }
+
+  const cfg = KUIS_CONFIG.find(k=>k.id===jenis);
+  document.getElementById('header-title').textContent = cfg.nama;
+  document.getElementById('header-sub').textContent = 'Kuis · ' + soalList.length + ' Soal';
+  showPage('page-kuis');
+  renderSoal();
+}
+
+// ======= RENDER SOAL =======
+function renderSoal() {
+  jawabanDikunci = false; susunDipilih = [];
+  const soal = soalList[soalIndex];
+  const total = soalList.length;
+
+  document.getElementById('progress-label').textContent = `Soal ${soalIndex+1} dari ${total}`;
+  document.getElementById('progress-skor').innerHTML = `✓ ${skorBenar} &nbsp; ✗ ${skorSalah}`;
+  document.getElementById('progress-fill').style.width = `${(soalIndex/total)*100}%`;
+
+  const wrap = document.getElementById('soal-wrap');
+  let html = '';
+
+  if (soal.tipe === 'susun' && soal.arah === 'id_jp') {
+    html = `
+      <div class="soal-tipe">Pola Kalimat · Susun Kalimat (ID → JP)</div>
+      <div class="soal-box">
+        <div class="soal-pertanyaan">Susun kata menjadi kalimat Jepang:</div>
+        <div class="soal-jp" style="font-family:'Outfit';font-size:17px;color:var(--sub)">"${soal.soal_id}"</div>
+      </div>
+      <div class="susun-area" id="susun-area"><span class="susun-placeholder">Ketuk kata untuk menyusun...</span></div>
+      <div class="pilihan-wrap" id="pilihan-wrap">
+        ${shuffle([...soal.pilihan]).map((k,i)=>`<div class="kata-chip" id="chip-${i}" onclick="pilihKata(${i},'${k}')">${k}</div>`).join('')}
+      </div>
+      <div class="feedback-box" id="feedback"></div>
+      <button class="btn-submit" id="btn-submit" onclick="cekSusun()" disabled>Periksa</button>`;
+
+  } else if (soal.tipe === 'susun' && soal.arah === 'jp_id') {
+    const opsi = shuffle([...soal.pilihan]);
+    html = `
+      <div class="soal-tipe">Pola Kalimat · Pilih Terjemahan (JP → ID)</div>
+      <div class="soal-box">
+        <div class="soal-pertanyaan">Apa arti kalimat berikut?</div>
+        <div class="soal-jp">${soal.soal_jp}</div>
+      </div>
+      <div class="pilihan-ganda" id="pilihan-ganda-multi">
+        ${opsi.map((o,i)=>`
+          <button class="pilihan-btn" data-idx="${i}" onclick="pilihMultiple(this,${i})">
+            <span class="pilihan-huruf">${'ABCD'[i]}</span>
+            <span class="pilihan-teks" style="font-family:'Outfit'">${o}</span>
+          </button>`).join('')}
+      </div>
+      <div class="feedback-box" id="feedback"></div>`;
+    // Store opsi & jawaban for this soal
+    window._opsiMulti = opsi;
+    window._jawabanMulti = soal.jawaban_id;
+
+  } else if (soal.tipe === 'ketik') {
+    html = `
+      <div class="soal-tipe">Kata Kerja · Konjugasi</div>
+      <div class="soal-box">
+        <div class="soal-pertanyaan">Ubah kata kerja ini:</div>
+        <div class="soal-jp">${soal.soal_jp}</div>
+        <div class="soal-hint">${soal.instruksi}</div>
+      </div>
+      <input class="input-jawaban" id="input-jawaban" type="text" placeholder="Ketik jawaban..." autocomplete="off" autocorrect="off" onkeydown="if(event.key==='Enter')cekKetik()"/>
+      <div class="feedback-box" id="feedback"></div>
+      <button class="btn-submit" id="btn-submit" onclick="cekKetik()">Periksa</button>`;
+
+  } else if (soal.tipe === 'pilihan') {
+    const opsi = shuffle([...soal.pilihan]);
+    const isJpId = soal.arah === 'jp_id';
+    html = `
+      <div class="soal-tipe">Kosakata · Pilihan Ganda (${isJpId?'JP → ID':'ID → JP'})</div>
+      <div class="soal-box">
+        <div class="soal-pertanyaan">${isJpId?'Apa arti kata ini?':'Bagaimana dalam bahasa Jepang?'}</div>
+        <div class="soal-jp" style="${!isJpId?'font-family:Outfit;font-size:22px':''}">${soal.soal}</div>
+      </div>
+      <div class="pilihan-ganda">
+        ${opsi.map((o,i)=>`
+          <button class="pilihan-btn" onclick="pilihSingle(this,'${escQ(o)}','${escQ(soal.jawaban)}')">
+            <span class="pilihan-huruf">${'ABCD'[i]}</span>
+            <span class="pilihan-teks" style="${!isJpId?'font-family:Noto Sans JP':''}">${o}</span>
+          </button>`).join('')}
+      </div>
+      <div class="feedback-box" id="feedback"></div>`;
+
+  } else if (soal.tipe === 'partikel') {
+    const opsi = shuffle([...soal.pilihan]);
+    const kalimat = soal.kalimat_parts.map(p=>p==='___'?`<span class="rumpang" id="rumpang">＿</span>`:p).join('');
+    html = `
+      <div class="soal-tipe">Partikel · Lengkapi Kalimat</div>
+      <div class="soal-box">
+        <div class="soal-pertanyaan">Pilih partikel yang tepat:</div>
+        <div class="kalimat-rumpang">${kalimat}</div>
+        <div class="soal-hint" style="text-align:center">"${soal.terjemahan}"</div>
+      </div>
+      <div class="pilihan-ganda">
+        ${opsi.map((o,i)=>`
+          <button class="pilihan-btn" onclick="pilihPartikel(this,'${o}','${soal.jawaban}')">
+            <span class="pilihan-huruf">${'ABCD'[i]}</span>
+            <span class="pilihan-teks" style="font-size:22px;font-weight:700">${o}</span>
+          </button>`).join('')}
+      </div>
+      <div class="feedback-box" id="feedback"></div>`;
+  }
+
+  wrap.innerHTML = html;
+  wrap.style.animation = 'none'; wrap.offsetHeight; wrap.style.animation = 'fadeUp 0.3s ease';
+  if (soal.tipe === 'ketik') setTimeout(()=>{ const el = document.getElementById('input-jawaban'); if(el) el.focus(); }, 300);
+}
+
+// ======= SUSUN =======
+function pilihKata(i, kata) {
+  if (jawabanDikunci) return;
+  const chip = document.getElementById(`chip-${i}`);
+  if (chip.classList.contains('selected')) {
+    chip.classList.remove('selected');
+    susunDipilih = susunDipilih.filter(x=>x.idx!==i);
+  } else {
+    chip.classList.add('selected');
+    susunDipilih.push({idx:i, kata});
+  }
+  updateSusunArea();
+}
+
+function updateSusunArea() {
+  const area = document.getElementById('susun-area');
+  if (susunDipilih.length === 0) {
+    area.innerHTML = '<span class="susun-placeholder">Ketuk kata untuk menyusun...</span>';
+    area.classList.remove('has-answer');
+  } else {
+    area.innerHTML = susunDipilih.map((x,i)=>`<div class="kata-chip selected" onclick="hapusDariArea(${i},${x.idx})">${x.kata}</div>`).join('');
+    area.classList.add('has-answer');
+  }
+  const btn = document.getElementById('btn-submit');
+  if (btn) btn.disabled = susunDipilih.length === 0;
+}
+
+function hapusDariArea(posArr, chipIdx) {
+  if (jawabanDikunci) return;
+  susunDipilih.splice(posArr, 1);
+  const chip = document.getElementById(`chip-${chipIdx}`);
+  if (chip) chip.classList.remove('selected');
+  updateSusunArea();
+}
+
+function cekSusun() {
+  if (jawabanDikunci) { lanjutSoal(); return; }
+  const soal = soalList[soalIndex];
+  const benar = JSON.stringify(susunDipilih.map(x=>x.kata)) === JSON.stringify(soal.jawaban_jp);
+  jawabanDikunci = true;
+  document.querySelectorAll('.kata-chip').forEach(c=>c.classList.add('disabled'));
+  showFeedback(benar, soal.jawaban_jp.join(' '));
+  updateSkorState(benar, soal);
+  const btn = document.getElementById('btn-submit');
+  btn.textContent = 'Soal Berikutnya →'; btn.disabled = false;
+}
+
+// ======= MULTIPLE (pola jp_id) =======
+function pilihMultiple(el, idx) {
+  if (jawabanDikunci) return;
+  jawabanDikunci = true;
+  const jawabanArr = window._jawabanMulti || [];
+  const opsi = window._opsiMulti || [];
+  const dipilih = opsi[idx];
+  const benar = jawabanArr.includes(dipilih);
+  document.querySelectorAll('.pilihan-btn').forEach(b=>{
+    b.classList.add('disabled');
+    const teks = b.querySelector('.pilihan-teks').textContent;
+    if (jawabanArr.includes(teks)) b.classList.add('benar');
+    else if (b===el && !benar) b.classList.add('salah-dipilih');
+    else b.classList.add('salah');
+  });
+  const soal = soalList[soalIndex];
+  showFeedback(benar, jawabanArr[0]);
+  updateSkorState(benar, soal);
+  setTimeout(()=>lanjutSoal(), 1800);
+}
+
+// ======= SINGLE (kosakata) =======
+function pilihSingle(el, dipilih, jawaban) {
+  if (jawabanDikunci) return;
+  jawabanDikunci = true;
+  const benar = dipilih === jawaban;
+  document.querySelectorAll('.pilihan-btn').forEach(b=>{
+    b.classList.add('disabled');
+    const teks = b.querySelector('.pilihan-teks').textContent;
+    if (teks===jawaban) b.classList.add('benar');
+    else if (b===el && !benar) b.classList.add('salah-dipilih');
+    else b.classList.add('salah');
+  });
+  showFeedback(benar, jawaban);
+  updateSkorState(benar, soalList[soalIndex]);
+  setTimeout(()=>lanjutSoal(), 1800);
+}
+
+// ======= PARTIKEL =======
+function pilihPartikel(el, dipilih, jawaban) {
+  if (jawabanDikunci) return;
+  jawabanDikunci = true;
+  const benar = dipilih === jawaban;
+  document.querySelectorAll('.pilihan-btn').forEach(b=>{
+    b.classList.add('disabled');
+    const teks = b.querySelector('.pilihan-teks').textContent;
+    if (teks===jawaban) b.classList.add('benar');
+    else if (b===el && !benar) b.classList.add('salah-dipilih');
+    else b.classList.add('salah');
+  });
+  const rumpang = document.getElementById('rumpang');
+  if (rumpang) { rumpang.textContent = jawaban; rumpang.style.color = benar?'var(--green)':'var(--red)'; }
+  showFeedback(benar, jawaban);
+  updateSkorState(benar, soalList[soalIndex]);
+  setTimeout(()=>lanjutSoal(), 1800);
+}
+
+// ======= KETIK =======
+function cekKetik() {
+  if (jawabanDikunci) { lanjutSoal(); return; }
+  const soal = soalList[soalIndex];
+  const input = document.getElementById('input-jawaban');
+  const val = input.value.trim();
+  if (!val) return;
+  const benar = val === soal.target;
+  jawabanDikunci = true;
+  input.disabled = true;
+  input.style.borderColor = benar ? 'var(--green)' : 'var(--red)';
+  showFeedback(benar, soal.target);
+  updateSkorState(benar, soal);
+  const btn = document.getElementById('btn-submit');
+  btn.textContent = 'Soal Berikutnya →';
+}
+
+// ======= FEEDBACK =======
+function showFeedback(benar, jawabanBenar) {
+  const fb = document.getElementById('feedback');
+  if (!fb) return;
+  fb.className = 'feedback-box ' + (benar?'benar':'salah');
+  fb.innerHTML = benar
+    ? `<div class="feedback-header">✓ Benar!</div>`
+    : `<div class="feedback-header">✗ Kurang tepat</div><div class="feedback-jawaban">Jawaban: <span>${jawabanBenar}</span></div>`;
+}
+
+// ======= SKOR =======
+function updateSkorState(benar, soal) {
+  if (benar) skorBenar++;
+  else {
+    skorSalah++;
+    const jawabanBenar = soal.target || soal.jawaban || (soal.jawaban_jp ? soal.jawaban_jp.join(' ') : soal.jawaban_id?.[0] || '');
+    const soalTeks = soal.soal_id || soal.soal_jp || soal.soal || (soal.kalimat_parts ? soal.kalimat_parts.join(' ') : '');
+    reviewList.push({ soalTeks, instruksi: soal.instruksi||'', jawabanBenar });
+  }
+  if (jenisKuis==='acak' && soal._kat) {
+    rincianAcak[soal._kat][1]++;
+    if (benar) rincianAcak[soal._kat][0]++;
+  }
+}
+
+// ======= LANJUT =======
+function lanjutSoal() {
+  soalIndex++;
+  if (soalIndex >= soalList.length) tampilHasil();
+  else renderSoal();
+}
+
+// ======= HASIL =======
+const GRADES = [
+  { min:23, g:'S', emoji:'🌸', pesan:'Luar biasa! Hampir sempurna!' },
+  { min:20, g:'A', emoji:'⭐', pesan:'Hebat! Terus pertahankan!' },
+  { min:17, g:'B', emoji:'👍', pesan:'Bagus! Terus berlatih!' },
+  { min:13, g:'C', emoji:'📚', pesan:'Lumayan! Masih ada yang perlu dipelajari.' },
+  { min:0,  g:'D', emoji:'💪', pesan:'Jangan menyerah, coba lagi!' }
+];
+
+function tampilHasil() {
+  const total = soalList.length;
+  const gc = GRADES.find(g=>skorBenar>=g.min);
+  const pct = Math.round((skorBenar/total)*100);
+
+  try { riwayat[jenisKuis]={benar:skorBenar,total}; localStorage.setItem('nihongo_riwayat',JSON.stringify(riwayat)); } catch(e){}
+
+  document.getElementById('header-title').textContent = 'Hasil';
+  document.getElementById('header-sub').textContent = KUIS_CONFIG.find(k=>k.id===jenisKuis)?.nama || '';
+
+  const labels = { pola:'Pola Kalimat', kataKerja:'Kata Kerja', kosakata:'Kosakata', partikel:'Partikel' };
+  const rincianHtml = jenisKuis==='acak' ? `
+    <div class="rincian-block">
+      <div class="rincian-title">Rincian per Kategori</div>
+      ${Object.entries(rincianAcak).map(([k,[b,t]])=>{
+        const p = t>0?Math.round((b/t)*100):0;
+        return `<div class="rincian-row">
+          <span class="rincian-label">${labels[k]}</span>
+          <div class="rincian-bar-bg"><div class="rincian-bar-fill" id="bar-${k}" style="width:0%"></div></div>
+          <span class="rincian-pct" id="pct-${k}">${p}%</span>
+        </div>`;
+      }).join('')}
+    </div>` : '';
+
+  const reviewHtml = reviewList.length > 0 ? `
+    <div class="rincian-block">
+      <div class="rincian-title">Jawaban Salah (${reviewList.length})</div>
+      ${reviewList.map(r=>`
+        <div class="review-item">
+          <div class="review-soal">${r.soalTeks} ${r.instruksi}</div>
+          <div class="review-benar">✓ <span class="review-jp">${r.jawabanBenar}</span></div>
+        </div>`).join('')}
+    </div>` : `
+    <div class="rincian-block" style="text-align:center;padding:24px">
+      <div style="font-size:32px;margin-bottom:8px">🎉</div>
+      <div style="font-weight:800;font-size:16px;color:var(--green)">Semua jawaban benar!</div>
+    </div>`;
+
+  document.getElementById('hasil-wrap').innerHTML = `
+    <div class="hasil-hero" data-grade="${gc.g}">
+      <div class="hasil-emoji">${gc.emoji}</div>
+      <div class="hasil-grade-label">Grade ${gc.g} &nbsp;·&nbsp; ${skorBenar}/${total}</div>
+      <div class="hasil-skor">${pct}% benar</div>
+      <div class="hasil-pesan">${gc.pesan}</div>
+    </div>
+    ${rincianHtml}
+    ${reviewHtml}
+    <button class="btn-hasil btn-ulangi" onclick="mulaiKuis('${jenisKuis}')">🔄 Coba Lagi</button>
+    <button class="btn-hasil btn-menu" onclick="renderPilih()">← Pilih Kuis Lain</button>
+  `;
+
+  showPage('page-hasil');
+
+  // Animasi bar setelah render
+  if (jenisKuis==='acak') {
+    setTimeout(()=>{
+      Object.entries(rincianAcak).forEach(([k,[b,t]])=>{
+        const p = t>0?Math.round((b/t)*100):0;
+        const bar = document.getElementById('bar-'+k);
+        if (bar) bar.style.width = p+'%';
+      });
+    }, 200);
+  }
+}
+
+// ======= UTILS =======
+function shuffle(arr) {
+  for(let i=arr.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[arr[i],arr[j]]=[arr[j],arr[i]];}
+  return arr;
+}
+function showPage(id) {
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  window.scrollTo(0,0);
+}
+function escQ(s) { return s.replace(/'/g,"\\'"); }
+
+function handleBack() {
+  const aktif = document.querySelector('.page.active').id;
+  if (aktif==='page-pilih') window.location.href='index.html';
+  else if (aktif==='page-kuis') { if(confirm('Keluar dari kuis? Progress akan hilang.')) renderPilih(); }
+  else renderPilih();
+}
+
+// ======= INIT =======
+renderPilih();
+</script>
+</body>
+</html>
