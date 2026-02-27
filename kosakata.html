@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kosakata – NihongoLab</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --red: #E8201A;
+      --dark: #111111;
+      --white: #FFFFFF;
+      --gray: #F2F2F2;
+      --gray2: #E8E8E8;
+      --text: #1a1a1a;
+      --sub: #888;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--gray);
+      max-width: 480px;
+      margin: 0 auto;
+      min-height: 100vh;
+    }
+
+    /* ===== HEADER ===== */
+    .header {
+      background: var(--dark);
+      padding: 20px 20px 18px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .btn-back {
+      width: 38px; height: 38px;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.1);
+      border: none;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: background 0.2s;
+    }
+    .btn-back:hover { background: rgba(255,255,255,0.2); }
+    .header-text { flex: 1; }
+    .header-title {
+      font-size: 18px;
+      font-weight: 800;
+      color: white;
+      line-height: 1;
+    }
+    .header-sub {
+      font-size: 12px;
+      color: rgba(255,255,255,0.45);
+      margin-top: 3px;
+      font-family: 'Noto Sans JP', sans-serif;
+    }
+    .header-count {
+      background: var(--red);
+      color: white;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 20px;
+      white-space: nowrap;
+    }
+
+    /* ===== SEARCH ===== */
+    .search-wrap {
+      background: var(--dark);
+      padding: 0 16px 16px;
+    }
+    .search-box {
+      display: flex;
+      align-items: center;
+      background: rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 10px 14px;
+      gap: 10px;
+      border: 1.5px solid transparent;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .search-box:focus-within {
+      border-color: var(--red);
+      background: rgba(255,255,255,0.15);
+    }
+    .search-icon { font-size: 16px; opacity: 0.5; }
+    .search-input {
+      flex: 1;
+      background: none;
+      border: none;
+      outline: none;
+      color: white;
+      font-size: 14px;
+      font-family: 'Outfit', sans-serif;
+    }
+    .search-input::placeholder { color: rgba(255,255,255,0.35); }
+    .search-clear {
+      background: none;
+      border: none;
+      color: rgba(255,255,255,0.4);
+      font-size: 16px;
+      cursor: pointer;
+      padding: 0;
+      display: none;
+    }
+    .search-clear.visible { display: block; }
+
+    /* ===== LIST PAGE ===== */
+    #page-list { display: block; }
+    #page-detail { display: none; }
+
+    .list-wrap { padding: 16px; }
+
+    /* Filter chips */
+    .filter-wrap {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+      margin-bottom: 14px;
+      scrollbar-width: none;
+    }
+    .filter-wrap::-webkit-scrollbar { display: none; }
+    .filter-chip {
+      background: white;
+      border: 1.5px solid var(--gray2);
+      border-radius: 20px;
+      padding: 5px 14px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--sub);
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.2s;
+      flex-shrink: 0;
+    }
+    .filter-chip.active {
+      background: var(--red);
+      border-color: var(--red);
+      color: white;
+    }
+
+    /* No result */
+    .no-result {
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--sub);
+    }
+    .no-result .emoji { font-size: 40px; margin-bottom: 12px; }
+    .no-result p { font-size: 14px; }
+
+    /* Kosakata card */
+    .kata-card {
+      background: white;
+      border-radius: 16px;
+      padding: 16px 18px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      border: 1.5px solid transparent;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      animation: fadeUp 0.3s ease both;
+    }
+    .kata-card:hover {
+      border-color: var(--red);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+    .kata-card:active { transform: scale(0.98); }
+
+    .kata-jp {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--text);
+      min-width: 80px; max-width: 120px; white-space: nowrap;
+      text-align: center;
+      flex-shrink: 0;
+      line-height: 1.2;
+    }
+    .kata-divider {
+      width: 1px; height: 36px;
+      background: var(--gray2);
+      flex-shrink: 0;
+    }
+    .kata-info { flex: 1; min-width: 0; }
+    .kata-romaji {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 2px;
+    }
+    .kata-arti {
+      font-size: 12px;
+      color: var(--sub);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .kata-kategori {
+      font-size: 10px;
+      font-weight: 700;
+      padding: 3px 9px;
+      border-radius: 6px;
+      flex-shrink: 0;
+      background: #F0F0F0;
+      color: #666;
+    }
+    .kata-arrow { color: var(--gray2); font-size: 16px; flex-shrink: 0; }
+    .kata-card:hover .kata-arrow { color: var(--red); }
+
+    /* ===== DETAIL PAGE ===== */
+    .detail-wrap { padding: 20px 16px 40px; }
+
+    /* Hero */
+    .kata-hero {
+      background: var(--dark);
+      border-radius: 20px;
+      padding: 28px 24px;
+      margin-bottom: 20px;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+    .kata-hero::before {
+      content: attr(data-kanji);
+      position: absolute;
+      right: -10px; top: -10px;
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 100px;
+      font-weight: 700;
+      color: rgba(255,255,255,0.04);
+      line-height: 1;
+    }
+    .kata-hero-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: var(--red);
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .kata-hero-jp {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 52px;
+      font-weight: 700;
+      color: white;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+    .kata-hero-romaji {
+      font-size: 18px;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+    .kata-hero-arti {
+      font-size: 15px;
+      color: rgba(255,255,255,0.4);
+      margin-bottom: 14px;
+    }
+    .kata-hero-badge {
+      display: inline-block;
+      padding: 4px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+      background: rgba(255,255,255,0.1);
+      color: rgba(255,255,255,0.7);
+    }
+
+    /* Section block */
+    .section-block {
+      background: white;
+      border-radius: 16px;
+      padding: 18px 20px;
+      margin-bottom: 14px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    .section-block-title {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: var(--red);
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .section-block-title::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: #F0E8E8;
+    }
+
+    /* Info rows */
+    .info-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 0;
+      border-bottom: 1px solid #F5F5F5;
+    }
+    .info-row:last-child { border-bottom: none; padding-bottom: 0; }
+    .info-row:first-child { padding-top: 0; }
+    .info-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--sub);
+      width: 80px;
+      flex-shrink: 0;
+    }
+    .info-value {
+      font-size: 14px;
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    /* Contoh */
+    .contoh-item {
+      border-left: 3px solid var(--red);
+      padding: 12px 14px;
+      background: #FAFAFA;
+      border-radius: 0 12px 12px 0;
+      margin-bottom: 10px;
+    }
+    .contoh-item:last-child { margin-bottom: 0; }
+    .contoh-jp {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 17px;
+      color: var(--text);
+      margin-bottom: 4px;
+      font-weight: 700;
+    }
+    .contoh-romaji { font-size: 12px; color: var(--sub); margin-bottom: 8px; }
+    .terjemahan-wrap { display: flex; flex-wrap: wrap; gap: 6px; }
+    .terjemahan-chip {
+      background: white;
+      border: 1px solid var(--gray2);
+      border-radius: 20px;
+      padding: 3px 10px;
+      font-size: 12px;
+      color: #555;
+    }
+    .terjemahan-chip:first-child {
+      background: var(--red);
+      color: white;
+      border-color: var(--red);
+    }
+
+    /* Nav */
+    .nav-wrap { display: flex; gap: 10px; margin-top: 20px; }
+    .btn-nav {
+      flex: 1;
+      background: white;
+      border: 1.5px solid var(--gray2);
+      border-radius: 14px;
+      padding: 14px;
+      cursor: pointer;
+      text-align: center;
+      transition: all 0.2s;
+      font-family: 'Outfit', sans-serif;
+    }
+    .btn-nav:hover { border-color: var(--red); }
+    .btn-nav .nav-label { font-size: 11px; color: var(--sub); margin-bottom: 3px; }
+    .btn-nav .nav-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text);
+      font-family: 'Noto Sans JP', sans-serif;
+    }
+    .btn-nav:hover .nav-title { color: var(--red); }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(14px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .slide-in { animation: fadeUp 0.3s ease both; }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <button class="btn-back" onclick="goBack()">←</button>
+  <div class="header-text">
+    <div class="header-title" id="header-title">Kosakata</div>
+    <div class="header-sub" id="header-sub">語彙</div>
+  </div>
+  <div class="header-count" id="header-count">0 kata</div>
+</div>
+
+<!-- SEARCH -->
+<div class="search-wrap" id="search-wrap">
+  <div class="search-box">
+    <span class="search-icon">🔍</span>
+    <input class="search-input" id="search-input" type="text"
+      placeholder="Cari kata, arti, romaji..."/>
+    <button class="search-clear" id="search-clear" onclick="clearSearch()">✕</button>
+  </div>
+</div>
+
+<!-- LIST PAGE -->
+<div id="page-list">
+  <div class="list-wrap">
+    <div class="filter-wrap" id="filter-wrap"></div>
+    <div id="list-wrap">
+      <div style="text-align:center;padding:40px;color:#999;font-size:14px">Memuat data...</div>
+    </div>
+  </div>
+</div>
+
+<!-- DETAIL PAGE -->
+<div id="page-detail">
+  <div class="detail-wrap" id="detail-wrap"></div>
+</div>
+
+<script>
+  const dummyData = {
+    judul: "Kosakata",
+    judul_jp: "語彙",
+    kategori: ["Semua", "Sapaan", "Makanan", "Tempat", "Waktu", "Benda", "Sifat"],
+    data: [
+      {
+        id: 1,
+        jp: "ありがとう",
+        romaji: "arigatou",
+        arti: "terima kasih",
+        kategori: "Sapaan",
+        jenis: "Frasa",
+        contoh: [
+          {
+            kalimat: "助けてくれてありがとう",
+            romaji: "Tasukete kurete arigatou",
+            terjemahan: ["Terima kasih sudah membantuku", "Makasih ya sudah nolong"]
+          },
+          {
+            kalimat: "ありがとうございます",
+            romaji: "Arigatou gozaimasu",
+            terjemahan: ["Terima kasih banyak", "Terima kasih (formal)"]
+          }
+        ]
+      },
+      {
+        id: 2,
+        jp: "すみません",
+        romaji: "sumimasen",
+        arti: "permisi / maaf",
+        kategori: "Sapaan",
+        jenis: "Frasa",
+        contoh: [
+          {
+            kalimat: "すみません、駅はどこですか",
+            romaji: "Sumimasen, eki wa doko desu ka",
+            terjemahan: ["Permisi, di mana stasiun?", "Maaf, stasiun di mana ya?"]
+          }
+        ]
+      },
+      {
+        id: 3,
+        jp: "寿司",
+        romaji: "sushi",
+        arti: "sushi",
+        kategori: "Makanan",
+        jenis: "Kata Benda",
+        contoh: [
+          {
+            kalimat: "寿司が大好きです",
+            romaji: "Sushi ga daisuki desu",
+            terjemahan: ["Saya sangat suka sushi", "Sushi itu favoritku banget"]
+          },
+          {
+            kalimat: "寿司を食べたいです",
+            romaji: "Sushi wo tabetai desu",
+            terjemahan: ["Saya ingin makan sushi", "Pengen makan sushi"]
+          }
+        ]
+      },
+      {
+        id: 4,
+        jp: "ラーメン",
+        romaji: "raamen",
+        arti: "ramen",
+        kategori: "Makanan",
+        jenis: "Kata Benda",
+        contoh: [
+          {
+            kalimat: "ラーメンは美味しいです",
+            romaji: "Raamen wa oishii desu",
+            terjemahan: ["Ramen itu enak", "Ramennya lezat"]
+          }
+        ]
+      },
+      {
+        id: 5,
+        jp: "学校",
+        romaji: "gakkou",
+        arti: "sekolah",
+        kategori: "Tempat",
+        jenis: "Kata Benda",
+        contoh: [
+          {
+            kalimat: "学校に行きます",
+            romaji: "Gakkou ni ikimasu",
+            terjemahan: ["Saya pergi ke sekolah", "Aku berangkat sekolah"]
+          },
+          {
+            kalimat: "学校は楽しいです",
+            romaji: "Gakkou wa tanoshii desu",
+            terjemahan: ["Sekolah itu menyenangkan", "Sekolahnya seru"]
+          }
+        ]
+      },
+      {
+        id: 6,
+        jp: "駅",
+        romaji: "eki",
+        arti: "stasiun",
+        kategori: "Tempat",
+        jenis: "Kata Benda",
+        contoh: [
+          {
+            kalimat: "駅はどこですか",
+            romaji: "Eki wa doko desu ka",
+            terjemahan: ["Di mana stasiunnya?", "Stasiun di mana?"]
+          }
+        ]
+      },
+      {
+        id: 7,
+        jp: "今日",
+        romaji: "kyou",
+        arti: "hari ini",
+        kategori: "Waktu",
+        jenis: "Kata Keterangan",
+        contoh: [
+          {
+            kalimat: "今日は暑いです",
+            romaji: "Kyou wa atsui desu",
+            terjemahan: ["Hari ini panas", "Panas banget hari ini"]
+          },
+          {
+            kalimat: "今日何をしますか",
+            romaji: "Kyou nani wo shimasu ka",
+            terjemahan: ["Hari ini kamu mau ngapain?", "Kamu ada rencana apa hari ini?"]
+          }
+        ]
+      },
+      {
+        id: 8,
+        jp: "明日",
+        romaji: "ashita",
+        arti: "besok",
+        kategori: "Waktu",
+        jenis: "Kata Keterangan",
+        contoh: [
+          {
+            kalimat: "明日また来てください",
+            romaji: "Ashita mata kite kudasai",
+            terjemahan: ["Tolong datang lagi besok", "Besok datang lagi ya"]
+          }
+        ]
+      },
+      {
+        id: 9,
+        jp: "本",
+        romaji: "hon",
+        arti: "buku",
+        kategori: "Benda",
+        jenis: "Kata Benda",
+        contoh: [
+          {
+            kalimat: "本を読みます",
+            romaji: "Hon wo yomimasu",
+            terjemahan: ["Saya membaca buku", "Aku baca buku"]
+          },
+          {
+            kalimat: "この本は面白いです",
+            romaji: "Kono hon wa omoshiroi desu",
+            terjemahan: ["Buku ini menarik", "Buku ini seru banget"]
+          }
+        ]
+      },
+      {
+        id: 10,
+        jp: "かわいい",
+        romaji: "kawaii",
+        arti: "imut / lucu",
+        kategori: "Sifat",
+        jenis: "Kata Sifat",
+        contoh: [
+          {
+            kalimat: "猫がかわいいです",
+            romaji: "Neko ga kawaii desu",
+            terjemahan: ["Kucingnya imut", "Lucu banget kucingnya", "Kucingnya lucu"]
+          },
+          {
+            kalimat: "かわいい服ですね",
+            romaji: "Kawaii fuku desu ne",
+            terjemahan: ["Bajunya imut ya", "Wah bajunya lucu!"]
+          }
+        ]
+      }
+    ]
+  };
+
+  let filteredData = [...dummyData.data];
+  let activeFilter = 'Semua';
+
+  // ===== RENDER FILTER =====
+  function renderFilters() {
+    const wrap = document.getElementById('filter-wrap');
+    wrap.innerHTML = dummyData.kategori.map(k => `
+      <div class="filter-chip ${k === activeFilter ? 'active' : ''}" onclick="setFilter('${k}')">
+        ${k}
+      </div>
+    `).join('');
+  }
+
+  function setFilter(k) {
+    activeFilter = k;
+    renderFilters();
+    applyFilter();
+  }
+
+  // ===== SEARCH =====
+  document.getElementById('search-input').addEventListener('input', function() {
+    document.getElementById('search-clear').classList.toggle('visible', this.value.length > 0);
+    applyFilter();
+  });
+
+  function clearSearch() {
+    document.getElementById('search-input').value = '';
+    document.getElementById('search-clear').classList.remove('visible');
+    applyFilter();
+  }
+
+  function applyFilter() {
+    const q = document.getElementById('search-input').value.toLowerCase().trim();
+    filteredData = dummyData.data.filter(item => {
+      const matchKat = activeFilter === 'Semua' || item.kategori === activeFilter;
+      const matchSearch = !q ||
+        item.jp.includes(q) ||
+        item.romaji.toLowerCase().includes(q) ||
+        item.arti.toLowerCase().includes(q);
+      return matchKat && matchSearch;
+    });
+    renderList();
+  }
+
+  // ===== RENDER LIST =====
+  function renderList() {
+    document.getElementById('header-count').textContent = filteredData.length + ' kata';
+    const wrap = document.getElementById('list-wrap');
+
+    if (filteredData.length === 0) {
+      wrap.innerHTML = `
+        <div class="no-result">
+          <div class="emoji">🔍</div>
+          <p>Tidak ada kosakata yang ditemukan</p>
+        </div>`;
+      return;
+    }
+
+    wrap.innerHTML = '';
+    filteredData.forEach((item, i) => {
+      const card = document.createElement('div');
+      card.className = 'kata-card';
+      card.style.animationDelay = (i * 0.05) + 's';
+      card.innerHTML = `
+        <div class="kata-jp">${item.jp}</div>
+        <div class="kata-divider"></div>
+        <div class="kata-info">
+          <div class="kata-romaji">${item.romaji}</div>
+          <div class="kata-arti">${item.arti}</div>
+        </div>
+        <span class="kata-kategori">${item.kategori}</span>
+        <span class="kata-arrow">›</span>
+      `;
+      const originalIndex = dummyData.data.indexOf(item);
+      card.onclick = () => showDetail(originalIndex);
+      wrap.appendChild(card);
+    });
+  }
+
+  // ===== DETAIL =====
+  function showDetail(index) {
+    const item = dummyData.data[index];
+    const total = dummyData.data.length;
+
+    document.getElementById('header-title').textContent = 'Detail Kosakata';
+    document.getElementById('header-sub').textContent = item.jp;
+    document.getElementById('header-count').textContent = `${index + 1}/${total}`;
+    document.getElementById('search-wrap').style.display = 'none';
+
+    const contohHtml = item.contoh.map(c => `
+      <div class="contoh-item">
+        <div class="contoh-jp">${c.kalimat}</div>
+        <div class="contoh-romaji">${c.romaji}</div>
+        <div class="terjemahan-wrap">
+          ${c.terjemahan.map(t => `<span class="terjemahan-chip">${t}</span>`).join('')}
+        </div>
+      </div>
+    `).join('');
+
+    const prev = index > 0 ? dummyData.data[index - 1] : null;
+    const next = index < total - 1 ? dummyData.data[index + 1] : null;
+    const navHtml = `
+      <div class="nav-wrap">
+        <button class="btn-nav" onclick="${prev ? 'showDetail(' + (index - 1) + ')' : ''}"
+          style="${!prev ? 'opacity:0.3;cursor:default' : ''}">
+          <div class="nav-label">← Sebelumnya</div>
+          <div class="nav-title">${prev ? prev.jp : '—'}</div>
+        </button>
+        <button class="btn-nav" onclick="${next ? 'showDetail(' + (index + 1) + ')' : ''}"
+          style="${!next ? 'opacity:0.3;cursor:default' : ''}">
+          <div class="nav-label">Berikutnya →</div>
+          <div class="nav-title">${next ? next.jp : '—'}</div>
+        </button>
+      </div>
+    `;
+
+    document.getElementById('detail-wrap').innerHTML = `
+      <div class="slide-in">
+        <div class="kata-hero" data-kanji="${item.jp[0]}">
+          <div class="kata-hero-label">Kosakata</div>
+          <div class="kata-hero-jp">${item.jp}</div>
+          <div class="kata-hero-romaji">${item.romaji}</div>
+          <div class="kata-hero-arti">${item.arti}</div>
+          <span class="kata-hero-badge">${item.kategori} · ${item.jenis}</span>
+        </div>
+
+        <div class="section-block">
+          <div class="section-block-title">Informasi</div>
+          <div class="info-row">
+            <span class="info-label">Kategori</span>
+            <span class="info-value">${item.kategori}</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Jenis Kata</span>
+            <span class="info-value">${item.jenis}</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Romaji</span>
+            <span class="info-value">${item.romaji}</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Arti</span>
+            <span class="info-value">${item.arti}</span>
+          </div>
+        </div>
+
+        <div class="section-block">
+          <div class="section-block-title">Contoh Kalimat</div>
+          ${contohHtml}
+        </div>
+
+        ${navHtml}
+      </div>
+    `;
+
+    document.getElementById('page-list').style.display = 'none';
+    document.getElementById('page-detail').style.display = 'block';
+    window.scrollTo(0, 0);
+  }
+
+  // ===== BACK =====
+  function goBack() {
+    const isDetail = document.getElementById('page-detail').style.display === 'block';
+    if (isDetail) {
+      document.getElementById('page-list').style.display = 'block';
+      document.getElementById('page-detail').style.display = 'none';
+      document.getElementById('search-wrap').style.display = 'block';
+      document.getElementById('header-title').textContent = dummyData.judul;
+      document.getElementById('header-sub').textContent = dummyData.judul_jp;
+      document.getElementById('header-count').textContent = filteredData.length + ' kata';
+      window.scrollTo(0, 0);
+    } else {
+      window.location.href = 'index.html';
+    }
+  }
+
+  // ===== INIT =====
+  renderFilters();
+  renderList();
+</script>
+</body>
+</html>
