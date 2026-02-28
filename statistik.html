@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Statistik – NihongoLab</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --red: #E8201A;
+      --dark: #111111;
+      --gray: #F2F2F2;
+      --gray2: #E8E8E8;
+      --text: #1a1a1a;
+      --sub: #888;
+      --green: #1E8E3E;
+      --green-light: #E8F8EE;
+      --blue: #1967D2;
+      --orange: #E65C00;
+      --purple: #7B1FA2;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--gray);
+      max-width: 480px;
+      margin: 0 auto;
+      min-height: 100vh;
+    }
+
+    /* HEADER */
+    .header {
+      background: var(--dark);
+      padding: 20px 20px 18px;
+      display: flex; align-items: center; gap: 14px;
+      position: sticky; top: 0; z-index: 100;
+    }
+    .btn-back {
+      width: 38px; height: 38px; border-radius: 10px;
+      background: rgba(255,255,255,0.1); border: none; color: white;
+      font-size: 18px; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; transition: background 0.2s;
+    }
+    .btn-back:hover { background: rgba(255,255,255,0.2); }
+    .header-text { flex: 1; }
+    .header-title { font-size: 18px; font-weight: 800; color: white; line-height: 1; }
+    .header-sub { font-size: 12px; color: rgba(255,255,255,0.45); margin-top: 3px; font-family: 'Noto Sans JP', sans-serif; }
+    .btn-reset {
+      background: rgba(255,255,255,0.1); border: none; color: rgba(255,255,255,0.5);
+      font-size: 11px; font-weight: 700; padding: 6px 12px;
+      border-radius: 8px; cursor: pointer; font-family: 'Outfit', sans-serif;
+      transition: all 0.2s;
+    }
+    .btn-reset:hover { background: rgba(232,32,26,0.3); color: white; }
+
+    /* WRAP */
+    .stats-wrap { padding: 20px 16px 40px; }
+
+    /* HERO AKURASI */
+    .hero-card {
+      background: var(--dark);
+      border-radius: 22px;
+      padding: 28px 24px;
+      margin-bottom: 16px;
+      position: relative;
+      overflow: hidden;
+      animation: fadeUp 0.4s ease both;
+    }
+    .hero-card::before {
+      content: '統';
+      position: absolute; right: -15px; top: -15px;
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 110px; font-weight: 700;
+      color: rgba(255,255,255,0.04); line-height: 1;
+    }
+    .hero-label {
+      font-size: 11px; font-weight: 700;
+      letter-spacing: 2px; color: var(--red);
+      text-transform: uppercase; margin-bottom: 16px;
+    }
+    .hero-main { display: flex; align-items: center; gap: 20px; }
+    .akurasi-circle {
+      width: 96px; height: 96px; flex-shrink: 0;
+      position: relative;
+    }
+    .akurasi-circle svg { transform: rotate(-90deg); }
+    .akurasi-bg { fill: none; stroke: rgba(255,255,255,0.08); stroke-width: 8; }
+    .akurasi-fill {
+      fill: none; stroke: var(--red); stroke-width: 8;
+      stroke-linecap: round;
+      stroke-dasharray: 251.2;
+      stroke-dashoffset: 251.2;
+      transition: stroke-dashoffset 1s ease;
+    }
+    .akurasi-text {
+      position: absolute; inset: 0;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+    }
+    .akurasi-pct { font-size: 22px; font-weight: 800; color: white; line-height: 1; }
+    .akurasi-sub-label { font-size: 9px; color: rgba(255,255,255,0.4); font-weight: 700; letter-spacing: 1px; }
+
+    .hero-info { flex: 1; }
+    .hero-info-row { margin-bottom: 10px; }
+    .hero-info-row:last-child { margin-bottom: 0; }
+    .hero-info-label { font-size: 11px; color: rgba(255,255,255,0.4); margin-bottom: 2px; }
+    .hero-info-val { font-size: 18px; font-weight: 800; color: white; }
+    .hero-info-val span { font-size: 12px; font-weight: 400; color: rgba(255,255,255,0.4); }
+
+    /* STREAK */
+    .streak-card {
+      background: linear-gradient(135deg, #FF6B35, #E8201A);
+      border-radius: 18px; padding: 20px 22px;
+      margin-bottom: 16px; display: flex;
+      align-items: center; gap: 16px;
+      box-shadow: 0 4px 20px rgba(232,32,26,0.3);
+      animation: fadeUp 0.4s ease 0.08s both;
+    }
+    .streak-icon { font-size: 40px; flex-shrink: 0; }
+    .streak-info { flex: 1; }
+    .streak-num { font-size: 36px; font-weight: 800; color: white; line-height: 1; }
+    .streak-label { font-size: 13px; color: rgba(255,255,255,0.7); margin-top: 2px; }
+    .streak-best { font-size: 11px; color: rgba(255,255,255,0.5); margin-top: 4px; }
+
+    /* GRID 2 KOLOM */
+    .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px; }
+    .mini-card {
+      background: white; border-radius: 16px;
+      padding: 16px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      animation: fadeUp 0.4s ease both;
+    }
+    .mini-icon { font-size: 22px; margin-bottom: 8px; }
+    .mini-val { font-size: 26px; font-weight: 800; color: var(--text); line-height: 1; margin-bottom: 4px; }
+    .mini-label { font-size: 11px; color: var(--sub); font-weight: 600; }
+
+    /* DISTRIBUSI BENAR/SALAH */
+    .section-block {
+      background: white; border-radius: 18px;
+      padding: 20px; margin-bottom: 16px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      animation: fadeUp 0.4s ease both;
+    }
+    .section-title {
+      font-size: 11px; font-weight: 700;
+      letter-spacing: 2px; color: var(--red);
+      text-transform: uppercase; margin-bottom: 16px;
+      display: flex; align-items: center; gap: 6px;
+    }
+    .section-title::after { content: ''; flex: 1; height: 1px; background: #F0E8E8; }
+
+    /* Bar distribusi */
+    .distribusi-bar-wrap { margin-bottom: 14px; }
+    .distribusi-bar-bg {
+      height: 14px; background: var(--gray);
+      border-radius: 10px; overflow: hidden;
+      display: flex;
+    }
+    .distribusi-bar-benar {
+      height: 100%; background: var(--green);
+      border-radius: 10px 0 0 10px;
+      transition: width 0.8s ease;
+    }
+    .distribusi-bar-salah {
+      height: 100%; background: var(--red);
+      border-radius: 0 10px 10px 0;
+      transition: width 0.8s ease;
+    }
+    .distribusi-legend {
+      display: flex; justify-content: space-between;
+      margin-top: 10px;
+    }
+    .legend-item { display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 700; }
+    .legend-dot { width: 10px; height: 10px; border-radius: 50%; }
+
+    /* SKOR PER KUIS */
+    .skor-item {
+      display: flex; align-items: center;
+      gap: 12px; padding: 12px 0;
+      border-bottom: 1px solid #F5F5F5;
+    }
+    .skor-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .skor-item:first-child { padding-top: 0; }
+    .skor-icon {
+      width: 40px; height: 40px; border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 16px; font-weight: 700; flex-shrink: 0;
+    }
+    .skor-info { flex: 1; }
+    .skor-nama { font-size: 13px; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+    .skor-bar-bg { height: 6px; background: var(--gray); border-radius: 10px; }
+    .skor-bar-fill { height: 6px; border-radius: 10px; transition: width 0.8s ease; width: 0%; }
+    .skor-val { font-size: 15px; font-weight: 800; color: var(--text); flex-shrink: 0; text-align: right; }
+    .skor-rata { font-size: 10px; color: var(--sub); }
+
+    /* FAVORIT */
+    .favorit-wrap { display: flex; align-items: center; gap: 14px; }
+    .favorit-icon {
+      width: 56px; height: 56px; border-radius: 16px;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 22px; font-weight: 700; flex-shrink: 0;
+    }
+    .favorit-info { flex: 1; }
+    .favorit-nama { font-size: 18px; font-weight: 800; color: var(--text); margin-bottom: 3px; }
+    .favorit-sub { font-size: 12px; color: var(--sub); }
+
+    /* KOSONG */
+    .empty-state {
+      text-align: center; padding: 40px 20px;
+    }
+    .empty-emoji { font-size: 48px; margin-bottom: 14px; }
+    .empty-title { font-size: 18px; font-weight: 800; color: var(--text); margin-bottom: 6px; }
+    .empty-sub { font-size: 13px; color: var(--sub); line-height: 1.6; }
+    .btn-mulai {
+      display: inline-block; margin-top: 20px;
+      background: var(--red); color: white;
+      border: none; border-radius: 14px;
+      padding: 14px 28px; font-size: 15px; font-weight: 800;
+      font-family: 'Outfit', sans-serif; cursor: pointer;
+      transition: opacity 0.2s;
+    }
+    .btn-mulai:hover { opacity: 0.9; }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(14px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <button class="btn-back" onclick="window.location.href='index.html'">←</button>
+  <div class="header-text">
+    <div class="header-title">Statistik</div>
+    <div class="header-sub">統計</div>
+  </div>
+  <button class="btn-reset" onclick="resetStats()">Reset</button>
+</div>
+
+<div class="stats-wrap" id="stats-wrap"></div>
+
+<script>
+  const KUIS_INFO = [
+    { id:'pola',      nama:'Pola Kalimat', icon:'文型', warna:'#FDEAEA', warnaText:'#E8201A', barColor:'#E8201A' },
+    { id:'kataKerja', nama:'Kata Kerja',   icon:'動詞', warna:'#FEF0E6', warnaText:'#E65C00', barColor:'#E65C00' },
+    { id:'kosakata',  nama:'Kosakata',     icon:'語彙', warna:'#E8F0FE', warnaText:'#1967D2', barColor:'#1967D2' },
+    { id:'partikel',  nama:'Partikel',     icon:'助詞', warna:'#E8F8EE', warnaText:'#1E8E3E', barColor:'#1E8E3E' },
+    { id:'acak',      nama:'Soal Acak',    icon:'🎲',   warna:'#F0EAFE', warnaText:'#7B1FA2', barColor:'#7B1FA2' }
+  ];
+
+  function loadStats() {
+    try {
+      return {
+        riwayat: JSON.parse(localStorage.getItem('nihongo_riwayat') || '{}'),
+        sesi: JSON.parse(localStorage.getItem('nihongo_sesi') || '{}'),
+        streak: JSON.parse(localStorage.getItem('nihongo_streak') || '{"current":0,"best":0,"lastDate":""}'),
+        total: JSON.parse(localStorage.getItem('nihongo_total') || '{"benar":0,"salah":0,"soal":0}')
+      };
+    } catch(e) { return { riwayat:{}, sesi:{}, streak:{current:0,best:0,lastDate:''}, total:{benar:0,salah:0,soal:0} }; }
+  }
+
+  function render() {
+    const stats = loadStats();
+    const wrap = document.getElementById('stats-wrap');
+    const adaData = stats.total.soal > 0;
+
+    if (!adaData) {
+      wrap.innerHTML = `
+        <div class="empty-state">
+          <div class="empty-emoji">📊</div>
+          <div class="empty-title">Belum ada data</div>
+          <div class="empty-sub">Mulai kuis untuk melihat<br>statistik belajarmu di sini!</div>
+          <button class="btn-mulai" onclick="window.location.href='kuis.html'">Mulai Kuis →</button>
+        </div>`;
+      return;
+    }
+
+    const akurasiPct = stats.total.soal > 0 ? Math.round((stats.total.benar / stats.total.soal) * 100) : 0;
+    const circumference = 251.2;
+    const offset = circumference - (akurasiPct / 100) * circumference;
+
+    // Favorit kuis
+    let favId = null, favSesi = 0;
+    Object.entries(stats.sesi).forEach(([id, n]) => { if (n > favSesi) { favSesi = n; favId = id; } });
+    const favInfo = KUIS_INFO.find(k => k.id === favId);
+
+    // Skor per kuis HTML
+    const skorHtml = KUIS_INFO.map(k => {
+      const s = stats.riwayat[k.id];
+      const sesiN = stats.sesi[k.id] || 0;
+      const best = s ? `${s.benar}/25` : '—';
+      const pct = s ? (s.benar / 25) * 100 : 0;
+      const rata = stats[`rata_${k.id}`] ? Math.round(stats[`rata_${k.id}`]) : (s ? s.benar : null);
+      const isEmoji = k.id === 'acak';
+      return `
+        <div class="skor-item">
+          <div class="skor-icon" style="background:${k.warna};color:${k.warnaText};font-size:${isEmoji?'20px':'15px'}">${k.icon}</div>
+          <div class="skor-info">
+            <div class="skor-nama">${k.nama}</div>
+            <div class="skor-bar-bg">
+              <div class="skor-bar-fill" id="bar-${k.id}" style="background:${k.barColor}"></div>
+            </div>
+            <div class="skor-rata">${sesiN} sesi dimainkan</div>
+          </div>
+          <div class="skor-val">
+            ${best}
+            <div class="skor-rata">terbaik</div>
+          </div>
+        </div>`;
+    }).join('');
+
+    wrap.innerHTML = `
+      <!-- HERO AKURASI -->
+      <div class="hero-card">
+        <div class="hero-label">Ringkasan Belajar</div>
+        <div class="hero-main">
+          <div class="akurasi-circle">
+            <svg width="96" height="96" viewBox="0 0 96 96">
+              <circle class="akurasi-bg" cx="48" cy="48" r="40"/>
+              <circle class="akurasi-fill" id="akurasi-ring" cx="48" cy="48" r="40"/>
+            </svg>
+            <div class="akurasi-text">
+              <div class="akurasi-pct" id="akurasi-pct">0%</div>
+              <div class="akurasi-sub-label">AKURASI</div>
+            </div>
+          </div>
+          <div class="hero-info">
+            <div class="hero-info-row">
+              <div class="hero-info-label">Total Soal Dijawab</div>
+              <div class="hero-info-val">${stats.total.soal} <span>soal</span></div>
+            </div>
+            <div class="hero-info-row">
+              <div class="hero-info-label">Total Sesi Belajar</div>
+              <div class="hero-info-val">${Object.values(stats.sesi).reduce((a,b)=>a+b,0)} <span>sesi</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- STREAK -->
+      <div class="streak-card">
+        <div class="streak-icon">🔥</div>
+        <div class="streak-info">
+          <div class="streak-num">${stats.streak.current}</div>
+          <div class="streak-label">Hari streak belajar</div>
+          <div class="streak-best">Terbaik: ${stats.streak.best} hari</div>
+        </div>
+      </div>
+
+      <!-- GRID MINI -->
+      <div class="grid2">
+        <div class="mini-card" style="animation-delay:0.1s">
+          <div class="mini-icon">✅</div>
+          <div class="mini-val" style="color:var(--green)">${stats.total.benar}</div>
+          <div class="mini-label">Jawaban Benar</div>
+        </div>
+        <div class="mini-card" style="animation-delay:0.15s">
+          <div class="mini-icon">❌</div>
+          <div class="mini-val" style="color:var(--red)">${stats.total.salah}</div>
+          <div class="mini-label">Jawaban Salah</div>
+        </div>
+      </div>
+
+      <!-- DISTRIBUSI -->
+      <div class="section-block" style="animation-delay:0.2s">
+        <div class="section-title">Distribusi Jawaban</div>
+        <div class="distribusi-bar-wrap">
+          <div class="distribusi-bar-bg">
+            <div class="distribusi-bar-benar" id="dist-benar" style="width:0%"></div>
+            <div class="distribusi-bar-salah" id="dist-salah" style="width:0%"></div>
+          </div>
+          <div class="distribusi-legend">
+            <div class="legend-item">
+              <div class="legend-dot" style="background:var(--green)"></div>
+              <span style="color:var(--green)">${akurasiPct}% Benar</span>
+            </div>
+            <div class="legend-item">
+              <div class="legend-dot" style="background:var(--red)"></div>
+              <span style="color:var(--red)">${100-akurasiPct}% Salah</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SKOR PER KUIS -->
+      <div class="section-block" style="animation-delay:0.25s">
+        <div class="section-title">Skor Terbaik per Kuis</div>
+        ${skorHtml}
+      </div>
+
+      <!-- FAVORIT -->
+      ${favInfo ? `
+      <div class="section-block" style="animation-delay:0.3s">
+        <div class="section-title">Kuis Favorit</div>
+        <div class="favorit-wrap">
+          <div class="favorit-icon" style="background:${favInfo.warna};color:${favInfo.warnaText};font-size:${favId==='acak'?'26px':'20px'}">${favInfo.icon}</div>
+          <div class="favorit-info">
+            <div class="favorit-nama">${favInfo.nama}</div>
+            <div class="favorit-sub">Dimainkan ${favSesi}x · Paling sering dilatih</div>
+          </div>
+        </div>
+      </div>` : ''}
+    `;
+
+    // Animasi setelah render
+    setTimeout(() => {
+      // Akurasi ring
+      const ring = document.getElementById('akurasi-ring');
+      if (ring) ring.style.strokeDashoffset = offset;
+      document.getElementById('akurasi-pct').textContent = akurasiPct + '%';
+
+      // Distribusi bar
+      const db = document.getElementById('dist-benar');
+      const ds = document.getElementById('dist-salah');
+      if (db) db.style.width = akurasiPct + '%';
+      if (ds) ds.style.width = (100 - akurasiPct) + '%';
+
+      // Skor bar per kuis
+      KUIS_INFO.forEach(k => {
+        const s = stats.riwayat[k.id];
+        const bar = document.getElementById('bar-' + k.id);
+        if (bar && s) bar.style.width = ((s.benar / 25) * 100) + '%';
+      });
+    }, 200);
+  }
+
+  function resetStats() {
+    if (confirm('Reset semua statistik? Data tidak bisa dikembalikan.')) {
+      localStorage.removeItem('nihongo_riwayat');
+      localStorage.removeItem('nihongo_sesi');
+      localStorage.removeItem('nihongo_streak');
+      localStorage.removeItem('nihongo_total');
+      render();
+    }
+  }
+
+  render();
+</script>
+</body>
+</html>
