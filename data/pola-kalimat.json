@@ -383,6 +383,102 @@
           "kalimat": "六時に家へ帰ります",
           "kalimat_susun": ["六", "時", "に", "家", "へ", "帰り", "ます"],
           "terjemahan": ["Pulang ke rumah jam enam", "Saya pulang ke rumah pukul enam"]
+          }
+      ]
+        },
+    {
+      "id": 17,
+      "pola": "K.Benda (transportasi) で 行きます / 来ます / 帰ります",
+      "arti": "pergi / datang / pulang dengan (transportasi)",
+      "penggunaan": "Digunakan untuk menyatakan alat transportasi yang digunakan saat berpindah tempat. Partikel で menunjukkan sarana atau alat yang dipakai.",
+      "catatan": "で digunakan untuk menunjukkan alat/transportasi. Tidak memakai で untuk berjalan kaki, tetapi menggunakan 歩いて. Struktur umum: [Transportasi] で [行きます/来ます/帰ります].",
+      "contoh": [
+        {
+          "kalimat": "バスで学校へ行きます",
+          "kalimat_susun": ["バス", "で", "学校", "へ", "行き", "ます"],
+          "terjemahan": ["Pergi ke sekolah dengan bus", "Saya pergi ke sekolah naik bus"]
+        },
+        {
+          "kalimat": "電車で会社へ来ました",
+          "kalimat_susun": ["電車", "で", "会社", "へ", "来", "ました"],
+          "terjemahan": ["Datang ke kantor dengan kereta", "Saya datang ke kantor naik kereta"]
+        },
+        {
+          "kalimat": "タクシーで家へ帰ります",
+          "kalimat_susun": ["タクシー", "で", "家", "へ", "帰り", "ます"],
+          "terjemahan": ["Pulang ke rumah dengan taksi", "Saya pulang ke rumah naik taksi"]
+           }
+      ]
+        },
+    {
+      "id": 18,
+      "pola": "いつ",
+      "arti": "kapan",
+      "penggunaan": "Digunakan untuk menanyakan waktu terjadinya suatu peristiwa atau aktivitas. Biasanya dipakai dalam kalimat tanya.",
+      "catatan": "Tidak perlu partikel に setelah いつ. Sering digunakan bersama kata kerja bentuk ます. Jawaban biasanya berupa keterangan waktu (jam, hari, tanggal, dll).",
+      "contoh": [
+        {
+          "kalimat": "いつ日本へ行きますか",
+          "kalimat_susun": ["いつ", "日本", "へ", "行き", "ます", "か"],
+          "terjemahan": ["Kapan pergi ke Jepang?", "Kapan Anda pergi ke Jepang?"]
+        },
+        {
+          "kalimat": "あなたはいつ来ましたか",
+          "kalimat_susun": ["あなた", "は", "いつ", "来", "ました", "か"],
+          "terjemahan": ["Kapan Anda datang?", "Kapan kamu datang?"]
+        },
+        {
+          "kalimat": "いつ学校へ帰りますか",
+          "kalimat_susun": ["いつ", "学校", "へ", "帰り", "ます", "か"],
+          "terjemahan": ["Kapan pulang ke sekolah?", "Kapan Anda kembali ke sekolah?"]
+         }
+      ]
+        },
+    {
+      "id": 19,
+      "pola": "K.Benda を K.Kerja",
+      "arti": "(objek) melakukan …",
+      "penggunaan": "Digunakan untuk menunjukkan objek langsung dari suatu kata kerja. Partikel を menandai benda yang dikenai tindakan.",
+      "catatan": "を dibaca “o”. Dipakai untuk kata kerja yang membutuhkan objek langsung (kata kerja transitif). Struktur umum: [Subjek] は [Objek] を [Kata kerja].",
+      "contoh": [
+        {
+          "kalimat": "私は本を読みます",
+          "kalimat_susun": ["私", "は", "本", "を", "読み", "ます"],
+          "terjemahan": ["Saya membaca buku", "Aku membaca sebuah buku"]
+        },
+        {
+          "kalimat": "映画を見ました",
+          "kalimat_susun": ["映画", "を", "見", "ました"],
+          "terjemahan": ["Menonton film", "Saya menonton film"]
+        },
+        {
+          "kalimat": "朝ごはんを食べません",
+          "kalimat_susun": ["朝ごはん", "を", "食べ", "ません"],
+          "terjemahan": ["Tidak makan sarapan", "Saya tidak makan sarapan"]
+        }
+      ]
+        },
+    {
+      "id": 20,
+      "pola": "Tempat で K.Kerja",
+      "arti": "melakukan … di (tempat)",
+      "penggunaan": "Digunakan untuk menyatakan lokasi terjadinya suatu aktivitas. Partikel で menunjukkan tempat berlangsungnya suatu tindakan.",
+      "catatan": "で digunakan untuk tempat aktivitas. Berbeda dengan に yang digunakan untuk keberadaan (あります / います). Struktur umum: [Tempat] で [Kata kerja].",
+      "contoh": [
+        {
+          "kalimat": "学校で勉強します",
+          "kalimat_susun": ["学校", "で", "勉強し", "ます"],
+          "terjemahan": ["Belajar di sekolah", "Saya belajar di sekolah"]
+        },
+        {
+          "kalimat": "レストランでごはんを食べました",
+          "kalimat_susun": ["レストラン", "で", "ごはん", "を", "食べ", "ました"],
+          "terjemahan": ["Makan di restoran", "Saya makan di restoran"]
+        },
+        {
+          "kalimat": "図書館で本を読みます",
+          "kalimat_susun": ["図書館", "で", "本", "を", "読み", "ます"],
+          "terjemahan": ["Membaca buku di perpustakaan", "Saya membaca buku di perpustakaan"]
         }
       ]
     }
