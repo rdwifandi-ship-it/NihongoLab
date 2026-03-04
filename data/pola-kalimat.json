@@ -479,6 +479,126 @@
           "kalimat": "図書館で本を読みます",
           "kalimat_susun": ["図書館", "で", "本", "を", "読み", "ます"],
           "terjemahan": ["Membaca buku di perpustakaan", "Saya membaca buku di perpustakaan"]
+          }
+      ]
+        },
+    {
+      "id": 21,
+      "pola": "K.Kerja ましょう",
+      "arti": "mari … / ayo …",
+      "penggunaan": "Digunakan untuk mengajak atau mengusulkan melakukan suatu aktivitas bersama dalam bentuk sopan (formal).",
+      "catatan": "Merupakan bentuk ajakan dari kata kerja bentuk ます. Bisa juga digunakan untuk menyatakan keputusan pembicara secara halus. Struktur umum: [Kata kerja bentuk ます tanpa ます] + ましょう.",
+      "contoh": [
+        {
+          "kalimat": "一緒に行きましょう",
+          "kalimat_susun": ["一緒", "に", "行き", "ましょう"],
+          "terjemahan": ["Mari pergi bersama", "Ayo kita pergi bersama"]
+        },
+        {
+          "kalimat": "日本語を勉強しましょう",
+          "kalimat_susun": ["日本語", "を", "勉強し", "ましょう"],
+          "terjemahan": ["Mari belajar bahasa Jepang", "Ayo belajar bahasa Jepang"]
+        },
+        {
+          "kalimat": "七時に会いましょう",
+          "kalimat_susun": ["七", "時", "に", "会い", "ましょう"],
+          "terjemahan": ["Mari bertemu jam tujuh", "Ayo kita bertemu pukul tujuh"]
+          }
+      ]
+        },
+    {
+      "id": 22,
+      "pola": "Alat で K.Kerja",
+      "arti": "melakukan … dengan (alat)",
+      "penggunaan": "Digunakan untuk menyatakan alat atau sarana yang digunakan untuk melakukan suatu aktivitas. Partikel で menunjukkan alat yang dipakai.",
+      "catatan": "で tidak hanya untuk tempat, tetapi juga untuk alat/sarana. Struktur umum: [Alat] で [Kata kerja]. Berbeda dengan transportasi で, tetapi fungsi partikelnya sama (menunjukkan sarana).",
+      "contoh": [
+        {
+          "kalimat": "はしでごはんを食べます",
+          "kalimat_susun": ["はし", "で", "ごはん", "を", "食べ", "ます"],
+          "terjemahan": ["Makan dengan sumpit", "Saya makan nasi dengan sumpit"]
+        },
+        {
+          "kalimat": "日本語で話します",
+          "kalimat_susun": ["日本語", "で", "話し", "ます"],
+          "terjemahan": ["Berbicara dengan bahasa Jepang", "Saya berbicara dalam bahasa Jepang"]
+        },
+        {
+          "kalimat": "ペンで名前を書きました",
+          "kalimat_susun": ["ペン", "で", "名前", "を", "書き", "ました"],
+          "terjemahan": ["Menulis nama dengan pena", "Saya menulis nama dengan pena"]
+          }
+      ]
+        },
+    {
+      "id": 23,
+      "pola": "～ は ～語 で 何 ですか",
+      "arti": "… dalam bahasa … apa?",
+      "penggunaan": "Digunakan untuk menanyakan bagaimana mengatakan atau menyebut sesuatu dalam bahasa tertentu. Pola ini sering dipakai saat belajar bahasa.",
+      "catatan": "～語 berarti “bahasa …” (日本語, 英語, インドネシア語, dll). Partikel で menunjukkan bahasa yang digunakan sebagai sarana. Struktur umum: [Kata] は [Bahasa] で 何 ですか.",
+      "contoh": [
+        {
+          "kalimat": "ありがとうはインドネシア語で何ですか",
+          "kalimat_susun": ["ありがとう", "は", "インドネシア語", "で", "何", "です", "か"],
+          "terjemahan": ["‘Arigatou’ dalam bahasa Indonesia apa?", "Apa bahasa Indonesia dari ‘arigatou’?"]
+        },
+        {
+          "kalimat": "先生は英語で何ですか",
+          "kalimat_susun": ["先生", "は", "英語", "で", "何", "です", "か"],
+          "terjemahan": ["‘Sensei’ dalam bahasa Inggris apa?", "Apa bahasa Inggris dari ‘sensei’?"]
+        },
+        {
+          "kalimat": "水は日本語で何ですか",
+          "kalimat_susun": ["水", "は", "日本語", "で", "何", "です", "か"],
+          "terjemahan": ["‘Air’ dalam bahasa Jepang apa?", "Apa bahasa Jepang dari ‘air’?"]
+          }
+      ]
+        },
+    {
+      "id": 24,
+      "pola": "Tujuan(Orang) に Objek を K.Kerja",
+      "arti": "melakukan tindakan kepada seseorang",
+      "penggunaan": "Digunakan untuk menyatakan bahwa suatu tindakan dilakukan dengan tujuan atau sasaran kepada seseorang. Partikel に menunjukkan orang yang menjadi tujuan atau sasaran dari tindakan tersebut.",
+      "catatan": "Partikel に menunjukkan target tindakan (orang). Kata kerja yang sering digunakan: あいます (bertemu), でんわします (menelpon), しつもんします (bertanya), てがみをかきます (menulis surat), dll. Pola umum: [Pelaku] は [Tujuan(Orang)] に [Objek] を [K.Kerja]. Jika tidak ada objek, tetap bisa memakai に langsung sebelum kata kerja.",
+      "contoh": [
+        {
+          "kalimat": "私は先生に質問をします",
+          "kalimat_susun": ["私", "は", "先生", "に", "質問", "を", "し", "ます"],
+          "terjemahan": ["Saya bertanya kepada guru", "Aku mengajukan pertanyaan kepada guru"]
+        },
+        {
+          "kalimat": "私は友達に電話をかけます",
+          "kalimat_susun": ["私", "は", "友達", "に", "電話", "を", "かけ", "ます"],
+          "terjemahan": ["Saya menelpon teman", "Aku menelepon teman"]
+        },
+        {
+          "kalimat": "私は友達に会います",
+          "kalimat_susun": ["私", "は", "友達", "に", "会い", "ます"],
+          "terjemahan": ["Saya bertemu teman", "Aku bertemu dengan teman"]
+          }
+      ]
+        },
+    {
+      "id": 25,
+      "pola": "K.Benda(Orang) に Objek を K.Kerja（もらいます／かります／ならいます dll）",
+      "arti": "menerima / meminjam / belajar dari seseorang",
+      "penggunaan": "Digunakan untuk menyatakan bahwa subjek menerima, meminjam, atau belajar sesuatu dari seseorang. Partikel に menunjukkan orang yang menjadi sumber pemberi atau sumber tindakan tersebut.",
+      "catatan": "Partikel に menunjukkan sumber (orang). Bisa juga menggunakan から untuk menegaskan sumber. Kata kerja yang sering digunakan: もらいます (menerima), かります (meminjam), ならいます (belajar dari seseorang). Pola umum: [Subjek] は [Orang] に [Objek] を [K.Kerja]. Jika ingin menekankan sumber, bisa memakai から sebagai pengganti に.",
+      "contoh": [
+        {
+          "kalimat": "私は友達に本をかりました",
+          "kalimat_susun": ["私", "は", "友達", "に", "本", "を", "かり", "ました"],
+          "terjemahan": ["Saya meminjam buku dari teman", "Aku meminjam buku dari teman"]
+        },
+        {
+          "kalimat": "私は先生に日本語をならいました",
+          "kalimat_susun": ["私", "は", "先生", "に", "日本語", "を", "ならい", "ました"],
+          "terjemahan": ["Saya belajar bahasa Jepang dari guru", "Aku belajar bahasa Jepang dari guru"]
+        },
+        {
+          "kalimat": "私は先生にプレゼントをもらいました",
+          "kalimat_susun": ["私", "は", "先生", "に", "プレゼント", "を", "もらい", "ました"],
+          "terjemahan": ["Saya menerima hadiah dari guru", "Aku mendapat hadiah dari guru"]
         }
       ]
     }
