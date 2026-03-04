@@ -337,6 +337,57 @@
           "terjemahan": ["Pergi dari rumah sampai kantor", "Saya pergi dari rumah ke kantor"]
         }
       ]
+        },
+    {
+      "id": 15,
+      "pola": "～ と ～",
+      "arti": "dan",
+      "penggunaan": "Digunakan untuk menghubungkan dua atau lebih kata benda dalam satu kalimat. Menyatakan daftar lengkap (semuanya disebutkan).",
+      "catatan": "Digunakan hanya untuk kata benda. Menunjukkan daftar yang lengkap (bukan contoh sebagian). Berbeda dengan や yang berarti “dan lain-lain” (tidak lengkap).",
+      "contoh": [
+        {
+          "kalimat": "私は本とノートを買いました",
+          "kalimat_susun": ["私", "は", "本", "と", "ノート", "を", "買い", "ました"],
+          "terjemahan": ["Saya membeli buku dan buku catatan", "Aku membeli buku dan notebook"]
+        },
+        {
+          "kalimat": "日本とインドネシアは国です",
+          "kalimat_susun": ["日本", "と", "インドネシア", "は", "国", "です"],
+          "terjemahan": ["Jepang dan Indonesia adalah negara", "Jepang dan Indonesia itu negara"]
+        },
+        {
+          "kalimat": "父と母は会社員です",
+          "kalimat_susun": ["父", "と", "母", "は", "会社員", "です"],
+          "terjemahan": ["Ayah dan ibu adalah karyawan", "Ayah dan ibu karyawan"]
+          }
+      ]
+        },
+    {
+      "id": 16,
+      "pola": "Tempat へ 行きます / 来ます / 帰ります",
+      "arti": "pergi ke / datang ke / pulang ke",
+      "penggunaan": "Digunakan untuk menyatakan perpindahan tempat. Partikel へ menunjukkan arah tujuan pergerakan.",
+      "catatan": "へ dibaca “e”. Bisa juga menggunakan に untuk menunjukkan tujuan tempat.
+行きます → pergi (menjauh dari pembicara)
+来ます → datang (mendekati pembicara)
+帰ります → pulang (kembali ke tempat asal, seperti rumah)",
+      "contoh": [
+        {
+          "kalimat": "学校へ行きます",
+          "kalimat_susun": ["学校", "へ", "行き", "ます"],
+          "terjemahan": ["Pergi ke sekolah", "Saya pergi ke sekolah"]
+        },
+        {
+          "kalimat": "友達は日本へ来ます",
+          "kalimat_susun": ["友達", "は", "日本", "へ", "来", "ます"],
+          "terjemahan": ["Teman datang ke Jepang", "Teman saya datang ke Jepang"]
+        },
+        {
+          "kalimat": "六時に家へ帰ります",
+          "kalimat_susun": ["六", "時", "に", "家", "へ", "帰り", "ます"],
+          "terjemahan": ["Pulang ke rumah jam enam", "Saya pulang ke rumah pukul enam"]
+        }
+      ]
     }
   ]
 }
