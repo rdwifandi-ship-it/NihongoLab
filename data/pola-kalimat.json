@@ -599,6 +599,55 @@
           "kalimat": "私は先生にプレゼントをもらいました",
           "kalimat_susun": ["私", "は", "先生", "に", "プレゼント", "を", "もらい", "ました"],
           "terjemahan": ["Saya menerima hadiah dari guru", "Aku mendapat hadiah dari guru"]
+         }
+      ]
+        },
+         {
+  "id": 26,
+  "pola": "もう K.Kerja ました",
+  "arti": "sudah …",
+  "penggunaan": "Digunakan untuk menyatakan bahwa suatu tindakan atau kegiatan telah selesai dilakukan. Kata もう menekankan bahwa kegiatan itu sudah terjadi atau sudah selesai.",
+  "catatan": "Biasanya dipakai dengan kata kerja bentuk lampau ました. Bisa digunakan untuk membalas pertanyaan “Sudah …?”. Struktur umum : [Subjek] は もう [Kata kerja bentuk lampau ました]。",
+  "contoh": [
+    {
+      "kalimat": "もうごはんを食べました",
+      "kalimat_susun": [
+        "もう",
+        "ごはん",
+        "を",
+        "食べました"
+      ],
+      "terjemahan": [
+        "Saya sudah makan",
+        "Aku sudah makan"
+      ]
+    },
+    {
+      "kalimat": "もう日本語を勉強しました",
+      "kalimat_susun": [
+        "もう",
+        "日本語",
+        "を",
+        "勉強",
+        "しました"
+      ],
+      "terjemahan": [
+        "Saya sudah belajar bahasa Jepang",
+        "Aku sudah belajar bahasa Jepang"
+      ]
+    },
+    {
+      "kalimat": "もう手紙を書きました",
+      "kalimat_susun": [
+        "もう",
+        "手紙",
+        "を",
+        "書きました"
+      ],
+      "terjemahan": [
+        "Saya sudah menulis surat",
+        "Aku sudah menulis surat"
+      ]
         }
       ]
     }
