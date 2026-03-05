@@ -648,8 +648,243 @@
         "Saya sudah menulis surat",
         "Aku sudah menulis surat"
       ]
+      }
+      ]
+        },
+      {
+  "id": 27,
+  "pola": "K.Sifat (い / な) + です / くないです / かったです / くなかったです",
+  "arti": "menyatakan keadaan atau sifat seseorang / sesuatu dalam bentuk positif, negatif, lampau, dan lampau negatif.",
+  "penggunaan": "Digunakan untuk menyatakan keadaan atau sifat dalam bentuk sopan (formal) dengan memperhatikan tenses: sekarang, negatif sekarang, lampau, dan negatif lampau.",
+  "catatan": "Kata sifat い → ubah menjadi くない untuk negatif, かった untuk lampau, くなかった untuk lampau negatif. Kata sifat な → gunakan ではありません untuk negatif, でした untuk lampau, ではありませんでした untuk lampau negatif. Struktur umum: [Kata sifat] + です / くないです / かったです / くなかったです.",
+  "contoh": [
+    {
+      "kalimat": "この本は面白いです",
+      "kalimat_susun": [
+        "この",
+        "本",
+        "は",
+        "面白い",
+        "です"
+      ],
+      "terjemahan": [
+        "Buku ini menarik",
+        "Buku ini seru"
+      ]
+    },
+    {
+      "kalimat": "昨日の映画は面白くなかったです",
+      "kalimat_susun": [
+        "昨日",
+        "の",
+        "映画",
+        "は",
+        "面白",
+        "くなかったです"
+      ],
+      "terjemahan": [
+        "Film kemarin tidak menarik",
+        "Film kemarin kurang seru"
+      ]
+    },
+    {
+      "kalimat": "あのレストランは静かでした",
+      "kalimat_susun": [
+        "あの",
+        "レストラン",
+        "は",
+        "静か",
+        "でした"
+      ],
+      "terjemahan": [
+        "Restoran itu tenang",
+        "Restoran itu memang tenang"
+      ]
+    },
+    {
+      "kalimat": "部屋はきれいではありませんでした",
+      "kalimat_susun": [
+        "部屋",
+        "は",
+        "きれい",
+        "では",
+        "ありませんでした"
+      ],
+      "terjemahan": [
+        "Kamarnya tidak bersih",
+        "Kamar itu tidak bersih"
+      ]
+          }
+      ]
+        },
+      {
+  "id": 28,
+  "pola": "～ が、～",
+  "arti": "tetapi / namun",
+  "penggunaan": "Digunakan untuk menghubungkan dua kalimat yang berlawanan atau menunjukkan pertentangan antara klausa pertama dan kedua. Partikel が berfungsi seperti “tetapi” atau “namun” dalam bahasa Indonesia.",
+  "catatan": "Biasanya digunakan di awal kalimat kedua atau di tengah kalimat untuk menunjukkan kontras.\nTidak sama dengan と yang menghubungkan kata benda, karena ini menghubungkan kalimat.\nStruktur umum: [Kalimat 1] が、[Kalimat 2].",
+  "contoh": [
+    {
+      "kalimat": "天気はいいですが、風が強いです",
+      "kalimat_susun": [
+        "天気",
+        "は",
+        "いい",
+        "です",
+        "が",
+        "、",
+        "風",
+        "が",
+        "強い",
+        "です"
+      ],
+      "terjemahan": [
+        "Cuacanya bagus, tapi anginnya kencang",
+        "Cuacanya bagus, namun anginnya kencang"
+      ]
+    },
+    {
+      "kalimat": "ケーキは好きですが、チョコレートは嫌いです",
+      "kalimat_susun": [
+        "ケーキ",
+        "は",
+        "好き",
+        "です",
+        "が",
+        "、",
+        "チョコレート",
+        "は",
+        "嫌い",
+        "です"
+      ],
+      "terjemahan": [
+        "Saya suka kue, tapi tidak suka coklat",
+        "Aku suka kue, namun coklat tidak"
+      ]
+    },
+    {
+      "kalimat": "日本語は難しいですが、面白いです",
+      "kalimat_susun": [
+        "日本",
+        "語",
+        "は",
+        "難しい",
+        "です",
+        "が",
+        "、",
+        "面白い",
+        "です"
+      ],
+      "terjemahan": [
+        "Bahasa Jepang sulit, tapi menarik",
+        "Bahasa Jepang memang sulit, namun menarik"
+        ]
+         }
+      ]
+        },
+        {
+  "id": 29,
+  "pola": "とても / あまり + K.Sifat (い / な) + です",
+  "arti": "sangat / tidak terlalu …",
+  "penggunaan": "とても → digunakan untuk menekankan sesuatu itu sangat (positif). あまり → digunakan untuk mengekspresikan “tidak terlalu” atau “kurang” (biasanya diikuti kata sifat negatif). Struktur umum: とても/あまり + [Kata sifat] + です",
+  "catatan": "とても selalu diikuti kata sifat positif. あまり diikuti kata sifat dalam bentuk negatif (くないです / ではありません). Bisa dipakai untuk memberi penekanan atau menilai sesuatu secara subjektif.",
+  "contoh": [
+    {
+      "kalimat": "この映画はとても面白いです",
+      "kalimat_susun": [
+        "この",
+        "映画",
+        "は",
+        "とても",
+        "面白い",
+        "です"
+      ],
+      "terjemahan": [
+        "Film ini sangat menarik",
+        "Film ini sangat seru"
+      ]
+    },
+    {
+      "kalimat": "昨日の宿題はあまり難しくないです",
+      "kalimat_susun": [
+        "昨日",
+        "の",
+        "宿題",
+        "は",
+        "あまり",
+        "難しくないです"
+      ],
+      "terjemahan": [
+        "PR kemarin tidak terlalu sulit",
+        "Pekerjaan rumah kemarin tidak terlalu sulit"
+      ]
+    },
+    {
+      "kalimat": "このケーキはとても甘いです",
+      "kalimat_susun": [
+        "この",
+        "ケーキ",
+        "は",
+        "とても",
+        "甘い",
+        "です"
+      ],
+      "terjemahan": [
+        "Kue ini sangat manis",
+        "Kuenya sangat manis"
+      ]
+      }
+      ]
+        },
+      {
+  "id": 30,
+  "pola": "K.Benda は どうですか",
+  "arti": "bagaimana …?",
+  "penggunaan": "Digunakan untuk menanyakan keadaan, kualitas, atau pendapat tentang sesuatu. Partikel は menandai topik yang ditanyakan, sedangkan どうですか menanyakan “bagaimana”.",
+  "catatan": "Bisa dipakai untuk benda, tempat, kegiatan, atau situasi. Jawaban biasanya berupa kata sifat (baik, buruk, menarik, dll) atau pendapat. Struktur umum: [K.Benda] は どうですか。",
+  "contoh": [
+    {
+      "kalimat": "この映画はどうですか",
+      "kalimat_susun": [
+        "この",
+        "映画",
+        "は",
+        "どうですか"
+      ],
+      "terjemahan": [
+        "Bagaimana film ini?",
+        "Film ini bagaimana?"
+      ]
+    },
+    {
+      "kalimat": "日本の食べ物はどうですか",
+      "kalimat_susun": [
+        "日本",
+        "の",
+        "食べ物",
+        "は",
+        "どうですか"
+      ],
+      "terjemahan": [
+        "Bagaimana makanan Jepang?",
+        "Makanan Jepang bagaimana?"
+      ]
+    },
+    {
+      "kalimat": "昨日の授業はどうでしたか",
+      "kalimat_susun": [
+        "昨日",
+        "の",
+        "授業",
+        "は",
+        "どうでしたか"
+      ],
+      "terjemahan": [
+        "Bagaimana pelajaran kemarin?",
+        "Pelajaran kemarin bagaimana?"
+      ]
         }
       ]
-    }
+　  }
   ]
 }
