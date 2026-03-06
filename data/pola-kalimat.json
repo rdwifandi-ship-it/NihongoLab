@@ -1,890 +1,1669 @@
 {
-  "judul": "Pola Kalimat",
-  "judul_jp": "文型",
-  "data": [
-    {
-      "id": 1,
-      "pola": "K.Benda1 は K.Benda2 です",
-      "arti": "adalah",
-      "penggunaan": "Digunakan untuk menyatakan identitas, profesi, kebangsaan, atau menjelaskan bahwa suatu benda/orang termasuk dalam kategori tertentu. Ini merupakan pola kalimat nominal paling dasar dalam bahasa Jepang.",
-      "catatan": "Untuk bentuk negatif gunakan 〜ではありません. Untuk bentuk informal gunakan 〜です → 〜だ. Contoh negatif: 彼は先生ではありません (Dia bukan guru).",
-      "contoh": [
-        {
-          "kalimat": "私は学生です",
-          "kalimat_susun": ["私", "は", "学生", "です"],
-          "terjemahan": ["Saya adalah pelajar", "Aku seorang pelajar"]
-        },
-        {
-          "kalimat": "彼は先生です",
-          "kalimat_susun": ["彼", "は", "先生", "です"],
-          "terjemahan": ["Dia adalah guru", "Dia seorang guru"]
-        },
-        {
-          "kalimat": "これは本です",
-          "kalimat_susun": ["これ", "は", "本", "です"],
-          "terjemahan": ["Ini adalah buku", "Ini buku"]
-        }
-      ]
-        },
-    {
-      "id": 2,
-      "pola": "K.Benda1 は K.Benda2 じゃ(では) ありません",
-      "arti": "bukan",
-      "penggunaan": "Digunakan untuk menyatakan bahwa K.Benda1 bukan K.Benda2. Ini adalah bentuk negatif dari pola nominal 〜は〜です dalam bentuk sopan (formal).",
-      "catatan": "ではありません adalah bentuk lebih formal. じゃありません adalah bentuk lebih santai tetapi tetap sopan. Bentuk informal biasa: 〜じゃない.",
-      "contoh": [
-        {
-          "kalimat": "私は学生じゃありません",
-          "kalimat_susun": ["私", "は", "学生", "じゃ", "ありません"],
-          "terjemahan": ["Saya bukan pelajar", "Aku bukan seorang pelajar"]
-        },
-        {
-          "kalimat": "彼は先生ではありません",
-          "kalimat_susun": ["彼", "は", "先生", "では", "ありません"],
-          "terjemahan": ["Dia bukan guru", "Dia bukan seorang guru"]
-        },
-        {
-          "kalimat": "これは本じゃありません",
-          "kalimat_susun": ["これ", "は", "本", "じゃ", "ありません"],
-          "terjemahan": ["Ini bukan buku", "Ini bukan sebuah buku"]
-        }
-      ]
-        },
-    {
-      "id": 3,
-      "pola": "K.Benda1 は K.Benda2 ですか",
-      "arti": "apakah … adalah …?",
-      "penggunaan": "Digunakan untuk menanyakan identitas, profesi, atau kategori seseorang maupun sesuatu dalam bentuk sopan (formal). Pola ini adalah bentuk tanya dari 〜は〜です.",
-      "catatan": "Partikel か digunakan untuk membuat kalimat tanya. Dalam percakapan santai, か sering dihilangkan dan hanya menggunakan intonasi naik. Jawaban positif: はい、〜です。 Jawaban negatif: いいえ、〜ではありません。",
-      "contoh": [
-        {
-          "kalimat": "あなたは学生ですか",
-          "kalimat_susun": ["あなた", "は", "学生", "です", "か"],
-          "terjemahan": ["Apakah kamu seorang pelajar?", "Apakah Anda pelajar?"]
-        },
-        {
-          "kalimat": "彼は先生ですか",
-          "kalimat_susun": ["彼", "は", "先生", "です", "か"],
-          "terjemahan": ["Apakah dia seorang guru?", "Apakah dia guru?"]
-        },
-        {
-          "kalimat": "これは本ですか",
-          "kalimat_susun": ["これ", "は", "本", "です", "か"],
-          "terjemahan": ["Apakah ini buku?", "Apakah ini sebuah buku?"]
-        }
-      ]
-        },
-    {
-      "id": 4,
-      "pola": "K.Benda も",
-      "arti": "juga",
-      "penggunaan": "Digunakan untuk menyatakan bahwa suatu benda/orang juga termasuk dalam pernyataan yang sama seperti sebelumnya. Partikel も menggantikan partikel は dalam kalimat nominal.",
-      "catatan": "も menggantikan は, bukan digunakan bersamaan dengan は. Pola lengkap biasanya: K.Benda1 も K.Benda2 です. Dapat digunakan dalam kalimat positif maupun negatif.",
-      "contoh": [
-        {
-          "kalimat": "私も学生です",
-          "kalimat_susun": ["私", "も", "学生", "です"],
-          "terjemahan": ["Saya juga pelajar", "Aku juga seorang pelajar"]
-        },
-        {
-          "kalimat": "彼も先生です",
-          "kalimat_susun": ["彼", "も", "先生", "です"],
-          "terjemahan": ["Dia juga guru", "Dia juga seorang guru"]
-        },
-        {
-          "kalimat": "これは本です。これも本です",
-          "kalimat_susun": ["これ", "も", "本", "です"],
-          "terjemahan": ["Ini juga buku", "Yang ini juga sebuah buku"]
-        }
-      ]
-        },
-    {
-      "id": 5,
-      "pola": "K.Benda1 の K.Benda2",
-      "arti": "milik / dari",
-      "penggunaan": "Digunakan untuk menunjukkan kepemilikan, hubungan, atau keterangan yang menjelaskan K.Benda2. Partikel の menghubungkan dua kata benda, di mana K.Benda1 menerangkan K.Benda2.",
-      "catatan": "Struktur dasar: [Yang menerangkan] の [Yang diterangkan]. Bisa berarti kepemilikan (milik), asal, jenis, atau hubungan. Urutan tidak boleh dibalik karena akan mengubah arti.",
-      "contoh": [
-        {
-          "kalimat": "私の本です",
-          "kalimat_susun": ["私", "の", "本", "です"],
-          "terjemahan": ["Itu buku saya", "Itu adalah buku milik saya"]
-        },
-        {
-          "kalimat": "日本の会社です",
-          "kalimat_susun": ["日本", "の", "会社", "です"],
-          "terjemahan": ["Itu perusahaan Jepang", "Itu adalah perusahaan dari Jepang"]
-        },
-        {
-          "kalimat": "学校の先生です",
-          "kalimat_susun": ["学校", "の", "先生", "です"],
-          "terjemahan": ["Itu guru sekolah", "Dia adalah guru dari sekolah"]
-        }
-      ]
-        },
-    {
-      "id": 6,
-      "pola": "これ / それ / あれ / どれ",
-      "arti": "ini / itu (dekat lawan bicara) / itu (jauh dari keduanya) / yang mana",
-      "penggunaan": "Digunakan untuk menunjuk benda. Kata ini dipakai ketika benda tidak disebutkan namanya secara langsung dan berdiri sendiri sebagai kata ganti benda.",
-      "catatan": "これ → benda dekat pembicara それ → benda dekat lawan bicara あれ → benda jauh dari pembicara dan lawan bicara どれ → digunakan untuk menanyakan pilihan (yang mana) Untuk bentuk sopan biasanya dipakai dalam pola: これは〜です / どれですか",
-      "contoh": [
-        {
-          "kalimat": "これは本です",
-          "kalimat_susun": ["これ", "は", "本", "です"],
-          "terjemahan": ["Ini adalah buku", "Ini buku"]
-        },
-        {
-          "kalimat": "それはあなたのかばんです",
-          "kalimat_susun": ["それ", "は", "あなた", "の", "かばん", "です"],
-          "terjemahan": ["Itu tas Anda", "Itu adalah tas milikmu"]
-        },
-        {
-          "kalimat": "どれですか",
-          "kalimat_susun": ["どれ", "です", "か"],
-          "terjemahan": ["Yang mana?", "Yang mana itu?"]
-        }
-      ]
-        },
-    {
-      "id": 7,
-      "pola": "この K.Benda / その K.Benda / あの K.Benda / どの K.Benda",
-      "arti": "benda ini / benda itu (dekat lawan bicara) / benda itu (jauh dari keduanya) / benda yang mana",
-      "penggunaan": "Digunakan untuk menerangkan kata benda secara langsung. Berbeda dengan これ/それ/あれ/どれ, pola ini harus diikuti oleh kata benda.",
-      "catatan": "この → benda dekat pembicara その → benda dekat lawan bicara あの → benda jauh dari pembicara dan lawan bicara どの → digunakan untuk menanyakan pilihan, selalu diikuti kata benda Tidak bisa berdiri sendiri, harus ada K.Benda setelahnya",
-      "contoh": [
-        {
-          "kalimat": "この本は私の本です",
-          "kalimat_susun": ["この", "本", "は", "私", "の", "本", "です"],
-          "terjemahan": ["Buku ini adalah buku saya", "Buku ini milik saya"]
-        },
-        {
-          "kalimat": "そのかばんはあなたのですか",
-          "kalimat_susun": ["その", "かばん", "は", "あなた", "の", "です", "か"],
-          "terjemahan": ["Apakah tas itu milik Anda?", "Apakah tas itu punyamu?"]
-        },
-        {
-          "kalimat": "どの本ですか",
-          "kalimat_susun": ["どの", "本", "です", "か"],
-          "terjemahan": ["Buku yang mana?", "Yang mana bukunya?"]
-        }
-      ]
-        },
-    {
-      "id": 8,
-      "pola": "～か、～か",
-      "arti": "atau",
-      "penggunaan": "Digunakan untuk menyebutkan dua (atau lebih) pilihan dalam kalimat tanya. Biasanya dipakai saat menanyakan pilihan kepada lawan bicara.",
-      "catatan": "Dipakai dalam kalimat pertanyaan. Tidak menggunakan どれ jika pilihan sudah disebutkan. Jawaban biasanya menyebutkan salah satu pilihan tanpa か.",
-      "contoh": [
-        {
-          "kalimat": "これは本ですか、ノートですか",
-          "kalimat_susun": ["これ", "は", "本", "です", "か", "、", "ノート", "です", "か"],
-          "terjemahan": ["Ini buku atau buku catatan?", "Ini buku atau notebook?"]
-        },
-        {
-          "kalimat": "あなたは学生ですか、先生ですか",
-          "kalimat_susun": ["あなた", "は", "学生", "です", "か", "、", "先生", "です", "か"],
-          "terjemahan": ["Anda pelajar atau guru?", "Kamu siswa atau guru?"]
-        },
-        {
-          "kalimat": "それは日本の会社ですか、インドネシアの会社ですか",
-          "kalimat_susun": ["それ", "は", "日本", "の", "会社", "です", "か", "、", "インドネシア", "の", "会社", "です", "か"],
-          "terjemahan": ["Itu perusahaan Jepang atau perusahaan Indonesia?", "Itu perusahaan dari Jepang atau dari Indonesia?"]
-        }
-      ]
-        },
-    {
-      "id": 9,
-      "pola": "ここ / そこ / あそこ / どこ / こちら / そちら / あちら / どちら",
-      "arti": "di sini / di situ / di sana / di mana / arah atau tempat ini (lebih sopan) / arah atau tempat itu / arah atau tempat sana / yang mana (lebih sopan)",
-      "penggunaan": "Digunakan untuk menunjukkan atau menanyakan tempat dan arah. Bentuk ～こちら digunakan sebagai versi lebih sopan dari ここ dan juga bisa dipakai untuk menunjukkan orang secara halus.",
-      "catatan": "ここ → tempat dekat pembicara そこ → tempat dekat lawan bicara あそこ → tempat jauh dari keduanya どこ → menanyakan tempat こちら / そちら / あちら / どちら → bentuk lebih sopan どちら dapat digunakan untuk menanyakan arah, tempat, atau pilihan secara sopan",
-      "contoh": [
-        {
-          "kalimat": "ここは学校です",
-          "kalimat_susun": ["ここ", "は", "学校", "です"],
-          "terjemahan": ["Di sini adalah sekolah", "Ini sekolah"]
-        },
-        {
-          "kalimat": "トイレはどこですか",
-          "kalimat_susun": ["トイレ", "は", "どこ", "です", "か"],
-          "terjemahan": ["Di mana toilet?", "Toilet di mana?"]
-        },
-        {
-          "kalimat": "受付はこちらです",
-          "kalimat_susun": ["受付", "は", "こちら", "です"],
-          "terjemahan": ["Resepsi ada di sini", "Bagian penerimaan di sebelah"]
-        }
-      ]
-        },
-    {
-      "id": 10,
-      "pola": "K.Benda は Tempat です",
-      "arti": "berada di / ada di",
-      "penggunaan": "Digunakan untuk menyatakan lokasi atau keberadaan suatu benda atau tempat. Pola ini menjelaskan bahwa K.Benda berada di suatu Tempat.",
-      "catatan": "Pola ini sering digunakan untuk menunjukkan lokasi suatu tempat atau gedung. Untuk menyatakan keberadaan orang atau benda secara lebih umum biasanya digunakan あります / います (dipelajari di bab berikutnya). Tempat biasanya berupa kata benda lokasi seperti ここ, 学校, 会社, dll.",
-      "contoh": [
-        {
-          "kalimat": "学校はここです",
-          "kalimat_susun": ["学校", "は", "ここ", "です"],
-          "terjemahan": ["Sekolah ada di sini", "Sekolahnya di sini"]
-        },
-        {
-          "kalimat": "トイレはあそこです",
-          "kalimat_susun": ["トイレ", "は", "あそこ", "です"],
-          "terjemahan": ["Toilet ada di sana", "Toiletnya di sana"]
-        },
-        {
-          "kalimat": "事務所は二階です",
-          "kalimat_susun": ["事務所", "は", "二階", "です"],
-          "terjemahan": ["Kantor ada di lantai dua", "Kantornya di lantai dua"]
-        }
-      ]
-        },
-    {
-      "id": 11,
-      "pola": "今 - 時 - 分 です",
-      "arti": "sekarang pukul …",
-      "penggunaan": "Digunakan untuk menyatakan waktu saat ini. Pola ini dipakai untuk memberitahukan jam dan menit dalam bentuk sopan (formal).",
-      "catatan": "Struktur dasar: 今は ～時～分です. Partikel は setelah 今 sering dipakai tetapi boleh dihilangkan dalam percakapan. Jika menit = 00, biasanya cukup ～時です (tanpa 分).",
-      "contoh": [
-        {
-          "kalimat": "今は三時です",
-          "kalimat_susun": ["今", "は", "三", "時", "です"],
-          "terjemahan": ["Sekarang jam tiga", "Sekarang pukul tiga"]
-        },
-        {
-          "kalimat": "今は七時十分です",
-          "kalimat_susun": ["今", "は", "七", "時", "十分", "です"],
-          "terjemahan": ["Sekarang jam tujuh lewat sepuluh menit", "Sekarang pukul tujuh sepuluh"]
-        },
-        {
-          "kalimat": "今は九時二十分です",
-          "kalimat_susun": ["今", "は", "九", "時", "二十分", "です"],
-          "terjemahan": ["Sekarang jam sembilan lewat dua puluh menit", "Sekarang pukul sembilan dua puluh"]
-        }
-      ]
-        },
-    {
-      "id": 12,
-      "pola": "K.Kerja ます / ません / ました / ませんでした",
-      "arti": "bentuk sopan kata kerja (sekarang/akan datang, negatif, lampau, lampau negatif)",
-      "penggunaan": "Digunakan untuk menyatakan aktivitas dalam bentuk sopan (formal). Pola ini dipakai dalam percakapan sehari-hari yang sopan dan situasi resmi.",
-      "catatan": "ます → sekarang / kebiasaan / akan datang ません → negatif sekarang / akan datang ました → lampau (sudah) ませんでした → lampau negatif (tidak/sudah tidak) Digunakan pada kata kerja bentuk ます (kata kerja kelompok 1, 2, 3 setelah diubah ke bentuk ます).",
-      "contoh": [
-        {
-          "kalimat": "私は毎日日本語を勉強します",
-          "kalimat_susun": ["私", "は", "毎日", "日本語", "を", "勉強し", "ます"],
-          "terjemahan": ["Saya belajar bahasa Jepang setiap hari", "Aku belajar bahasa Jepang setiap hari"]
-        },
-        {
-          "kalimat": "今日は会社へ行きません",
-          "kalimat_susun": ["今日", "は", "会社", "へ", "行き", "ません"],
-          "terjemahan": ["Hari ini saya tidak pergi ke kantor", "Hari ini aku tidak pergi ke kantor"]
-        },
-        {
-          "kalimat": "昨日映画を見ました",
-          "kalimat_susun": ["昨日", "映画", "を", "見", "ました"],
-          "terjemahan": ["Kemarin saya menonton film", "Kemarin aku sudah menonton film"]
-        }
-      ]
-        },
-    {
-      "id": 13,
-      "pola": "Waktu に K.Kerja",
-      "arti": "pada (waktu) … melakukan …",
-      "penggunaan": "Digunakan untuk menyatakan waktu spesifik terjadinya suatu aktivitas. Partikel に dipakai setelah keterangan waktu yang jelas seperti jam, tanggal, atau hari tertentu.",
-      "catatan": "に dipakai untuk waktu spesifik: jam (～時), tanggal (～日), hari tertentu (月曜日). Tidak memakai に untuk kata waktu relatif seperti: 今日, 昨日, 毎日, 今朝. Struktur umum: [Keterangan waktu] に [Kata kerja].",
-      "contoh": [
-        {
-          "kalimat": "七時に起きます",
-          "kalimat_susun": ["七", "時", "に", "起き", "ます"],
-          "terjemahan": ["Bangun jam tujuh", "Saya bangun pukul tujuh"]
-        },
-        {
-          "kalimat": "月曜日に学校へ行きます",
-          "kalimat_susun": ["月曜日", "に", "学校", "へ", "行き", "ます"],
-          "terjemahan": ["Pergi ke sekolah pada hari Senin", "Saya pergi ke sekolah hari Senin"]
-        },
-        {
-          "kalimat": "三月十日に日本へ行きました",
-          "kalimat_susun": ["三月", "十日", "に", "日本", "へ", "行き", "ました"],
-          "terjemahan": ["Pergi ke Jepang pada tanggal 10 Maret", "Saya pergi ke Jepang tanggal 10 Maret"]
-        }
-      ]
-        },
-    {
-      "id": 14,
-      "pola": "～から ～まで",
-      "arti": "dari … sampai …",
-      "penggunaan": "Digunakan untuk menyatakan rentang waktu atau tempat, yaitu titik awal (から) dan titik akhir (まで).",
-      "catatan": "から → titik awal まで → titik akhir Bisa dipakai untuk waktu maupun tempat. Tidak wajib selalu dipakai berpasangan (boleh hanya から saja atau まで saja).",
-      "contoh": [
-        {
-          "kalimat": "九時から五時まで働きます",
-          "kalimat_susun": ["九", "時", "から", "五", "時", "まで", "働き", "ます"],
-          "terjemahan": ["Bekerja dari jam sembilan sampai jam lima", "Saya bekerja pukul sembilan sampai lima"]
-        },
-        {
-          "kalimat": "月曜日から金曜日まで学校へ行きます",
-          "kalimat_susun": ["月曜日", "から", "金曜日", "まで", "学校", "へ", "行き", "ます"],
-          "terjemahan": ["Pergi ke sekolah dari hari Senin sampai hari Jumat", "Saya sekolah dari Senin sampai Jumat"]
-        },
-        {
-          "kalimat": "家から会社まで行きました",
-          "kalimat_susun": ["家", "から", "会社", "まで", "行き", "ました"],
-          "terjemahan": ["Pergi dari rumah sampai kantor", "Saya pergi dari rumah ke kantor"]
-        }
-      ]
-        },
-    {
-      "id": 15,
-      "pola": "～ と ～",
-      "arti": "dan",
-      "penggunaan": "Digunakan untuk menghubungkan dua atau lebih kata benda dalam satu kalimat. Menyatakan daftar lengkap (semuanya disebutkan).",
-      "catatan": "Digunakan hanya untuk kata benda. Menunjukkan daftar yang lengkap (bukan contoh sebagian). Berbeda dengan や yang berarti “dan lain-lain” (tidak lengkap).",
-      "contoh": [
-        {
-          "kalimat": "私は本とノートを買いました",
-          "kalimat_susun": ["私", "は", "本", "と", "ノート", "を", "買い", "ました"],
-          "terjemahan": ["Saya membeli buku dan buku catatan", "Aku membeli buku dan notebook"]
-        },
-        {
-          "kalimat": "日本とインドネシアは国です",
-          "kalimat_susun": ["日本", "と", "インドネシア", "は", "国", "です"],
-          "terjemahan": ["Jepang dan Indonesia adalah negara", "Jepang dan Indonesia itu negara"]
-        },
-        {
-          "kalimat": "父と母は会社員です",
-          "kalimat_susun": ["父", "と", "母", "は", "会社員", "です"],
-          "terjemahan": ["Ayah dan ibu adalah karyawan", "Ayah dan ibu karyawan"]
-          }
-      ]
-        },
-    {
-      "id": 16,
-      "pola": "Tempat へ 行きます / 来ます / 帰ります",
-      "arti": "pergi ke / datang ke / pulang ke",
-      "penggunaan": "Digunakan untuk menyatakan perpindahan tempat. Partikel へ menunjukkan arah tujuan pergerakan.",
-      "catatan": "へ dibaca “e”. Bisa juga menggunakan に untuk menunjukkan tujuan tempat. 行きます → pergi (menjauh dari pembicara) 来ます → datang (mendekati pembicara) 帰ります → pulang (kembali ke tempat asal, seperti rumah)",
-      "contoh": [
-        {
-          "kalimat": "学校へ行きます",
-          "kalimat_susun": ["学校", "へ", "行き", "ます"],
-          "terjemahan": ["Pergi ke sekolah", "Saya pergi ke sekolah"]
-        },
-        {
-          "kalimat": "友達は日本へ来ます",
-          "kalimat_susun": ["友達", "は", "日本", "へ", "来", "ます"],
-          "terjemahan": ["Teman datang ke Jepang", "Teman saya datang ke Jepang"]
-        },
-        {
-          "kalimat": "六時に家へ帰ります",
-          "kalimat_susun": ["六", "時", "に", "家", "へ", "帰り", "ます"],
-          "terjemahan": ["Pulang ke rumah jam enam", "Saya pulang ke rumah pukul enam"]
-          }
-      ]
-        },
-    {
-      "id": 17,
-      "pola": "K.Benda (transportasi) で 行きます / 来ます / 帰ります",
-      "arti": "pergi / datang / pulang dengan (transportasi)",
-      "penggunaan": "Digunakan untuk menyatakan alat transportasi yang digunakan saat berpindah tempat. Partikel で menunjukkan sarana atau alat yang dipakai.",
-      "catatan": "で digunakan untuk menunjukkan alat/transportasi. Tidak memakai で untuk berjalan kaki, tetapi menggunakan 歩いて. Struktur umum: [Transportasi] で [行きます/来ます/帰ります].",
-      "contoh": [
-        {
-          "kalimat": "バスで学校へ行きます",
-          "kalimat_susun": ["バス", "で", "学校", "へ", "行き", "ます"],
-          "terjemahan": ["Pergi ke sekolah dengan bus", "Saya pergi ke sekolah naik bus"]
-        },
-        {
-          "kalimat": "電車で会社へ来ました",
-          "kalimat_susun": ["電車", "で", "会社", "へ", "来", "ました"],
-          "terjemahan": ["Datang ke kantor dengan kereta", "Saya datang ke kantor naik kereta"]
-        },
-        {
-          "kalimat": "タクシーで家へ帰ります",
-          "kalimat_susun": ["タクシー", "で", "家", "へ", "帰り", "ます"],
-          "terjemahan": ["Pulang ke rumah dengan taksi", "Saya pulang ke rumah naik taksi"]
-           }
-      ]
-        },
-    {
-      "id": 18,
-      "pola": "いつ",
-      "arti": "kapan",
-      "penggunaan": "Digunakan untuk menanyakan waktu terjadinya suatu peristiwa atau aktivitas. Biasanya dipakai dalam kalimat tanya.",
-      "catatan": "Tidak perlu partikel に setelah いつ. Sering digunakan bersama kata kerja bentuk ます. Jawaban biasanya berupa keterangan waktu (jam, hari, tanggal, dll).",
-      "contoh": [
-        {
-          "kalimat": "いつ日本へ行きますか",
-          "kalimat_susun": ["いつ", "日本", "へ", "行き", "ます", "か"],
-          "terjemahan": ["Kapan pergi ke Jepang?", "Kapan Anda pergi ke Jepang?"]
-        },
-        {
-          "kalimat": "あなたはいつ来ましたか",
-          "kalimat_susun": ["あなた", "は", "いつ", "来", "ました", "か"],
-          "terjemahan": ["Kapan Anda datang?", "Kapan kamu datang?"]
-        },
-        {
-          "kalimat": "いつ学校へ帰りますか",
-          "kalimat_susun": ["いつ", "学校", "へ", "帰り", "ます", "か"],
-          "terjemahan": ["Kapan pulang ke sekolah?", "Kapan Anda kembali ke sekolah?"]
-         }
-      ]
-        },
-    {
-      "id": 19,
-      "pola": "K.Benda を K.Kerja",
-      "arti": "(objek) melakukan …",
-      "penggunaan": "Digunakan untuk menunjukkan objek langsung dari suatu kata kerja. Partikel を menandai benda yang dikenai tindakan.",
-      "catatan": "を dibaca “o”. Dipakai untuk kata kerja yang membutuhkan objek langsung (kata kerja transitif). Struktur umum: [Subjek] は [Objek] を [Kata kerja].",
-      "contoh": [
-        {
-          "kalimat": "私は本を読みます",
-          "kalimat_susun": ["私", "は", "本", "を", "読み", "ます"],
-          "terjemahan": ["Saya membaca buku", "Aku membaca sebuah buku"]
-        },
-        {
-          "kalimat": "映画を見ました",
-          "kalimat_susun": ["映画", "を", "見", "ました"],
-          "terjemahan": ["Menonton film", "Saya menonton film"]
-        },
-        {
-          "kalimat": "朝ごはんを食べません",
-          "kalimat_susun": ["朝ごはん", "を", "食べ", "ません"],
-          "terjemahan": ["Tidak makan sarapan", "Saya tidak makan sarapan"]
-        }
-      ]
-        },
-    {
-      "id": 20,
-      "pola": "Tempat で K.Kerja",
-      "arti": "melakukan … di (tempat)",
-      "penggunaan": "Digunakan untuk menyatakan lokasi terjadinya suatu aktivitas. Partikel で menunjukkan tempat berlangsungnya suatu tindakan.",
-      "catatan": "で digunakan untuk tempat aktivitas. Berbeda dengan に yang digunakan untuk keberadaan (あります / います). Struktur umum: [Tempat] で [Kata kerja].",
-      "contoh": [
-        {
-          "kalimat": "学校で勉強します",
-          "kalimat_susun": ["学校", "で", "勉強し", "ます"],
-          "terjemahan": ["Belajar di sekolah", "Saya belajar di sekolah"]
-        },
-        {
-          "kalimat": "レストランでごはんを食べました",
-          "kalimat_susun": ["レストラン", "で", "ごはん", "を", "食べ", "ました"],
-          "terjemahan": ["Makan di restoran", "Saya makan di restoran"]
-        },
-        {
-          "kalimat": "図書館で本を読みます",
-          "kalimat_susun": ["図書館", "で", "本", "を", "読み", "ます"],
-          "terjemahan": ["Membaca buku di perpustakaan", "Saya membaca buku di perpustakaan"]
-          }
-      ]
-        },
-    {
-      "id": 21,
-      "pola": "K.Kerja ましょう",
-      "arti": "mari … / ayo …",
-      "penggunaan": "Digunakan untuk mengajak atau mengusulkan melakukan suatu aktivitas bersama dalam bentuk sopan (formal).",
-      "catatan": "Merupakan bentuk ajakan dari kata kerja bentuk ます. Bisa juga digunakan untuk menyatakan keputusan pembicara secara halus. Struktur umum: [Kata kerja bentuk ます tanpa ます] + ましょう.",
-      "contoh": [
-        {
-          "kalimat": "一緒に行きましょう",
-          "kalimat_susun": ["一緒", "に", "行き", "ましょう"],
-          "terjemahan": ["Mari pergi bersama", "Ayo kita pergi bersama"]
-        },
-        {
-          "kalimat": "日本語を勉強しましょう",
-          "kalimat_susun": ["日本語", "を", "勉強し", "ましょう"],
-          "terjemahan": ["Mari belajar bahasa Jepang", "Ayo belajar bahasa Jepang"]
-        },
-        {
-          "kalimat": "七時に会いましょう",
-          "kalimat_susun": ["七", "時", "に", "会い", "ましょう"],
-          "terjemahan": ["Mari bertemu jam tujuh", "Ayo kita bertemu pukul tujuh"]
-          }
-      ]
-        },
-    {
-      "id": 22,
-      "pola": "Alat で K.Kerja",
-      "arti": "melakukan … dengan (alat)",
-      "penggunaan": "Digunakan untuk menyatakan alat atau sarana yang digunakan untuk melakukan suatu aktivitas. Partikel で menunjukkan alat yang dipakai.",
-      "catatan": "で tidak hanya untuk tempat, tetapi juga untuk alat/sarana. Struktur umum: [Alat] で [Kata kerja]. Berbeda dengan transportasi で, tetapi fungsi partikelnya sama (menunjukkan sarana).",
-      "contoh": [
-        {
-          "kalimat": "はしでごはんを食べます",
-          "kalimat_susun": ["はし", "で", "ごはん", "を", "食べ", "ます"],
-          "terjemahan": ["Makan dengan sumpit", "Saya makan nasi dengan sumpit"]
-        },
-        {
-          "kalimat": "日本語で話します",
-          "kalimat_susun": ["日本語", "で", "話し", "ます"],
-          "terjemahan": ["Berbicara dengan bahasa Jepang", "Saya berbicara dalam bahasa Jepang"]
-        },
-        {
-          "kalimat": "ペンで名前を書きました",
-          "kalimat_susun": ["ペン", "で", "名前", "を", "書き", "ました"],
-          "terjemahan": ["Menulis nama dengan pena", "Saya menulis nama dengan pena"]
-          }
-      ]
-        },
-    {
-      "id": 23,
-      "pola": "～ は ～語 で 何 ですか",
-      "arti": "… dalam bahasa … apa?",
-      "penggunaan": "Digunakan untuk menanyakan bagaimana mengatakan atau menyebut sesuatu dalam bahasa tertentu. Pola ini sering dipakai saat belajar bahasa.",
-      "catatan": "～語 berarti “bahasa …” (日本語, 英語, インドネシア語, dll). Partikel で menunjukkan bahasa yang digunakan sebagai sarana. Struktur umum: [Kata] は [Bahasa] で 何 ですか.",
-      "contoh": [
-        {
-          "kalimat": "ありがとうはインドネシア語で何ですか",
-          "kalimat_susun": ["ありがとう", "は", "インドネシア語", "で", "何", "です", "か"],
-          "terjemahan": ["‘Arigatou’ dalam bahasa Indonesia apa?", "Apa bahasa Indonesia dari ‘arigatou’?"]
-        },
-        {
-          "kalimat": "先生は英語で何ですか",
-          "kalimat_susun": ["先生", "は", "英語", "で", "何", "です", "か"],
-          "terjemahan": ["‘Sensei’ dalam bahasa Inggris apa?", "Apa bahasa Inggris dari ‘sensei’?"]
-        },
-        {
-          "kalimat": "水は日本語で何ですか",
-          "kalimat_susun": ["水", "は", "日本語", "で", "何", "です", "か"],
-          "terjemahan": ["‘Air’ dalam bahasa Jepang apa?", "Apa bahasa Jepang dari ‘air’?"]
-          }
-      ]
-        },
-    {
-      "id": 24,
-      "pola": "Tujuan(Orang) に Objek を K.Kerja",
-      "arti": "melakukan tindakan kepada seseorang",
-      "penggunaan": "Digunakan untuk menyatakan bahwa suatu tindakan dilakukan dengan tujuan atau sasaran kepada seseorang. Partikel に menunjukkan orang yang menjadi tujuan atau sasaran dari tindakan tersebut.",
-      "catatan": "Partikel に menunjukkan target tindakan (orang). Kata kerja yang sering digunakan: あいます (bertemu), でんわします (menelpon), しつもんします (bertanya), てがみをかきます (menulis surat), dll. Pola umum: [Pelaku] は [Tujuan(Orang)] に [Objek] を [K.Kerja]. Jika tidak ada objek, tetap bisa memakai に langsung sebelum kata kerja.",
-      "contoh": [
-        {
-          "kalimat": "私は先生に質問をします",
-          "kalimat_susun": ["私", "は", "先生", "に", "質問", "を", "し", "ます"],
-          "terjemahan": ["Saya bertanya kepada guru", "Aku mengajukan pertanyaan kepada guru"]
-        },
-        {
-          "kalimat": "私は友達に電話をかけます",
-          "kalimat_susun": ["私", "は", "友達", "に", "電話", "を", "かけ", "ます"],
-          "terjemahan": ["Saya menelpon teman", "Aku menelepon teman"]
-        },
-        {
-          "kalimat": "私は友達に会います",
-          "kalimat_susun": ["私", "は", "友達", "に", "会い", "ます"],
-          "terjemahan": ["Saya bertemu teman", "Aku bertemu dengan teman"]
-          }
-      ]
-        },
-    {
-      "id": 25,
-      "pola": "K.Benda(Orang) に Objek を K.Kerja（もらいます／かります／ならいます dll）",
-      "arti": "menerima / meminjam / belajar dari seseorang",
-      "penggunaan": "Digunakan untuk menyatakan bahwa subjek menerima, meminjam, atau belajar sesuatu dari seseorang. Partikel に menunjukkan orang yang menjadi sumber pemberi atau sumber tindakan tersebut.",
-      "catatan": "Partikel に menunjukkan sumber (orang). Bisa juga menggunakan から untuk menegaskan sumber. Kata kerja yang sering digunakan: もらいます (menerima), かります (meminjam), ならいます (belajar dari seseorang). Pola umum: [Subjek] は [Orang] に [Objek] を [K.Kerja]. Jika ingin menekankan sumber, bisa memakai から sebagai pengganti に.",
-      "contoh": [
-        {
-          "kalimat": "私は友達に本をかりました",
-          "kalimat_susun": ["私", "は", "友達", "に", "本", "を", "かり", "ました"],
-          "terjemahan": ["Saya meminjam buku dari teman", "Aku meminjam buku dari teman"]
-        },
-        {
-          "kalimat": "私は先生に日本語をならいました",
-          "kalimat_susun": ["私", "は", "先生", "に", "日本語", "を", "ならい", "ました"],
-          "terjemahan": ["Saya belajar bahasa Jepang dari guru", "Aku belajar bahasa Jepang dari guru"]
-        },
-        {
-          "kalimat": "私は先生にプレゼントをもらいました",
-          "kalimat_susun": ["私", "は", "先生", "に", "プレゼント", "を", "もらい", "ました"],
-          "terjemahan": ["Saya menerima hadiah dari guru", "Aku mendapat hadiah dari guru"]
-         }
-      ]
-        },
-         {
-  "id": 26,
-  "pola": "もう K.Kerja ました",
-  "arti": "sudah …",
-  "penggunaan": "Digunakan untuk menyatakan bahwa suatu tindakan atau kegiatan telah selesai dilakukan. Kata もう menekankan bahwa kegiatan itu sudah terjadi atau sudah selesai.",
-  "catatan": "Biasanya dipakai dengan kata kerja bentuk lampau ました. Bisa digunakan untuk membalas pertanyaan “Sudah …?”. Struktur umum : [Subjek] は もう [Kata kerja bentuk lampau ました]。",
-  "contoh": [
-    {
-      "kalimat": "もうごはんを食べました",
-      "kalimat_susun": [
-        "もう",
-        "ごはん",
-        "を",
-        "食べました"
-      ],
-      "terjemahan": [
-        "Saya sudah makan",
-        "Aku sudah makan"
-      ]
-    },
-    {
-      "kalimat": "もう日本語を勉強しました",
-      "kalimat_susun": [
-        "もう",
-        "日本語",
-        "を",
-        "勉強",
-        "しました"
-      ],
-      "terjemahan": [
-        "Saya sudah belajar bahasa Jepang",
-        "Aku sudah belajar bahasa Jepang"
-      ]
-    },
-    {
-      "kalimat": "もう手紙を書きました",
-      "kalimat_susun": [
-        "もう",
-        "手紙",
-        "を",
-        "書きました"
-      ],
-      "terjemahan": [
-        "Saya sudah menulis surat",
-        "Aku sudah menulis surat"
-      ]
-      }
-      ]
-        },
+   "judul": "Pola Kalimat",
+   "judul_jp": "文型",
+   "data": [
       {
-  "id": 27,
-  "pola": "K.Sifat (い / な) + です / くないです / かったです / くなかったです",
-  "arti": "menyatakan keadaan atau sifat seseorang / sesuatu dalam bentuk positif, negatif, lampau, dan lampau negatif.",
-  "penggunaan": "Digunakan untuk menyatakan keadaan atau sifat dalam bentuk sopan (formal) dengan memperhatikan tenses: sekarang, negatif sekarang, lampau, dan negatif lampau.",
-  "catatan": "Kata sifat い → ubah menjadi くない untuk negatif, かった untuk lampau, くなかった untuk lampau negatif. Kata sifat な → gunakan ではありません untuk negatif, でした untuk lampau, ではありませんでした untuk lampau negatif. Struktur umum: [Kata sifat] + です / くないです / かったです / くなかったです.",
-  "contoh": [
-    {
-      "kalimat": "この本は面白いです",
-      "kalimat_susun": [
-        "この",
-        "本",
-        "は",
-        "面白い",
-        "です"
-      ],
-      "terjemahan": [
-        "Buku ini menarik",
-        "Buku ini seru"
-      ]
-    },
-    {
-      "kalimat": "昨日の映画は面白くなかったです",
-      "kalimat_susun": [
-        "昨日",
-        "の",
-        "映画",
-        "は",
-        "面白",
-        "くなかったです"
-      ],
-      "terjemahan": [
-        "Film kemarin tidak menarik",
-        "Film kemarin kurang seru"
-      ]
-    },
-    {
-      "kalimat": "あのレストランは静かでした",
-      "kalimat_susun": [
-        "あの",
-        "レストラン",
-        "は",
-        "静か",
-        "でした"
-      ],
-      "terjemahan": [
-        "Restoran itu tenang",
-        "Restoran itu memang tenang"
-      ]
-    },
-    {
-      "kalimat": "部屋はきれいではありませんでした",
-      "kalimat_susun": [
-        "部屋",
-        "は",
-        "きれい",
-        "では",
-        "ありませんでした"
-      ],
-      "terjemahan": [
-        "Kamarnya tidak bersih",
-        "Kamar itu tidak bersih"
-      ]
-          }
-      ]
-        },
+         "id": 1,
+         "pola": "K.Benda1 は K.Benda2 です",
+         "arti": "adalah",
+         "penggunaan": "Digunakan untuk menyatakan identitas, profesi, kebangsaan, atau menjelaskan bahwa suatu benda/orang termasuk dalam kategori tertentu. Ini merupakan pola kalimat nominal paling dasar dalam bahasa Jepang.",
+         "catatan": "Untuk bentuk negatif gunakan 〜ではありません. Untuk bentuk informal gunakan 〜です → 〜だ. Contoh negatif: 彼は先生ではありません (Dia bukan guru).",
+         "contoh": [
+            {
+               "kalimat": "私は学生です",
+               "kalimat_susun": [
+                  "私",
+                  "は",
+                  "学生",
+                  "です"
+               ],
+               "terjemahan": [
+                  "Saya adalah pelajar",
+                  "Aku seorang pelajar"
+               ]
+            },
+            {
+               "kalimat": "彼は先生です",
+               "kalimat_susun": [
+                  "彼",
+                  "は",
+                  "先生",
+                  "です"
+               ],
+               "terjemahan": [
+                  "Dia adalah guru",
+                  "Dia seorang guru"
+               ]
+            },
+            {
+               "kalimat": "これは本です",
+               "kalimat_susun": [
+                  "これ",
+                  "は",
+                  "本",
+                  "です"
+               ],
+               "terjemahan": [
+                  "Ini adalah buku",
+                  "Ini buku"
+               ]
+            }
+         ]
+      },
       {
-  "id": 28,
-  "pola": "～ が、～",
-  "arti": "tetapi / namun",
-  "penggunaan": "Digunakan untuk menghubungkan dua kalimat yang berlawanan atau menunjukkan pertentangan antara klausa pertama dan kedua. Partikel が berfungsi seperti “tetapi” atau “namun” dalam bahasa Indonesia.",
-  "catatan": "Biasanya digunakan di awal kalimat kedua atau di tengah kalimat untuk menunjukkan kontras.\nTidak sama dengan と yang menghubungkan kata benda, karena ini menghubungkan kalimat.\nStruktur umum: [Kalimat 1] が、[Kalimat 2].",
-  "contoh": [
-    {
-      "kalimat": "天気はいいですが、風が強いです",
-      "kalimat_susun": [
-        "天気",
-        "は",
-        "いい",
-        "です",
-        "が",
-        "、",
-        "風",
-        "が",
-        "強い",
-        "です"
-      ],
-      "terjemahan": [
-        "Cuacanya bagus, tapi anginnya kencang",
-        "Cuacanya bagus, namun anginnya kencang"
-      ]
-    },
-    {
-      "kalimat": "ケーキは好きですが、チョコレートは嫌いです",
-      "kalimat_susun": [
-        "ケーキ",
-        "は",
-        "好き",
-        "です",
-        "が",
-        "、",
-        "チョコレート",
-        "は",
-        "嫌い",
-        "です"
-      ],
-      "terjemahan": [
-        "Saya suka kue, tapi tidak suka coklat",
-        "Aku suka kue, namun coklat tidak"
-      ]
-    },
-    {
-      "kalimat": "日本語は難しいですが、面白いです",
-      "kalimat_susun": [
-        "日本",
-        "語",
-        "は",
-        "難しい",
-        "です",
-        "が",
-        "、",
-        "面白い",
-        "です"
-      ],
-      "terjemahan": [
-        "Bahasa Jepang sulit, tapi menarik",
-        "Bahasa Jepang memang sulit, namun menarik"
-        ]
-         }
-      ]
-        },
-        {
-  "id": 29,
-  "pola": "とても / あまり + K.Sifat (い / な) + です",
-  "arti": "sangat / tidak terlalu …",
-  "penggunaan": "とても → digunakan untuk menekankan sesuatu itu sangat (positif). あまり → digunakan untuk mengekspresikan “tidak terlalu” atau “kurang” (biasanya diikuti kata sifat negatif). Struktur umum: とても/あまり + [Kata sifat] + です",
-  "catatan": "とても selalu diikuti kata sifat positif. あまり diikuti kata sifat dalam bentuk negatif (くないです / ではありません). Bisa dipakai untuk memberi penekanan atau menilai sesuatu secara subjektif.",
-  "contoh": [
-    {
-      "kalimat": "この映画はとても面白いです",
-      "kalimat_susun": [
-        "この",
-        "映画",
-        "は",
-        "とても",
-        "面白い",
-        "です"
-      ],
-      "terjemahan": [
-        "Film ini sangat menarik",
-        "Film ini sangat seru"
-      ]
-    },
-    {
-      "kalimat": "昨日の宿題はあまり難しくないです",
-      "kalimat_susun": [
-        "昨日",
-        "の",
-        "宿題",
-        "は",
-        "あまり",
-        "難しくないです"
-      ],
-      "terjemahan": [
-        "PR kemarin tidak terlalu sulit",
-        "Pekerjaan rumah kemarin tidak terlalu sulit"
-      ]
-    },
-    {
-      "kalimat": "このケーキはとても甘いです",
-      "kalimat_susun": [
-        "この",
-        "ケーキ",
-        "は",
-        "とても",
-        "甘い",
-        "です"
-      ],
-      "terjemahan": [
-        "Kue ini sangat manis",
-        "Kuenya sangat manis"
-      ]
-      }
-      ]
-        },
+         "id": 2,
+         "pola": "K.Benda1 は K.Benda2 じゃ(では) ありません",
+         "arti": "bukan",
+         "penggunaan": "Digunakan untuk menyatakan bahwa K.Benda1 bukan K.Benda2. Ini adalah bentuk negatif dari pola nominal 〜は〜です dalam bentuk sopan (formal).",
+         "catatan": "ではありません adalah bentuk lebih formal. じゃありません adalah bentuk lebih santai tetapi tetap sopan. Bentuk informal biasa: 〜じゃない.",
+         "contoh": [
+            {
+               "kalimat": "私は学生じゃありません",
+               "kalimat_susun": [
+                  "私",
+                  "は",
+                  "学生",
+                  "じゃ",
+                  "ありません"
+               ],
+               "terjemahan": [
+                  "Saya bukan pelajar",
+                  "Aku bukan seorang pelajar"
+               ]
+            },
+            {
+               "kalimat": "彼は先生ではありません",
+               "kalimat_susun": [
+                  "彼",
+                  "は",
+                  "先生",
+                  "では",
+                  "ありません"
+               ],
+               "terjemahan": [
+                  "Dia bukan guru",
+                  "Dia bukan seorang guru"
+               ]
+            },
+            {
+               "kalimat": "これは本じゃありません",
+               "kalimat_susun": [
+                  "これ",
+                  "は",
+                  "本",
+                  "じゃ",
+                  "ありません"
+               ],
+               "terjemahan": [
+                  "Ini bukan buku",
+                  "Ini bukan sebuah buku"
+               ]
+            }
+         ]
+      },
       {
-  "id": 30,
-  "pola": "K.Benda は どうですか",
-  "arti": "bagaimana …?",
-  "penggunaan": "Digunakan untuk menanyakan keadaan, kualitas, atau pendapat tentang sesuatu. Partikel は menandai topik yang ditanyakan, sedangkan どうですか menanyakan “bagaimana”.",
-  "catatan": "Bisa dipakai untuk benda, tempat, kegiatan, atau situasi. Jawaban biasanya berupa kata sifat (baik, buruk, menarik, dll) atau pendapat. Struktur umum: [K.Benda] は どうですか。",
-  "contoh": [
-    {
-      "kalimat": "この映画はどうですか",
-      "kalimat_susun": [
-        "この",
-        "映画",
-        "は",
-        "どうですか"
-      ],
-      "terjemahan": [
-        "Bagaimana film ini?",
-        "Film ini bagaimana?"
-      ]
-    },
-    {
-      "kalimat": "日本の食べ物はどうですか",
-      "kalimat_susun": [
-        "日本",
-        "の",
-        "食べ物",
-        "は",
-        "どうですか"
-      ],
-      "terjemahan": [
-        "Bagaimana makanan Jepang?",
-        "Makanan Jepang bagaimana?"
-      ]
-    },
-    {
-      "kalimat": "昨日の授業はどうでしたか",
-      "kalimat_susun": [
-        "昨日",
-        "の",
-        "授業",
-        "は",
-        "どうでしたか"
-      ],
-      "terjemahan": [
-        "Bagaimana pelajaran kemarin?",
-        "Pelajaran kemarin bagaimana?"
-      ]
-        }
-      ]
+         "id": 3,
+         "pola": "K.Benda1 は K.Benda2 ですか",
+         "arti": "apakah … adalah …?",
+         "penggunaan": "Digunakan untuk menanyakan identitas, profesi, atau kategori seseorang maupun sesuatu dalam bentuk sopan (formal). Pola ini adalah bentuk tanya dari 〜は〜です.",
+         "catatan": "Partikel か digunakan untuk membuat kalimat tanya. Dalam percakapan santai, か sering dihilangkan dan hanya menggunakan intonasi naik. Jawaban positif: はい、〜です。 Jawaban negatif: いいえ、〜ではありません。",
+         "contoh": [
+            {
+               "kalimat": "あなたは学生ですか",
+               "kalimat_susun": [
+                  "あなた",
+                  "は",
+                  "学生",
+                  "です",
+                  "か"
+               ],
+               "terjemahan": [
+                  "Apakah kamu seorang pelajar?",
+                  "Apakah Anda pelajar?"
+               ]
+            },
+            {
+               "kalimat": "彼は先生ですか",
+               "kalimat_susun": [
+                  "彼",
+                  "は",
+                  "先生",
+                  "です",
+                  "か"
+               ],
+               "terjemahan": [
+                  "Apakah dia seorang guru?",
+                  "Apakah dia guru?"
+               ]
+            },
+            {
+               "kalimat": "これは本ですか",
+               "kalimat_susun": [
+                  "これ",
+                  "は",
+                  "本",
+                  "です",
+                  "か"
+               ],
+               "terjemahan": [
+                  "Apakah ini buku?",
+                  "Apakah ini sebuah buku?"
+               ]
+            }
+         ]
+      },
+      {
+         "id": 4,
+         "pola": "K.Benda も",
+         "arti": "juga",
+         "penggunaan": "Digunakan untuk menyatakan bahwa suatu benda/orang juga termasuk dalam pernyataan yang sama seperti sebelumnya. Partikel も menggantikan partikel は dalam kalimat nominal.",
+         "catatan": "も menggantikan は, bukan digunakan bersamaan dengan は. Pola lengkap biasanya: K.Benda1 も K.Benda2 です. Dapat digunakan dalam kalimat positif maupun negatif.",
+         "contoh": [
+            {
+               "kalimat": "私も学生です",
+               "kalimat_susun": [
+                  "私",
+                  "も",
+                  "学生",
+                  "です"
+               ],
+               "terjemahan": [
+                  "Saya juga pelajar",
+                  "Aku juga seorang pelajar"
+               ]
+            },
+            {
+               "kalimat": "彼も先生です",
+               "kalimat_susun": [
+                  "彼",
+                  "も",
+                  "先生",
+                  "です"
+               ],
+               "terjemahan": [
+                  "Dia juga guru",
+                  "Dia juga seorang guru"
+               ]
+            },
+            {
+               "kalimat": "これは本です。これも本です",
+               "kalimat_susun": [
+                  "これ",
+                  "も",
+                  "本",
+                  "です"
+               ],
+               "terjemahan": [
+                  "Ini juga buku",
+                  "Yang ini juga sebuah buku"
+               ]
+            }
+         ]
+      },
+      {
+         "id": 5,
+         "pola": "K.Benda1 の K.Benda2",
+         "arti": "milik / dari",
+         "penggunaan": "Digunakan untuk menunjukkan kepemilikan, hubungan, atau keterangan yang menjelaskan K.Benda2. Partikel の menghubungkan dua kata benda, di mana K.Benda1 menerangkan K.Benda2.",
+         "catatan": "Struktur dasar: [Yang menerangkan] の [Yang diterangkan]. Bisa berarti kepemilikan (milik), asal, jenis, atau hubungan. Urutan tidak boleh dibalik karena akan mengubah arti.",
+         "contoh": [
+            {
+               "kalimat": "私の本です",
+               "kalimat_susun": [
+                  "私",
+                  "の",
+                  "本",
+                  "です"
+               ],
+               "terjemahan": [
+                  "Itu buku saya",
+                  "Itu adalah buku milik saya"
+               ]
+            },
+            {
+               "kalimat": "日本の会社です",
+               "kalimat_susun": [
+                  "日本",
+                  "の",
+                  "会社",
+                  "です"
+               ],
+               "terjemahan": [
+                  "Itu perusahaan Jepang",
+                  "Itu adalah perusahaan dari Jepang"
+               ]
+            },
+            {
+               "kalimat": "学校の先生です",
+               "kalimat_susun": [
+                  "学校",
+                  "の",
+                  "先生",
+                  "です"
+               ],
+               "terjemahan": [
+                  "Itu guru sekolah",
+                  "Dia adalah guru dari sekolah"
+               ]
+            }
+         ]
+      },
+      {
+         "id": 6,
+         "pola": "これ / それ / あれ / どれ",
+         "arti": "ini / itu (dekat lawan bicara) / itu (jauh dari keduanya) / yang mana",
+         "penggunaan": "Digunakan untuk menunjuk benda. Kata ini dipakai ketika benda tidak disebutkan namanya secara langsung dan berdiri sendiri sebagai kata ganti benda.",
+         "catatan": "これ → benda dekat pembicara それ → benda dekat lawan bicara あれ → benda jauh dari pembicara dan lawan bicara どれ → digunakan untuk menanyakan pilihan (yang mana) Untuk bentuk sopan biasanya dipakai dalam pola: これは〜です / どれですか",
+         "contoh": [
+            {
+               "kalimat": "これは本です",
+               "kalimat_susun": [
+                  "これ",
+                  "は",
+                  "本",
+                  "です"
+               ],
+               "terjemahan": [
+                  "Ini adalah buku",
+                  "Ini buku"
+               ]
+            },
+            {
+               "kalimat": "それはあなたのかばんです",
+               "kalimat_susun": [
+                  "それ",
+                  "は",
+                  "あなた",
+                  "の",
+                  "かばん",
+                  "です"
+               ],
+               "terjemahan": [
+                  "Itu tas Anda",
+                  "Itu adalah tas milikmu"
+               ]
+            },
+            {
+               "kalimat": "どれですか",
+               "kalimat_susun": [
+                  "どれ",
+                  "です",
+                  "か"
+               ],
+               "terjemahan": [
+                  "Yang mana?",
+                  "Yang mana itu?"
+               ]
+            }
+         ]
+      },
+      {
+         "id": 7,
+         "pola": "この K.Benda / その K.Benda / あの K.Benda / どの K.Benda",
+         "arti": "benda ini / benda itu (dekat lawan bicara) / benda itu (jauh dari keduanya) / benda yang mana",
+         "penggunaan": "Digunakan untuk menerangkan kata benda secara langsung. Berbeda dengan これ/それ/あれ/どれ, pola ini harus diikuti oleh kata benda.",
+         "catatan": "この → benda dekat pembicara その → benda dekat lawan bicara あの → benda jauh dari pembicara dan lawan bicara どの → digunakan untuk menanyakan pilihan, selalu diikuti kata benda Tidak bisa berdiri sendiri, harus ada K.Benda setelahnya",
+         "contoh": [
+            {
+               "kalimat": "この本は私の本です",
+               "kalimat_susun": [
+                  "この",
+                  "本",
+                  "は",
+                  "私",
+                  "の",
+                  "本",
+                  "です"
+               ],
+               "terjemahan": [
+                  "Buku ini adalah buku saya",
+                  "Buku ini milik saya"
+               ]
+            },
+            {
+               "kalimat": "そのかばんはあなたのですか",
+               "kalimat_susun": [
+                  "その",
+                  "かばん",
+                  "は",
+                  "あなた",
+                  "の",
+                  "です",
+                  "か"
+               ],
+               "terjemahan": [
+                  "Apakah tas itu milik Anda?",
+                  "Apakah tas itu punyamu?"
+               ]
+            },
+            {
+               "kalimat": "どの本ですか",
+               "kalimat_susun": [
+                  "どの",
+                  "本",
+                  "です",
+                  "か"
+               ],
+               "terjemahan": [
+                  "Buku yang mana?",
+                  "Yang mana bukunya?"
+               ]
+            }
+         ]
+      },
+      {
+         "id": 8,
+         "pola": "～か、～か",
+         "arti": "atau",
+         "penggunaan": "Digunakan untuk menyebutkan dua (atau lebih) pilihan dalam kalimat tanya. Biasanya dipakai saat menanyakan pilihan kepada lawan bicara.",
+         "catatan": "Dipakai dalam kalimat pertanyaan. Tidak menggunakan どれ jika pilihan sudah disebutkan. Jawaban biasanya menyebutkan salah satu pilihan tanpa か.",
+         "contoh": [
+            {
+               "kalimat": "これは本ですか、ノートですか",
+               "kalimat_susun": [
+                  "これ",
+                  "は",
+                  "本",
+                  "です",
+                  "か",
+                  "、",
+                  "ノート",
+                  "です",
+                  "か"
+               ],
+               "terjemahan": [
+                  "Ini buku atau buku catatan?",
+                  "Ini buku atau notebook?"
+               ]
+            },
+            {
+               "kalimat": "あなたは学生ですか、先生ですか",
+               "kalimat_susun": [
+                  "あなた",
+                  "は",
+                  "学生",
+                  "です",
+                  "か",
+                  "、",
+                  "先生",
+                  "です",
+                  "か"
+               ],
+               "terjemahan": [
+                  "Anda pelajar atau guru?",
+                  "Kamu siswa atau guru?"
+               ]
+            },
+            {
+               "kalimat": "それは日本の会社ですか、インドネシアの会社ですか",
+               "kalimat_susun": [
+                  "それ",
+                  "は",
+                  "日本",
+                  "の",
+                  "会社",
+                  "です",
+                  "か",
+                  "、",
+                  "インドネシア",
+                  "の",
+                  "会社",
+                  "です",
+                  "か"
+               ],
+               "terjemahan": [
+                  "Itu perusahaan Jepang atau perusahaan Indonesia?",
+                  "Itu perusahaan dari Jepang atau dari Indonesia?"
+               ]
+            }
+         ]
+      },
+      {
+         "id": 9,
+         "pola": "ここ / そこ / あそこ / どこ / こちら / そちら / あちら / どちら",
+         "arti": "di sini / di situ / di sana / di mana / arah atau tempat ini (lebih sopan) / arah atau tempat itu / arah atau tempat sana / yang mana (lebih sopan)",
+         "penggunaan": "Digunakan untuk menunjukkan atau menanyakan tempat dan arah. Bentuk ～こちら digunakan sebagai versi lebih sopan dari ここ dan juga bisa dipakai untuk menunjukkan orang secara halus.",
+         "catatan": "ここ → tempat dekat pembicara そこ → tempat dekat lawan bicara あそこ → tempat jauh dari keduanya どこ → menanyakan tempat こちら / そちら / あちら / どちら → bentuk lebih sopan どちら dapat digunakan untuk menanyakan arah, tempat, atau pilihan secara sopan",
+         "contoh": [
+            {
+               "kalimat": "ここは学校です",
+               "kalimat_susun": [
+                  "ここ",
+                  "は",
+                  "学校",
+                  "です"
+               ],
+               "terjemahan": [
+                  "Di sini adalah sekolah",
+                  "Ini sekolah"
+               ]
+            },
+            {
+               "kalimat": "トイレはどこですか",
+               "kalimat_susun": [
+                  "トイレ",
+                  "は",
+                  "どこ",
+                  "です",
+                  "か"
+               ],
+               "terjemahan": [
+                  "Di mana toilet?",
+                  "Toilet di mana?"
+               ]
+            },
+            {
+               "kalimat": "受付はこちらです",
+               "kalimat_susun": [
+                  "受付",
+                  "は",
+                  "こちら",
+                  "です"
+               ],
+               "terjemahan": [
+                  "Resepsi ada di sini",
+                  "Bagian penerimaan di sebelah"
+               ]
+            }
+         ]
+      },
+      {
+         "id": 10,
+         "pola": "K.Benda は Tempat です",
+         "arti": "berada di / ada di",
+         "penggunaan": "Digunakan untuk menyatakan lokasi atau keberadaan suatu benda atau tempat. Pola ini menjelaskan bahwa K.Benda berada di suatu Tempat.",
+         "catatan": "Pola ini sering digunakan untuk menunjukkan lokasi suatu tempat atau gedung. Untuk menyatakan keberadaan orang atau benda secara lebih umum biasanya digunakan あります / います (dipelajari di bab berikutnya). Tempat biasanya berupa kata benda lokasi seperti ここ, 学校, 会社, dll.",
+         "contoh": [
+            {
+               "kalimat": "学校はここです",
+               "kalimat_susun": [
+                  "学校",
+                  "は",
+                  "ここ",
+                  "です"
+               ],
+               "terjemahan": [
+                  "Sekolah ada di sini",
+                  "Sekolahnya di sini"
+               ]
+            },
+            {
+               "kalimat": "トイレはあそこです",
+               "kalimat_susun": [
+                  "トイレ",
+                  "は",
+                  "あそこ",
+                  "です"
+               ],
+               "terjemahan": [
+                  "Toilet ada di sana",
+                  "Toiletnya di sana"
+               ]
+            },
+            {
+               "kalimat": "事務所は二階です",
+               "kalimat_susun": [
+                  "事務所",
+                  "は",
+                  "二階",
+                  "です"
+               ],
+               "terjemahan": [
+                  "Kantor ada di lantai dua",
+                  "Kantornya di lantai dua"
+               ]
+            }
+         ]
+      },
+      {
+         "id": 11,
+         "pola": "今 - 時 - 分 です",
+         "arti": "sekarang pukul …",
+         "penggunaan": "Digunakan untuk menyatakan waktu saat ini. Pola ini dipakai untuk memberitahukan jam dan menit dalam bentuk sopan (formal).",
+         "catatan": "Struktur dasar: 今は ～時～分です. Partikel は setelah 今 sering dipakai tetapi boleh dihilangkan dalam percakapan. Jika menit = 00, biasanya cukup ～時です (tanpa 分).",
+         "contoh": [
+            {
+               "kalimat": "今は三時です",
+               "kalimat_susun": [
+                  "今",
+                  "は",
+                  "三",
+                  "時",
+                  "です"
+               ],
+               "terjemahan": [
+                  "Sekarang jam tiga",
+                  "Sekarang pukul tiga"
+               ]
+            },
+            {
+               "kalimat": "今は七時十分です",
+               "kalimat_susun": [
+                  "今",
+                  "は",
+                  "七",
+                  "時",
+                  "十分",
+                  "です"
+               ],
+               "terjemahan": [
+                  "Sekarang jam tujuh lewat sepuluh menit",
+                  "Sekarang pukul tujuh sepuluh"
+               ]
+            },
+            {
+               "kalimat": "今は九時二十分です",
+               "kalimat_susun": [
+                  "今",
+                  "は",
+                  "九",
+                  "時",
+                  "二十分",
+                  "です"
+               ],
+               "terjemahan": [
+                  "Sekarang jam sembilan lewat dua puluh menit",
+                  "Sekarang pukul sembilan dua puluh"
+               ]
+            }
+         ]
+      },
+      {
+         "id": 12,
+         "pola": "K.Kerja ます / ません / ました / ませんでした",
+         "arti": "bentuk sopan kata kerja (sekarang/akan datang, negatif, lampau, lampau negatif)",
+         "penggunaan": "Digunakan untuk menyatakan aktivitas dalam bentuk sopan (formal). Pola ini dipakai dalam percakapan sehari-hari yang sopan dan situasi resmi.",
+         "catatan": "ます → sekarang / kebiasaan / akan datang ません → negatif sekarang / akan datang ました → lampau (sudah) ませんでした → lampau negatif (tidak/sudah tidak) Digunakan pada kata kerja bentuk ます (kata kerja kelompok 1, 2, 3 setelah diubah ke bentuk ます).",
+         "contoh": [
+            {
+               "kalimat": "私は毎日日本語を勉強します",
+               "kalimat_susun": [
+                  "私",
+                  "は",
+                  "毎日",
+                  "日本語",
+                  "を",
+                  "勉強し",
+                  "ます"
+               ],
+               "terjemahan": [
+                  "Saya belajar bahasa Jepang setiap hari",
+                  "Aku belajar bahasa Jepang setiap hari"
+               ]
+            },
+            {
+               "kalimat": "今日は会社へ行きません",
+               "kalimat_susun": [
+                  "今日",
+                  "は",
+                  "会社",
+                  "へ",
+                  "行き",
+                  "ません"
+               ],
+               "terjemahan": [
+                  "Hari ini saya tidak pergi ke kantor",
+                  "Hari ini aku tidak pergi ke kantor"
+               ]
+            },
+            {
+               "kalimat": "昨日映画を見ました",
+               "kalimat_susun": [
+                  "昨日",
+                  "映画",
+                  "を",
+                  "見",
+                  "ました"
+               ],
+               "terjemahan": [
+                  "Kemarin saya menonton film",
+                  "Kemarin aku sudah menonton film"
+               ]
+            }
+         ]
+      },
+      {
+         "id": 13,
+         "pola": "Waktu に K.Kerja",
+         "arti": "pada (waktu) … melakukan …",
+         "penggunaan": "Digunakan untuk menyatakan waktu spesifik terjadinya suatu aktivitas. Partikel に dipakai setelah keterangan waktu yang jelas seperti jam, tanggal, atau hari tertentu.",
+         "catatan": "に dipakai untuk waktu spesifik: jam (～時), tanggal (～日), hari tertentu (月曜日). Tidak memakai に untuk kata waktu relatif seperti: 今日, 昨日, 毎日, 今朝. Struktur umum: [Keterangan waktu] に [Kata kerja].",
+         "contoh": [
+            {
+               "kalimat": "七時に起きます",
+               "kalimat_susun": [
+                  "七",
+                  "時",
+                  "に",
+                  "起き",
+                  "ます"
+               ],
+               "terjemahan": [
+                  "Bangun jam tujuh",
+                  "Saya bangun pukul tujuh"
+               ]
+            },
+            {
+               "kalimat": "月曜日に学校へ行きます",
+               "kalimat_susun": [
+                  "月曜日",
+                  "に",
+                  "学校",
+                  "へ",
+                  "行き",
+                  "ます"
+               ],
+               "terjemahan": [
+                  "Pergi ke sekolah pada hari Senin",
+                  "Saya pergi ke sekolah hari Senin"
+               ]
+            },
+            {
+               "kalimat": "三月十日に日本へ行きました",
+               "kalimat_susun": [
+                  "三月",
+                  "十日",
+                  "に",
+                  "日本",
+                  "へ",
+                  "行き",
+                  "ました"
+               ],
+               "terjemahan": [
+                  "Pergi ke Jepang pada tanggal 10 Maret",
+                  "Saya pergi ke Jepang tanggal 10 Maret"
+               ]
+            }
+         ]
+      },
+      {
+         "id": 14,
+         "pola": "～から ～まで",
+         "arti": "dari … sampai …",
+         "penggunaan": "Digunakan untuk menyatakan rentang waktu atau tempat, yaitu titik awal (から) dan titik akhir (まで).",
+         "catatan": "から → titik awal まで → titik akhir Bisa dipakai untuk waktu maupun tempat. Tidak wajib selalu dipakai berpasangan (boleh hanya から saja atau まで saja).",
+         "contoh": [
+            {
+               "kalimat": "九時から五時まで働きます",
+               "kalimat_susun": [
+                  "九",
+                  "時",
+                  "から",
+                  "五",
+                  "時",
+                  "まで",
+                  "働き",
+                  "ます"
+               ],
+               "terjemahan": [
+                  "Bekerja dari jam sembilan sampai jam lima",
+                  "Saya bekerja pukul sembilan sampai lima"
+               ]
+            },
+            {
+               "kalimat": "月曜日から金曜日まで学校へ行きます",
+               "kalimat_susun": [
+                  "月曜日",
+                  "から",
+                  "金曜日",
+                  "まで",
+                  "学校",
+                  "へ",
+                  "行き",
+                  "ます"
+               ],
+               "terjemahan": [
+                  "Pergi ke sekolah dari hari Senin sampai hari Jumat",
+                  "Saya sekolah dari Senin sampai Jumat"
+               ]
+            },
+            {
+               "kalimat": "家から会社まで行きました",
+               "kalimat_susun": [
+                  "家",
+                  "から",
+                  "会社",
+                  "まで",
+                  "行き",
+                  "ました"
+               ],
+               "terjemahan": [
+                  "Pergi dari rumah sampai kantor",
+                  "Saya pergi dari rumah ke kantor"
+               ]
+            }
+         ]
+      },
+      {
+         "id": 15,
+         "pola": "～ と ～",
+         "arti": "dan",
+         "penggunaan": "Digunakan untuk menghubungkan dua atau lebih kata benda dalam satu kalimat. Menyatakan daftar lengkap (semuanya disebutkan).",
+         "catatan": "Digunakan hanya untuk kata benda. Menunjukkan daftar yang lengkap (bukan contoh sebagian). Berbeda dengan や yang berarti “dan lain-lain” (tidak lengkap).",
+         "contoh": [
+            {
+               "kalimat": "私は本とノートを買いました",
+               "kalimat_susun": [
+                  "私",
+                  "は",
+                  "本",
+                  "と",
+                  "ノート",
+                  "を",
+                  "買い",
+                  "ました"
+               ],
+               "terjemahan": [
+                  "Saya membeli buku dan buku catatan",
+                  "Aku membeli buku dan notebook"
+               ]
+            },
+            {
+               "kalimat": "日本とインドネシアは国です",
+               "kalimat_susun": [
+                  "日本",
+                  "と",
+                  "インドネシア",
+                  "は",
+                  "国",
+                  "です"
+               ],
+               "terjemahan": [
+                  "Jepang dan Indonesia adalah negara",
+                  "Jepang dan Indonesia itu negara"
+               ]
+            },
+            {
+               "kalimat": "父と母は会社員です",
+               "kalimat_susun": [
+                  "父",
+                  "と",
+                  "母",
+                  "は",
+                  "会社員",
+                  "です"
+               ],
+               "terjemahan": [
+                  "Ayah dan ibu adalah karyawan",
+                  "Ayah dan ibu karyawan"
+               ]
+            }
+         ]
+      },
+      {
+         "id": 16,
+         "pola": "Tempat へ 行きます / 来ます / 帰ります",
+         "arti": "pergi ke / datang ke / pulang ke",
+         "penggunaan": "Digunakan untuk menyatakan perpindahan tempat. Partikel へ menunjukkan arah tujuan pergerakan.",
+         "catatan": "へ dibaca “e”. Bisa juga menggunakan に untuk menunjukkan tujuan tempat. 行きます → pergi (menjauh dari pembicara) 来ます → datang (mendekati pembicara) 帰ります → pulang (kembali ke tempat asal, seperti rumah)",
+         "contoh": [
+            {
+               "kalimat": "学校へ行きます",
+               "kalimat_susun": [
+                  "学校",
+                  "へ",
+                  "行き",
+                  "ます"
+               ],
+               "terjemahan": [
+                  "Pergi ke sekolah",
+                  "Saya pergi ke sekolah"
+               ]
+            },
+            {
+               "kalimat": "友達は日本へ来ます",
+               "kalimat_susun": [
+                  "友達",
+                  "は",
+                  "日本",
+                  "へ",
+                  "来",
+                  "ます"
+               ],
+               "terjemahan": [
+                  "Teman datang ke Jepang",
+                  "Teman saya datang ke Jepang"
+               ]
+            },
+            {
+               "kalimat": "六時に家へ帰ります",
+               "kalimat_susun": [
+                  "六",
+                  "時",
+                  "に",
+                  "家",
+                  "へ",
+                  "帰り",
+                  "ます"
+               ],
+               "terjemahan": [
+                  "Pulang ke rumah jam enam",
+                  "Saya pulang ke rumah pukul enam"
+               ]
+            }
+         ]
+      },
+      {
+         "id": 17,
+         "pola": "K.Benda (transportasi) で 行きます / 来ます / 帰ります",
+         "arti": "pergi / datang / pulang dengan (transportasi)",
+         "penggunaan": "Digunakan untuk menyatakan alat transportasi yang digunakan saat berpindah tempat. Partikel で menunjukkan sarana atau alat yang dipakai.",
+         "catatan": "で digunakan untuk menunjukkan alat/transportasi. Tidak memakai で untuk berjalan kaki, tetapi menggunakan 歩いて. Struktur umum: [Transportasi] で [行きます/来ます/帰ります].",
+         "contoh": [
+            {
+               "kalimat": "バスで学校へ行きます",
+               "kalimat_susun": [
+                  "バス",
+                  "で",
+                  "学校",
+                  "へ",
+                  "行き",
+                  "ます"
+               ],
+               "terjemahan": [
+                  "Pergi ke sekolah dengan bus",
+                  "Saya pergi ke sekolah naik bus"
+               ]
+            },
+            {
+               "kalimat": "電車で会社へ来ました",
+               "kalimat_susun": [
+                  "電車",
+                  "で",
+                  "会社",
+                  "へ",
+                  "来",
+                  "ました"
+               ],
+               "terjemahan": [
+                  "Datang ke kantor dengan kereta",
+                  "Saya datang ke kantor naik kereta"
+               ]
+            },
+            {
+               "kalimat": "タクシーで家へ帰ります",
+               "kalimat_susun": [
+                  "タクシー",
+                  "で",
+                  "家",
+                  "へ",
+                  "帰り",
+                  "ます"
+               ],
+               "terjemahan": [
+                  "Pulang ke rumah dengan taksi",
+                  "Saya pulang ke rumah naik taksi"
+               ]
+            }
+         ]
+      },
+      {
+         "id": 18,
+         "pola": "いつ",
+         "arti": "kapan",
+         "penggunaan": "Digunakan untuk menanyakan waktu terjadinya suatu peristiwa atau aktivitas. Biasanya dipakai dalam kalimat tanya.",
+         "catatan": "Tidak perlu partikel に setelah いつ. Sering digunakan bersama kata kerja bentuk ます. Jawaban biasanya berupa keterangan waktu (jam, hari, tanggal, dll).",
+         "contoh": [
+            {
+               "kalimat": "いつ日本へ行きますか",
+               "kalimat_susun": [
+                  "いつ",
+                  "日本",
+                  "へ",
+                  "行き",
+                  "ます",
+                  "か"
+               ],
+               "terjemahan": [
+                  "Kapan pergi ke Jepang?",
+                  "Kapan Anda pergi ke Jepang?"
+               ]
+            },
+            {
+               "kalimat": "あなたはいつ来ましたか",
+               "kalimat_susun": [
+                  "あなた",
+                  "は",
+                  "いつ",
+                  "来",
+                  "ました",
+                  "か"
+               ],
+               "terjemahan": [
+                  "Kapan Anda datang?",
+                  "Kapan kamu datang?"
+               ]
+            },
+            {
+               "kalimat": "いつ学校へ帰りますか",
+               "kalimat_susun": [
+                  "いつ",
+                  "学校",
+                  "へ",
+                  "帰り",
+                  "ます",
+                  "か"
+               ],
+               "terjemahan": [
+                  "Kapan pulang ke sekolah?",
+                  "Kapan Anda kembali ke sekolah?"
+               ]
+            }
+         ]
+      },
+      {
+         "id": 19,
+         "pola": "K.Benda を K.Kerja",
+         "arti": "(objek) melakukan …",
+         "penggunaan": "Digunakan untuk menunjukkan objek langsung dari suatu kata kerja. Partikel を menandai benda yang dikenai tindakan.",
+         "catatan": "を dibaca “o”. Dipakai untuk kata kerja yang membutuhkan objek langsung (kata kerja transitif). Struktur umum: [Subjek] は [Objek] を [Kata kerja].",
+         "contoh": [
+            {
+               "kalimat": "私は本を読みます",
+               "kalimat_susun": [
+                  "私",
+                  "は",
+                  "本",
+                  "を",
+                  "読み",
+                  "ます"
+               ],
+               "terjemahan": [
+                  "Saya membaca buku",
+                  "Aku membaca sebuah buku"
+               ]
+            },
+            {
+               "kalimat": "映画を見ました",
+               "kalimat_susun": [
+                  "映画",
+                  "を",
+                  "見",
+                  "ました"
+               ],
+               "terjemahan": [
+                  "Menonton film",
+                  "Saya menonton film"
+               ]
+            },
+            {
+               "kalimat": "朝ごはんを食べません",
+               "kalimat_susun": [
+                  "朝ごはん",
+                  "を",
+                  "食べ",
+                  "ません"
+               ],
+               "terjemahan": [
+                  "Tidak makan sarapan",
+                  "Saya tidak makan sarapan"
+               ]
+            }
+         ]
+      },
+      {
+         "id": 20,
+         "pola": "Tempat で K.Kerja",
+         "arti": "melakukan … di (tempat)",
+         "penggunaan": "Digunakan untuk menyatakan lokasi terjadinya suatu aktivitas. Partikel で menunjukkan tempat berlangsungnya suatu tindakan.",
+         "catatan": "で digunakan untuk tempat aktivitas. Berbeda dengan に yang digunakan untuk keberadaan (あります / います). Struktur umum: [Tempat] で [Kata kerja].",
+         "contoh": [
+            {
+               "kalimat": "学校で勉強します",
+               "kalimat_susun": [
+                  "学校",
+                  "で",
+                  "勉強し",
+                  "ます"
+               ],
+               "terjemahan": [
+                  "Belajar di sekolah",
+                  "Saya belajar di sekolah"
+               ]
+            },
+            {
+               "kalimat": "レストランでごはんを食べました",
+               "kalimat_susun": [
+                  "レストラン",
+                  "で",
+                  "ごはん",
+                  "を",
+                  "食べ",
+                  "ました"
+               ],
+               "terjemahan": [
+                  "Makan di restoran",
+                  "Saya makan di restoran"
+               ]
+            },
+            {
+               "kalimat": "図書館で本を読みます",
+               "kalimat_susun": [
+                  "図書館",
+                  "で",
+                  "本",
+                  "を",
+                  "読み",
+                  "ます"
+               ],
+               "terjemahan": [
+                  "Membaca buku di perpustakaan",
+                  "Saya membaca buku di perpustakaan"
+               ]
+            }
+         ]
+      },
+      {
+         "id": 21,
+         "pola": "K.Kerja ましょう",
+         "arti": "mari … / ayo …",
+         "penggunaan": "Digunakan untuk mengajak atau mengusulkan melakukan suatu aktivitas bersama dalam bentuk sopan (formal).",
+         "catatan": "Merupakan bentuk ajakan dari kata kerja bentuk ます. Bisa juga digunakan untuk menyatakan keputusan pembicara secara halus. Struktur umum: [Kata kerja bentuk ます tanpa ます] + ましょう.",
+         "contoh": [
+            {
+               "kalimat": "一緒に行きましょう",
+               "kalimat_susun": [
+                  "一緒",
+                  "に",
+                  "行き",
+                  "ましょう"
+               ],
+               "terjemahan": [
+                  "Mari pergi bersama",
+                  "Ayo kita pergi bersama"
+               ]
+            },
+            {
+               "kalimat": "日本語を勉強しましょう",
+               "kalimat_susun": [
+                  "日本語",
+                  "を",
+                  "勉強し",
+                  "ましょう"
+               ],
+               "terjemahan": [
+                  "Mari belajar bahasa Jepang",
+                  "Ayo belajar bahasa Jepang"
+               ]
+            },
+            {
+               "kalimat": "七時に会いましょう",
+               "kalimat_susun": [
+                  "七",
+                  "時",
+                  "に",
+                  "会い",
+                  "ましょう"
+               ],
+               "terjemahan": [
+                  "Mari bertemu jam tujuh",
+                  "Ayo kita bertemu pukul tujuh"
+               ]
+            }
+         ]
+      },
+      {
+         "id": 22,
+         "pola": "Alat で K.Kerja",
+         "arti": "melakukan … dengan (alat)",
+         "penggunaan": "Digunakan untuk menyatakan alat atau sarana yang digunakan untuk melakukan suatu aktivitas. Partikel で menunjukkan alat yang dipakai.",
+         "catatan": "で tidak hanya untuk tempat, tetapi juga untuk alat/sarana. Struktur umum: [Alat] で [Kata kerja]. Berbeda dengan transportasi で, tetapi fungsi partikelnya sama (menunjukkan sarana).",
+         "contoh": [
+            {
+               "kalimat": "はしでごはんを食べます",
+               "kalimat_susun": [
+                  "はし",
+                  "で",
+                  "ごはん",
+                  "を",
+                  "食べ",
+                  "ます"
+               ],
+               "terjemahan": [
+                  "Makan dengan sumpit",
+                  "Saya makan nasi dengan sumpit"
+               ]
+            },
+            {
+               "kalimat": "日本語で話します",
+               "kalimat_susun": [
+                  "日本語",
+                  "で",
+                  "話し",
+                  "ます"
+               ],
+               "terjemahan": [
+                  "Berbicara dengan bahasa Jepang",
+                  "Saya berbicara dalam bahasa Jepang"
+               ]
+            },
+            {
+               "kalimat": "ペンで名前を書きました",
+               "kalimat_susun": [
+                  "ペン",
+                  "で",
+                  "名前",
+                  "を",
+                  "書き",
+                  "ました"
+               ],
+               "terjemahan": [
+                  "Menulis nama dengan pena",
+                  "Saya menulis nama dengan pena"
+               ]
+            }
+         ]
+      },
+      {
+         "id": 23,
+         "pola": "～ は ～語 で 何 ですか",
+         "arti": "… dalam bahasa … apa?",
+         "penggunaan": "Digunakan untuk menanyakan bagaimana mengatakan atau menyebut sesuatu dalam bahasa tertentu. Pola ini sering dipakai saat belajar bahasa.",
+         "catatan": "～語 berarti “bahasa …” (日本語, 英語, インドネシア語, dll). Partikel で menunjukkan bahasa yang digunakan sebagai sarana. Struktur umum: [Kata] は [Bahasa] で 何 ですか.",
+         "contoh": [
+            {
+               "kalimat": "ありがとうはインドネシア語で何ですか",
+               "kalimat_susun": [
+                  "ありがとう",
+                  "は",
+                  "インドネシア語",
+                  "で",
+                  "何",
+                  "です",
+                  "か"
+               ],
+               "terjemahan": [
+                  "‘Arigatou’ dalam bahasa Indonesia apa?",
+                  "Apa bahasa Indonesia dari ‘arigatou’?"
+               ]
+            },
+            {
+               "kalimat": "先生は英語で何ですか",
+               "kalimat_susun": [
+                  "先生",
+                  "は",
+                  "英語",
+                  "で",
+                  "何",
+                  "です",
+                  "か"
+               ],
+               "terjemahan": [
+                  "‘Sensei’ dalam bahasa Inggris apa?",
+                  "Apa bahasa Inggris dari ‘sensei’?"
+               ]
+            },
+            {
+               "kalimat": "水は日本語で何ですか",
+               "kalimat_susun": [
+                  "水",
+                  "は",
+                  "日本語",
+                  "で",
+                  "何",
+                  "です",
+                  "か"
+               ],
+               "terjemahan": [
+                  "‘Air’ dalam bahasa Jepang apa?",
+                  "Apa bahasa Jepang dari ‘air’?"
+               ]
+            }
+         ]
+      },
+      {
+         "id": 24,
+         "pola": "Tujuan(Orang) に Objek を K.Kerja",
+         "arti": "melakukan tindakan kepada seseorang",
+         "penggunaan": "Digunakan untuk menyatakan bahwa suatu tindakan dilakukan dengan tujuan atau sasaran kepada seseorang. Partikel に menunjukkan orang yang menjadi tujuan atau sasaran dari tindakan tersebut.",
+         "catatan": "Partikel に menunjukkan target tindakan (orang). Kata kerja yang sering digunakan: あいます (bertemu), でんわします (menelpon), しつもんします (bertanya), てがみをかきます (menulis surat), dll. Pola umum: [Pelaku] は [Tujuan(Orang)] に [Objek] を [K.Kerja]. Jika tidak ada objek, tetap bisa memakai に langsung sebelum kata kerja.",
+         "contoh": [
+            {
+               "kalimat": "私は先生に質問をします",
+               "kalimat_susun": [
+                  "私",
+                  "は",
+                  "先生",
+                  "に",
+                  "質問",
+                  "を",
+                  "し",
+                  "ます"
+               ],
+               "terjemahan": [
+                  "Saya bertanya kepada guru",
+                  "Aku mengajukan pertanyaan kepada guru"
+               ]
+            },
+            {
+               "kalimat": "私は友達に電話をかけます",
+               "kalimat_susun": [
+                  "私",
+                  "は",
+                  "友達",
+                  "に",
+                  "電話",
+                  "を",
+                  "かけ",
+                  "ます"
+               ],
+               "terjemahan": [
+                  "Saya menelpon teman",
+                  "Aku menelepon teman"
+               ]
+            },
+            {
+               "kalimat": "私は友達に会います",
+               "kalimat_susun": [
+                  "私",
+                  "は",
+                  "友達",
+                  "に",
+                  "会い",
+                  "ます"
+               ],
+               "terjemahan": [
+                  "Saya bertemu teman",
+                  "Aku bertemu dengan teman"
+               ]
+            }
+         ]
+      },
+      {
+         "id": 25,
+         "pola": "K.Benda(Orang) に Objek を K.Kerja（もらいます／かります／ならいます dll）",
+         "arti": "menerima / meminjam / belajar dari seseorang",
+         "penggunaan": "Digunakan untuk menyatakan bahwa subjek menerima, meminjam, atau belajar sesuatu dari seseorang. Partikel に menunjukkan orang yang menjadi sumber pemberi atau sumber tindakan tersebut.",
+         "catatan": "Partikel に menunjukkan sumber (orang). Bisa juga menggunakan から untuk menegaskan sumber. Kata kerja yang sering digunakan: もらいます (menerima), かります (meminjam), ならいます (belajar dari seseorang). Pola umum: [Subjek] は [Orang] に [Objek] を [K.Kerja]. Jika ingin menekankan sumber, bisa memakai から sebagai pengganti に.",
+         "contoh": [
+            {
+               "kalimat": "私は友達に本をかりました",
+               "kalimat_susun": [
+                  "私",
+                  "は",
+                  "友達",
+                  "に",
+                  "本",
+                  "を",
+                  "かり",
+                  "ました"
+               ],
+               "terjemahan": [
+                  "Saya meminjam buku dari teman",
+                  "Aku meminjam buku dari teman"
+               ]
+            },
+            {
+               "kalimat": "私は先生に日本語をならいました",
+               "kalimat_susun": [
+                  "私",
+                  "は",
+                  "先生",
+                  "に",
+                  "日本語",
+                  "を",
+                  "ならい",
+                  "ました"
+               ],
+               "terjemahan": [
+                  "Saya belajar bahasa Jepang dari guru",
+                  "Aku belajar bahasa Jepang dari guru"
+               ]
+            },
+            {
+               "kalimat": "私は先生にプレゼントをもらいました",
+               "kalimat_susun": [
+                  "私",
+                  "は",
+                  "先生",
+                  "に",
+                  "プレゼント",
+                  "を",
+                  "もらい",
+                  "ました"
+               ],
+               "terjemahan": [
+                  "Saya menerima hadiah dari guru",
+                  "Aku mendapat hadiah dari guru"
+               ]
+            }
+         ]
+      },
+      {
+         "id": 26,
+         "pola": "もう K.Kerja ました",
+         "arti": "sudah …",
+         "penggunaan": "Digunakan untuk menyatakan bahwa suatu tindakan atau kegiatan telah selesai dilakukan. Kata もう menekankan bahwa kegiatan itu sudah terjadi atau sudah selesai.",
+         "catatan": "Biasanya dipakai dengan kata kerja bentuk lampau ました. Bisa digunakan untuk membalas pertanyaan “Sudah …?”. Struktur umum : [Subjek] は もう [Kata kerja bentuk lampau ました]。",
+         "contoh": [
+            {
+               "kalimat": "もうごはんを食べました",
+               "kalimat_susun": [
+                  "もう",
+                  "ごはん",
+                  "を",
+                  "食べました"
+               ],
+               "terjemahan": [
+                  "Saya sudah makan",
+                  "Aku sudah makan"
+               ]
+            },
+            {
+               "kalimat": "もう日本語を勉強しました",
+               "kalimat_susun": [
+                  "もう",
+                  "日本語",
+                  "を",
+                  "勉強",
+                  "しました"
+               ],
+               "terjemahan": [
+                  "Saya sudah belajar bahasa Jepang",
+                  "Aku sudah belajar bahasa Jepang"
+               ]
+            },
+            {
+               "kalimat": "もう手紙を書きました",
+               "kalimat_susun": [
+                  "もう",
+                  "手紙",
+                  "を",
+                  "書きました"
+               ],
+               "terjemahan": [
+                  "Saya sudah menulis surat",
+                  "Aku sudah menulis surat"
+               ]
+            }
+         ]
+      },
+      {
+         "id": 27,
+         "pola": "K.Sifat (い / な) + です / くないです / かったです / くなかったです",
+         "arti": "menyatakan keadaan atau sifat seseorang / sesuatu dalam bentuk positif, negatif, lampau, dan lampau negatif.",
+         "penggunaan": "Digunakan untuk menyatakan keadaan atau sifat dalam bentuk sopan (formal) dengan memperhatikan tenses: sekarang, negatif sekarang, lampau, dan negatif lampau.",
+         "catatan": "Kata sifat い → ubah menjadi くない untuk negatif, かった untuk lampau, くなかった untuk lampau negatif. Kata sifat な → gunakan ではありません untuk negatif, でした untuk lampau, ではありませんでした untuk lampau negatif. Struktur umum: [Kata sifat] + です / くないです / かったです / くなかったです.",
+         "contoh": [
+            {
+               "kalimat": "この本は面白いです",
+               "kalimat_susun": [
+                  "この",
+                  "本",
+                  "は",
+                  "面白い",
+                  "です"
+               ],
+               "terjemahan": [
+                  "Buku ini menarik",
+                  "Buku ini seru"
+               ]
+            },
+            {
+               "kalimat": "昨日の映画は面白くなかったです",
+               "kalimat_susun": [
+                  "昨日",
+                  "の",
+                  "映画",
+                  "は",
+                  "面白",
+                  "くなかったです"
+               ],
+               "terjemahan": [
+                  "Film kemarin tidak menarik",
+                  "Film kemarin kurang seru"
+               ]
+            },
+            {
+               "kalimat": "あのレストランは静かでした",
+               "kalimat_susun": [
+                  "あの",
+                  "レストラン",
+                  "は",
+                  "静か",
+                  "でした"
+               ],
+               "terjemahan": [
+                  "Restoran itu tenang",
+                  "Restoran itu memang tenang"
+               ]
+            },
+            {
+               "kalimat": "部屋はきれいではありませんでした",
+               "kalimat_susun": [
+                  "部屋",
+                  "は",
+                  "きれい",
+                  "では",
+                  "ありませんでした"
+               ],
+               "terjemahan": [
+                  "Kamarnya tidak bersih",
+                  "Kamar itu tidak bersih"
+               ]
+            }
+         ]
+      },
+      {
+         "id": 28,
+         "pola": "～ が、～",
+         "arti": "tetapi / namun",
+         "penggunaan": "Digunakan untuk menghubungkan dua kalimat yang berlawanan atau menunjukkan pertentangan antara klausa pertama dan kedua. Partikel が berfungsi seperti “tetapi” atau “namun” dalam bahasa Indonesia.",
+         "catatan": "Biasanya digunakan di awal kalimat kedua atau di tengah kalimat untuk menunjukkan kontras.\nTidak sama dengan と yang menghubungkan kata benda, karena ini menghubungkan kalimat.\nStruktur umum: [Kalimat 1] が、[Kalimat 2].",
+         "contoh": [
+            {
+               "kalimat": "天気はいいですが、風が強いです",
+               "kalimat_susun": [
+                  "天気",
+                  "は",
+                  "いい",
+                  "です",
+                  "が",
+                  "、",
+                  "風",
+                  "が",
+                  "強い",
+                  "です"
+               ],
+               "terjemahan": [
+                  "Cuacanya bagus, tapi anginnya kencang",
+                  "Cuacanya bagus, namun anginnya kencang"
+               ]
+            },
+            {
+               "kalimat": "ケーキは好きですが、チョコレートは嫌いです",
+               "kalimat_susun": [
+                  "ケーキ",
+                  "は",
+                  "好き",
+                  "です",
+                  "が",
+                  "、",
+                  "チョコレート",
+                  "は",
+                  "嫌い",
+                  "です"
+               ],
+               "terjemahan": [
+                  "Saya suka kue, tapi tidak suka coklat",
+                  "Aku suka kue, namun coklat tidak"
+               ]
+            },
+            {
+               "kalimat": "日本語は難しいですが、面白いです",
+               "kalimat_susun": [
+                  "日本",
+                  "語",
+                  "は",
+                  "難しい",
+                  "です",
+                  "が",
+                  "、",
+                  "面白い",
+                  "です"
+               ],
+               "terjemahan": [
+                  "Bahasa Jepang sulit, tapi menarik",
+                  "Bahasa Jepang memang sulit, namun menarik"
+               ]
+            }
+         ]
+      },
+      {
+         "id": 29,
+         "pola": "とても / あまり + K.Sifat (い / な) + です",
+         "arti": "sangat / tidak terlalu …",
+         "penggunaan": "とても → digunakan untuk menekankan sesuatu itu sangat (positif). あまり → digunakan untuk mengekspresikan “tidak terlalu” atau “kurang” (biasanya diikuti kata sifat negatif). Struktur umum: とても/あまり + [Kata sifat] + です",
+         "catatan": "とても selalu diikuti kata sifat positif. あまり diikuti kata sifat dalam bentuk negatif (くないです / ではありません). Bisa dipakai untuk memberi penekanan atau menilai sesuatu secara subjektif.",
+         "contoh": [
+            {
+               "kalimat": "この映画はとても面白いです",
+               "kalimat_susun": [
+                  "この",
+                  "映画",
+                  "は",
+                  "とても",
+                  "面白い",
+                  "です"
+               ],
+               "terjemahan": [
+                  "Film ini sangat menarik",
+                  "Film ini sangat seru"
+               ]
+            },
+            {
+               "kalimat": "昨日の宿題はあまり難しくないです",
+               "kalimat_susun": [
+                  "昨日",
+                  "の",
+                  "宿題",
+                  "は",
+                  "あまり",
+                  "難しくないです"
+               ],
+               "terjemahan": [
+                  "PR kemarin tidak terlalu sulit",
+                  "Pekerjaan rumah kemarin tidak terlalu sulit"
+               ]
+            },
+            {
+               "kalimat": "このケーキはとても甘いです",
+               "kalimat_susun": [
+                  "この",
+                  "ケーキ",
+                  "は",
+                  "とても",
+                  "甘い",
+                  "です"
+               ],
+               "terjemahan": [
+                  "Kue ini sangat manis",
+                  "Kuenya sangat manis"
+               ]
+            }
+         ]
+      },
+      {
+         "id": 30,
+         "pola": "K.Benda は どうですか",
+         "arti": "bagaimana …?",
+         "penggunaan": "Digunakan untuk menanyakan keadaan, kualitas, atau pendapat tentang sesuatu. Partikel は menandai topik yang ditanyakan, sedangkan どうですか menanyakan “bagaimana”.",
+         "catatan": "Bisa dipakai untuk benda, tempat, kegiatan, atau situasi. Jawaban biasanya berupa kata sifat (baik, buruk, menarik, dll) atau pendapat. Struktur umum: [K.Benda] は どうですか。",
+         "contoh": [
+            {
+               "kalimat": "この映画はどうですか",
+               "kalimat_susun": [
+                  "この",
+                  "映画",
+                  "は",
+                  "どうですか"
+               ],
+               "terjemahan": [
+                  "Bagaimana film ini?",
+                  "Film ini bagaimana?"
+               ]
+            },
+            {
+               "kalimat": "日本の食べ物はどうですか",
+               "kalimat_susun": [
+                  "日本",
+                  "の",
+                  "食べ物",
+                  "は",
+                  "どうですか"
+               ],
+               "terjemahan": [
+                  "Bagaimana makanan Jepang?",
+                  "Makanan Jepang bagaimana?"
+               ]
+            },
+            {
+               "kalimat": "昨日の授業はどうでしたか",
+               "kalimat_susun": [
+                  "昨日",
+                  "の",
+                  "授業",
+                  "は",
+                  "どうでしたか"
+               ],
+               "terjemahan": [
+                  "Bagaimana pelajaran kemarin?",
+                  "Pelajaran kemarin bagaimana?"
+               ]
+            }
+         ]
+      },
+      {
+         "id": 31,
+         "pola": "K.Benda は どんな K.Benda ですか",
+         "arti": "… yang seperti apa? / … yang bagaimana?",
+         "penggunaan": "Digunakan untuk menanyakan jenis, karakteristik, atau sifat suatu benda/orang. Kata どんな berarti “seperti apa / yang bagaimana” dan selalu diikuti oleh kata benda.",
+         "catatan": "どんな harus diikuti kata benda. Biasanya jawaban berupa kata sifat + kata benda atau penjelasan jenis benda tersebut. Struktur umum: [K.Benda] は どんな [K.Benda] ですか。",
+         "contoh": [
+            {
+               "kalimat": "日本はどんな国ですか",
+               "kalimat_susun": [
+                  "日本",
+                  "は",
+                  "どんな",
+                  "国",
+                  "ですか"
+               ],
+               "terjemahan": [
+                  "Jepang negara seperti apa?",
+                  "Jepang itu negara yang bagaimana?"
+               ]
+            },
+            {
+               "kalimat": "田中さんはどんな人ですか",
+               "kalimat_susun": [
+                  "田中さん",
+                  "は",
+                  "どんな",
+                  "人",
+                  "ですか"
+               ],
+               "terjemahan": [
+                  "Tanaka orang seperti apa?",
+                  "Tanaka itu orang yang bagaimana?"
+               ]
+            },
+            {
+               "kalimat": "この本はどんな本ですか",
+               "kalimat_susun": [
+                  "この",
+                  "本",
+                  "は",
+                  "どんな",
+                  "本",
+                  "ですか"
+               ],
+               "terjemahan": [
+                  "Buku ini buku seperti apa?",
+                  "Buku ini buku yang bagaimana?"
+               ]
+            }
+         ]
       }
-  ]
+   ]
 }
