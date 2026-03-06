@@ -1664,6 +1664,467 @@
                ]
             }
          ]
+      },
+      {
+         "id": 32,
+         "pola": "K.Benda が K.Kerja",
+         "arti": "… melakukan / … terjadi",
+         "penggunaan": "Digunakan untuk menyatakan bahwa suatu benda, orang, atau fenomena menjadi subjek yang melakukan atau mengalami suatu tindakan. Partikel が menandai subjek yang melakukan atau mengalami tindakan tersebut.",
+         "catatan": "Partikel が menandai subjek kalimat (pelaku atau yang mengalami kejadian). Sering digunakan ketika memperkenalkan informasi baru atau menekankan subjek. Berbeda dengan は yang menandai topik, sedangkan が menandai subjek secara langsung. Struktur umum: [K.Benda] が [K.Kerja].",
+         "contoh": [
+            {
+               "kalimat": "雨が降ります",
+               "kalimat_susun": [
+                  "雨",
+                  "が",
+                  "降ります"
+               ],
+               "terjemahan": [
+                  "Hujan turun",
+                  "Sedang turun hujan"
+               ]
+            },
+            {
+               "kalimat": "犬が走ります",
+               "kalimat_susun": [
+                  "犬",
+                  "が",
+                  "走ります"
+               ],
+               "terjemahan": [
+                  "Anjing berlari",
+                  "Anjing itu berlari"
+               ]
+            },
+            {
+               "kalimat": "子どもが遊びます",
+               "kalimat_susun": [
+                  "子ども",
+                  "が",
+                  "遊びます"
+               ],
+               "terjemahan": [
+                  "Anak bermain",
+                  "Anak-anak bermain"
+               ]
+            }
+         ]
+      },
+      {
+         "id": 33,
+         "pola": "よく / だいたい / たくさん",
+         "arti": "sering / biasanya / banyak",
+         "penggunaan": "Digunakan sebagai kata keterangan (adverb) untuk menjelaskan frekuensi atau jumlah suatu kegiatan dalam kalimat. Kata-kata ini biasanya ditempatkan sebelum kata kerja.",
+         "catatan": "よく → berarti “sering”. Digunakan untuk menyatakan frekuensi yang tinggi. だいたい → berarti “biasanya / kira-kira”. Digunakan untuk menyatakan kebiasaan atau perkiraan umum. たくさん → berarti “banyak”. Digunakan untuk menyatakan jumlah yang banyak pada suatu aktivitas. Struktur umum: [Subjek] は [Adverb] [Objek] を [K.Kerja].",
+         "contoh": [
+            {
+               "kalimat": "私はよく日本語を勉強します",
+               "kalimat_susun": [
+                  "私",
+                  "は",
+                  "よく",
+                  "日本語",
+                  "を",
+                  "勉強します"
+               ],
+               "terjemahan": [
+                  "Saya sering belajar bahasa Jepang",
+                  "Aku sering belajar bahasa Jepang"
+               ]
+            },
+            {
+               "kalimat": "私はだいたい七時に起きます",
+               "kalimat_susun": [
+                  "私",
+                  "は",
+                  "だいたい",
+                  "七時",
+                  "に",
+                  "起きます"
+               ],
+               "terjemahan": [
+                  "Saya biasanya bangun jam tujuh",
+                  "Aku biasanya bangun pukul tujuh"
+               ]
+            },
+            {
+               "kalimat": "私は本をたくさん読みます",
+               "kalimat_susun": [
+                  "私",
+                  "は",
+                  "本",
+                  "を",
+                  "たくさん",
+                  "読みます"
+               ],
+               "terjemahan": [
+                  "Saya membaca banyak buku",
+                  "Aku membaca banyak buku"
+               ]
+            }
+         ]
+      },
+      {
+         "id": 34,
+         "pola": "少し / あまり / 全然",
+         "arti": "sedikit / tidak terlalu / sama sekali tidak",
+         "penggunaan": "Digunakan sebagai kata keterangan (adverb) untuk menyatakan tingkat atau frekuensi suatu keadaan atau aktivitas dalam kalimat. Biasanya ditempatkan sebelum kata sifat atau kata kerja.",
+         "catatan": "少し → berarti “sedikit / agak”. Digunakan untuk menyatakan jumlah atau tingkat yang kecil. あまり → berarti “tidak terlalu”. Biasanya digunakan bersama bentuk negatif. 全然 → berarti “sama sekali tidak”. Digunakan dengan bentuk negatif untuk menekankan bahwa sesuatu tidak terjadi sama sekali. Struktur umum: [Subjek] は [Adverb] [Kata sifat / Kata kerja].",
+         "contoh": [
+            {
+               "kalimat": "日本語が少しわかります",
+               "kalimat_susun": [
+                  "日本語",
+                  "が",
+                  "少し",
+                  "わかります"
+               ],
+               "terjemahan": [
+                  "Saya sedikit mengerti bahasa Jepang",
+                  "Aku sedikit paham bahasa Jepang"
+               ]
+            },
+            {
+               "kalimat": "この料理はあまりおいしくないです",
+               "kalimat_susun": [
+                  "この",
+                  "料理",
+                  "は",
+                  "あまり",
+                  "おいしくない",
+                  "です"
+               ],
+               "terjemahan": [
+                  "Masakan ini tidak terlalu enak",
+                  "Makanan ini kurang enak"
+               ]
+            },
+            {
+               "kalimat": "私はお酒を全然飲みません",
+               "kalimat_susun": [
+                  "私",
+                  "は",
+                  "お酒",
+                  "を",
+                  "全然",
+                  "飲みません"
+               ],
+               "terjemahan": [
+                  "Saya sama sekali tidak minum alkohol",
+                  "Aku tidak minum alkohol sama sekali"
+               ]
+            }
+         ]
+      },
+      {
+         "id": 35,
+         "pola": "～から、～",
+         "arti": "karena / jadi",
+         "penggunaan": "Digunakan untuk menyatakan sebab atau alasan pada kalimat pertama yang menghasilkan akibat atau hasil pada kalimat kedua. Kata から berarti “karena”.",
+         "catatan": "Klausa sebelum から menunjukkan alasan, sedangkan klausa setelahnya menunjukkan hasil atau keputusan. Bisa digunakan dengan kata kerja, kata sifat, maupun kata benda + です. Struktur umum: [Kalimat sebab] から、[Kalimat akibat].",
+         "contoh": [
+            {
+               "kalimat": "雨が降りましたから、出かけませんでした",
+               "kalimat_susun": [
+                  "雨",
+                  "が",
+                  "降りました",
+                  "から",
+                  "、",
+                  "出かけません",
+                  "でした"
+               ],
+               "terjemahan": [
+                  "Karena hujan turun, saya tidak pergi keluar",
+                  "Karena hujan, aku tidak keluar"
+               ]
+            },
+            {
+               "kalimat": "忙しいですから、行きません",
+               "kalimat_susun": [
+                  "忙しい",
+                  "です",
+                  "から",
+                  "、",
+                  "行きません"
+               ],
+               "terjemahan": [
+                  "Karena sibuk, saya tidak pergi",
+                  "Karena sibuk, aku tidak pergi"
+               ]
+            },
+            {
+               "kalimat": "お金がありませんから、買いません",
+               "kalimat_susun": [
+                  "お金",
+                  "が",
+                  "ありません",
+                  "から",
+                  "、",
+                  "買いません"
+               ],
+               "terjemahan": [
+                  "Karena tidak punya uang, saya tidak membeli",
+                  "Karena tidak ada uang, aku tidak beli"
+               ]
+            }
+         ]
+      },
+      {
+         "id": 36,
+         "pola": "どうして",
+         "arti": "mengapa / kenapa",
+         "penggunaan": "Digunakan untuk menanyakan alasan atau sebab dari suatu keadaan atau tindakan. Biasanya pertanyaan dengan どうして dijawab menggunakan pola ～から (karena).",
+         "catatan": "Digunakan di awal kalimat tanya. Biasanya jawabannya menyebutkan alasan dengan から. Struktur umum: どうして + [Kalimat] か.",
+         "contoh": [
+            {
+               "kalimat": "どうして日本語を勉強しますか",
+               "kalimat_susun": [
+                  "どうして",
+                  "日本語",
+                  "を",
+                  "勉強します",
+                  "か"
+               ],
+               "terjemahan": [
+                  "Mengapa belajar bahasa Jepang?",
+                  "Kenapa kamu belajar bahasa Jepang?"
+               ]
+            },
+            {
+               "kalimat": "どうして学校へ行きませんか",
+               "kalimat_susun": [
+                  "どうして",
+                  "学校",
+                  "へ",
+                  "行きません",
+                  "か"
+               ],
+               "terjemahan": [
+                  "Mengapa tidak pergi ke sekolah?",
+                  "Kenapa kamu tidak pergi ke sekolah?"
+               ]
+            },
+            {
+               "kalimat": "どうして昨日来ませんでしたか",
+               "kalimat_susun": [
+                  "どうして",
+                  "昨日",
+                  "来ません",
+                  "でした",
+                  "か"
+               ],
+               "terjemahan": [
+                  "Mengapa kemarin tidak datang?",
+                  "Kenapa kemarin tidak datang?"
+               ]
+            }
+         ]
+      },
+      {
+         "id": 37,
+         "pola": "K.Benda が います / あります",
+         "arti": "ada / terdapat",
+         "penggunaan": "Digunakan untuk menyatakan keberadaan seseorang, hewan, atau benda. Partikel が menandai sesuatu yang keberadaannya dinyatakan. Kata kerja yang digunakan berbeda tergantung jenis benda tersebut.",
+         "catatan": "います digunakan untuk makhluk hidup seperti orang dan hewan. あります digunakan untuk benda mati atau sesuatu yang tidak bernyawa. Struktur umum: [K.Benda] が います. [K.Benda] が あります.",
+         "contoh": [
+            {
+               "kalimat": "公園に犬がいます",
+               "kalimat_susun": [
+                  "公園",
+                  "に",
+                  "犬",
+                  "が",
+                  "います"
+               ],
+               "terjemahan": [
+                  "Ada anjing di taman",
+                  "Di taman ada anjing"
+               ]
+            },
+            {
+               "kalimat": "教室に学生がいます",
+               "kalimat_susun": [
+                  "教室",
+                  "に",
+                  "学生",
+                  "が",
+                  "います"
+               ],
+               "terjemahan": [
+                  "Ada siswa di kelas",
+                  "Di kelas ada murid"
+               ]
+            },
+            {
+               "kalimat": "机の上に本があります",
+               "kalimat_susun": [
+                  "机",
+                  "の",
+                  "上",
+                  "に",
+                  "本",
+                  "が",
+                  "あります"
+               ],
+               "terjemahan": [
+                  "Ada buku di atas meja",
+                  "Di atas meja ada buku"
+               ]
+            }
+         ]
+      },
+      {
+         "id": 38,
+         "pola": "Tempat に K.Benda が あります / います",
+         "arti": "di (tempat) ada …",
+         "penggunaan": "Digunakan untuk menyatakan keberadaan orang, hewan, atau benda di suatu tempat. Partikel に menunjukkan tempat keberadaan, sedangkan が menandai benda atau makhluk yang ada di tempat tersebut.",
+         "catatan": "います digunakan untuk makhluk hidup (orang, hewan). あります digunakan untuk benda mati. Struktur umum: [Tempat] に [K.Benda] が います. [Tempat] に [K.Benda] が あります.",
+         "contoh": [
+            {
+               "kalimat": "教室に先生がいます",
+               "kalimat_susun": [
+                  "教室",
+                  "に",
+                  "先生",
+                  "が",
+                  "います"
+               ],
+               "terjemahan": [
+                  "Di kelas ada guru",
+                  "Ada guru di kelas"
+               ]
+            },
+            {
+               "kalimat": "机の上に辞書があります",
+               "kalimat_susun": [
+                  "机",
+                  "の",
+                  "上",
+                  "に",
+                  "辞書",
+                  "が",
+                  "あります"
+               ],
+               "terjemahan": [
+                  "Di atas meja ada kamus",
+                  "Di atas meja ada sebuah kamus"
+               ]
+            },
+            {
+               "kalimat": "公園に猫がいます",
+               "kalimat_susun": [
+                  "公園",
+                  "に",
+                  "猫",
+                  "が",
+                  "います"
+               ],
+               "terjemahan": [
+                  "Di taman ada kucing",
+                  "Di taman ada seekor kucing",
+                  "Ada kucing di taman"
+               ]
+            }
+         ]
+      },
+      {
+         "id": 39,
+         "pola": "K.Benda は Tempat に あります / います",
+         "arti": "… berada di …",
+         "penggunaan": "Digunakan untuk menyatakan lokasi atau tempat keberadaan suatu benda, orang, atau hewan. Partikel は menunjukkan topik yang dibicarakan, sedangkan に menunjukkan tempat keberadaannya.",
+         "catatan": "います digunakan untuk makhluk hidup (orang dan hewan). あります digunakan untuk benda mati. Berbeda dengan pola 「Tempat に K.Benda が あります/います」 yang menekankan apa yang ada di tempat tersebut, pola ini menekankan di mana sesuatu berada. Struktur umum: [K.Benda] は [Tempat] に あります. [K.Benda] は [Tempat] に います.",
+         "contoh": [
+            {
+               "kalimat": "鉛筆は机の上にあります",
+               "kalimat_susun": [
+                  "鉛筆",
+                  "は",
+                  "机",
+                  "の",
+                  "上",
+                  "に",
+                  "あります"
+               ],
+               "terjemahan": [
+                  "Pensil berada di atas meja",
+                  "Pensilnya ada di atas meja"
+               ]
+            },
+            {
+               "kalimat": "田中さんは教室にいます",
+               "kalimat_susun": [
+                  "田中さん",
+                  "は",
+                  "教室",
+                  "に",
+                  "います"
+               ],
+               "terjemahan": [
+                  "Tanaka berada di kelas",
+                  "Tanaka ada di kelas"
+               ]
+            },
+            {
+               "kalimat": "猫は公園にいます",
+               "kalimat_susun": [
+                  "猫",
+                  "は",
+                  "公園",
+                  "に",
+                  "います"
+               ],
+               "terjemahan": [
+                  "Kucing berada di taman",
+                  "Kucing itu ada di taman"
+               ]
+            }
+         ]
+      },
+      {
+         "id": 40,
+         "pola": "posisi / letak … dari …",
+         "arti": "… berada di …",
+         "penggunaan": "Digunakan untuk menyatakan posisi atau letak suatu benda, orang, atau tempat terhadap sesuatu yang lain. Kata の menghubungkan benda dengan kata yang menunjukkan posisi.",
+         "catatan": "Kata posisi yang sering digunakan: 上 (うえ) → atas, 下 (した) → bawah, 前 (まえ) → depan, 後ろ (うしろ) → belakang, 中 (なか) → dalam, 外 (そと) → luar, 隣 (となり) → sebelah, 近く (ちかく) → dekat, 間 (あいだ) → di antara. Pola ini biasanya digabung dengan あります / います untuk menjelaskan lokasi sesuatu. Struktur umum: [K.Benda] の [Posisi]",
+         "contoh": [
+            {
+               "kalimat": "机の上",
+               "kalimat_susun": [
+                  "机",
+                  "の",
+                  "上"
+               ],
+               "terjemahan": [
+                  "di atas meja",
+                  "bagian atas meja"
+               ]
+            },
+            {
+               "kalimat": "学校の前",
+               "kalimat_susun": [
+                  "学校",
+                  "の",
+                  "前"
+               ],
+               "terjemahan": [
+                  "di depan sekolah",
+                  "bagian depan sekolah"
+               ]
+            },
+            {
+               "kalimat": "家の中",
+               "kalimat_susun": [
+                  "家",
+                  "の",
+                  "中"
+               ],
+               "terjemahan": [
+                  "di dalam rumah",
+                  "bagian dalam rumah"
+               ]
+            }
+         ]
       }
    ]
 }
