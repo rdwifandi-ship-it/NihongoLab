@@ -2083,8 +2083,8 @@
       },
       {
          "id": 40,
-         "pola": "posisi / letak … dari …",
-         "arti": "… berada di …",
+         "pola": "K.Benda (benda/orang/tempat) の Posisi",
+         "arti": "posisi / letak … dari …",
          "penggunaan": "Digunakan untuk menyatakan posisi atau letak suatu benda, orang, atau tempat terhadap sesuatu yang lain. Kata の menghubungkan benda dengan kata yang menunjukkan posisi.",
          "catatan": "Kata posisi yang sering digunakan: 上 (うえ) → atas, 下 (した) → bawah, 前 (まえ) → depan, 後ろ (うしろ) → belakang, 中 (なか) → dalam, 外 (そと) → luar, 隣 (となり) → sebelah, 近く (ちかく) → dekat, 間 (あいだ) → di antara. Pola ini biasanya digabung dengan あります / います untuk menjelaskan lokasi sesuatu. Struktur umum: [K.Benda] の [Posisi]",
          "contoh": [
@@ -2122,6 +2122,280 @@
                "terjemahan": [
                   "di dalam rumah",
                   "bagian dalam rumah"
+               ]
+            }
+         ]
+      },
+      {
+         "id": 41,
+         "pola": "K.Benda1 や K.Benda2",
+         "arti": "… dan … (dan lain-lain)",
+         "penggunaan": "Digunakan untuk menyebutkan beberapa contoh benda dari suatu kelompok, tetapi tidak semuanya. Partikel や berarti “dan sebagainya”.",
+         "catatan": "Berbeda dengan と yang berarti daftar lengkap. や digunakan jika masih ada benda lain yang tidak disebutkan. Biasanya diikuti など untuk menegaskan arti “dan lain-lain”. Struktur umum: [K.Benda1] や [K.Benda2] (など).",
+         "contoh": [
+            {
+               "kalimat": "机の上に本やノートがあります",
+               "kalimat_susun": [
+                  "机",
+                  "の",
+                  "上",
+                  "に",
+                  "本",
+                  "や",
+                  "ノート",
+                  "が",
+                  "あります"
+               ],
+               "terjemahan": [
+                  "Di atas meja ada buku, buku catatan, dan lain-lain",
+                  "Di atas meja ada buku dan notebook"
+               ]
+            },
+            {
+               "kalimat": "スーパーで野菜や果物を買います",
+               "kalimat_susun": [
+                  "スーパー",
+                  "で",
+                  "野菜",
+                  "や",
+                  "果物",
+                  "を",
+                  "買います"
+               ],
+               "terjemahan": [
+                  "Saya membeli sayur, buah, dan lain-lain di supermarket",
+                  "Aku membeli sayur dan buah di supermarket"
+               ]
+            },
+            {
+               "kalimat": "かばんの中にペンや消しゴムがあります",
+               "kalimat_susun": [
+                  "かばん",
+                  "の",
+                  "中",
+                  "に",
+                  "ペン",
+                  "や",
+                  "消しゴム",
+                  "が",
+                  "あります"
+               ],
+               "terjemahan": [
+                  "Di dalam tas ada pena, penghapus, dan lain-lain",
+                  "Di dalam tas ada pena dan penghapus"
+               ]
+            }
+         ]
+      },
+      {
+         "id": 42,
+         "pola": "いくつ",
+         "arti": "berapa (jumlah benda)",
+         "penggunaan": "Digunakan untuk menanyakan jumlah benda atau barang secara umum. Biasanya digunakan bersama kata benda untuk menanyakan “berapa banyak”.",
+         "catatan": "Digunakan untuk menanyakan jumlah benda tanpa menggunakan counter khusus. Biasanya jawabannya menggunakan hitungan umum Jepang seperti ひとつ, ふたつ, みっつ, dll. Struktur umum: [K.Benda] は いくつ ですか.",
+         "contoh": [
+            {
+               "kalimat": "りんごはいくつありますか",
+               "kalimat_susun": [
+                  "りんご",
+                  "は",
+                  "いくつ",
+                  "あります",
+                  "か"
+               ],
+               "terjemahan": [
+                  "Ada berapa apel?",
+                  "Apelnya ada berapa?"
+               ]
+            },
+            {
+               "kalimat": "ケーキはいくつ買いましたか",
+               "kalimat_susun": [
+                  "ケーキ",
+                  "は",
+                  "いくつ",
+                  "買いました",
+                  "か"
+               ],
+               "terjemahan": [
+                  "Membeli berapa kue?",
+                  "Kamu beli berapa kue?"
+               ]
+            },
+            {
+               "kalimat": "箱はいくつありますか",
+               "kalimat_susun": [
+                  "箱",
+                  "は",
+                  "いくつ",
+                  "あります",
+                  "か"
+               ],
+               "terjemahan": [
+                  "Ada berapa kotak?",
+                  "Kotaknya ada berapa?"
+               ]
+            }
+         ]
+      },
+      {
+         "id": 43,
+         "pola": "何 + K.Bantu Bilangan",
+         "arti": "berapa (dengan kata bantu bilangan)",
+         "penggunaan": "Digunakan untuk menanyakan jumlah benda dengan menggunakan kata bantu bilangan (counter) yang sesuai dengan jenis benda tersebut.",
+         "catatan": "何 (なん / なに) berubah bacaannya tergantung counter yang digunakan. Contoh counter: 人 (にん) → orang, 本 (ほん) → benda panjang, 枚 (まい) → benda tipis, 個 (こ) → benda kecil, 台 (だい) → mesin / kendaraan. Struktur umum: 何 + K.Bantu Bilangan + [K.Benda].",
+         "contoh": [
+            {
+               "kalimat": "りんごを何個買いましたか",
+               "kalimat_susun": [
+                  "りんご",
+                  "を",
+                  "何",
+                  "個",
+                  "買いました",
+                  "か"
+               ],
+               "terjemahan": [
+                  "Membeli berapa buah apel?",
+                  "Kamu beli berapa apel?"
+               ]
+            },
+            {
+               "kalimat": "学生は何人いますか",
+               "kalimat_susun": [
+                  "学生",
+                  "は",
+                  "何",
+                  "人",
+                  "います",
+                  "か"
+               ],
+               "terjemahan": [
+                  "Ada berapa siswa?",
+                  "Siswanya ada berapa orang?"
+               ]
+            },
+            {
+               "kalimat": "切手を何枚買いましたか",
+               "kalimat_susun": [
+                  "切手",
+                  "を",
+                  "何",
+                  "枚",
+                  "買いました",
+                  "か"
+               ],
+               "terjemahan": [
+                  "Membeli berapa lembar perangko?",
+                  "Kamu beli berapa perangko?"
+               ]
+            }
+         ]
+      },
+      {
+         "id": 44,
+         "pola": "どのくらい",
+         "arti": "berapa lama / seberapa banyak / seberapa jauh",
+         "penggunaan": "Digunakan untuk menanyakan jumlah, durasi waktu, atau tingkat sesuatu secara perkiraan. Biasanya digunakan ketika menanyakan “sekitar berapa”.",
+         "catatan": "Sering digunakan untuk menanyakan lama waktu, jarak, atau jumlah secara umum. Mirip dengan どのぐらい (arti sama, hanya perbedaan pengucapan). Biasanya diikuti kata yang berkaitan dengan waktu, jarak, atau jumlah. Struktur umum: どのくらい + [Kata / Kalimat]",
+         "contoh": [
+            {
+               "kalimat": "日本語をどのくらい勉強しましたか",
+               "kalimat_susun": [
+                  "日本",
+                  "語",
+                  "を",
+                  "どのくらい",
+                  "勉強",
+                  "しました",
+                  "か"
+               ],
+               "terjemahan": [
+                  "Belajar bahasa Jepang berapa lama?",
+                  "Kamu belajar bahasa Jepang berapa lama?"
+               ]
+            },
+            {
+               "kalimat": "ここから駅までどのくらいかかりますか",
+               "kalimat_susun": [
+                  "ここ",
+                  "から",
+                  "駅",
+                  "まで",
+                  "どのくらい",
+                  "かかります",
+                  "か"
+               ],
+               "terjemahan": [
+                  "Dari sini ke stasiun berapa lama?",
+                  "Dari sini ke stasiun butuh waktu berapa lama?"
+               ]
+            },
+            {
+               "kalimat": "日本にどのくらいいましたか",
+               "kalimat_susun": [
+                  "日本",
+                  "に",
+                  "どのくらい",
+                  "いました",
+                  "か"
+               ],
+               "terjemahan": [
+                  "Berapa lama di Jepang?",
+                  "Kamu di Jepang berapa lama?"
+               ]
+            }
+         ]
+      },
+      {
+         "id": 45,
+         "pola": "～ ぐらい",
+         "arti": "sekitar / kira-kira",
+         "penggunaan": "Digunakan untuk menyatakan perkiraan jumlah, waktu, atau tingkat sesuatu. Kata ぐらい menunjukkan bahwa jumlah atau waktu tersebut tidak pasti tetapi hanya perkiraan.",
+         "catatan": "Bisa digunakan untuk jumlah, waktu, jarak, atau tingkat sesuatu. Mirip dengan くらい, hanya berbeda cara pengucapan. Biasanya diletakkan setelah angka atau kata yang menunjukkan jumlah. Struktur umum: [Jumlah / Waktu] + ぐらい",
+         "contoh": [
+            {
+               "kalimat": "三時間ぐらい勉強しました",
+               "kalimat_susun": [
+                  "三",
+                  "時間",
+                  "ぐらい",
+                  "勉強",
+                  "しました"
+               ],
+               "terjemahan": [
+                  "Belajar sekitar tiga jam",
+                  "Aku belajar kira-kira tiga jam"
+               ]
+            },
+            {
+               "kalimat": "りんごを五個ぐらい買いました",
+               "kalimat_susun": [
+                  "りんご",
+                  "を",
+                  "五",
+                  "個",
+                  "ぐらい",
+                  "買いました"
+               ],
+               "terjemahan": [
+                  "Membeli sekitar lima apel",
+                  "Aku membeli kira-kira lima apel"
+               ]
+            },
+            {
+               "kalimat": "駅まで十分ぐらいです",
+               "kalimat_susun": [
+                  "駅",
+                  "まで",
+                  "十",
+                  "分",
+                  "ぐらい",
+                  "です"
+               ],
+               "terjemahan": [
+                  "Sekitar sepuluh menit ke stasiun",
+                  "Ke stasiun kira-kira sepuluh menit"
                ]
             }
          ]
