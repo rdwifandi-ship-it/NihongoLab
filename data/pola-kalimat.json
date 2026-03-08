@@ -2399,6 +2399,310 @@
                ]
             }
          ]
+      },
+      {
+         "id": 46,
+         "pola": "Jangka Waktu に Frekuensi + K.Kerja",
+         "arti": "melakukan … sebanyak … dalam jangka waktu tertentu",
+         "penggunaan": "Digunakan untuk menyatakan berapa kali suatu kegiatan dilakukan dalam jangka waktu tertentu. Partikel に menunjukkan periode waktu, sedangkan kata bilangan menunjukkan frekuensi kegiatan.",
+         "catatan": "Pola ini menyatakan frekuensi dalam periode waktu tertentu. Kata bantu bilangan yang sering dipakai: 回 (かい) untuk “kali”. Struktur umum: [Jangka Waktu] に [Frekuensi] [K.Kerja].",
+         "contoh": [
+            {
+               "kalimat": "私は一週間に三回日本語を勉強します",
+               "kalimat_susun": [
+                  "私",
+                  "は",
+                  "一週間",
+                  "に",
+                  "三",
+                  "回",
+                  "日本",
+                  "語",
+                  "を",
+                  "勉強",
+                  "します"
+               ],
+               "terjemahan": [
+                  "Saya belajar bahasa Jepang tiga kali dalam seminggu",
+                  "Aku belajar bahasa Jepang tiga kali seminggu"
+               ]
+            },
+            {
+               "kalimat": "私は一日に二回薬を飲みます",
+               "kalimat_susun": [
+                  "私",
+                  "は",
+                  "一日",
+                  "に",
+                  "二回",
+                  "薬",
+                  "を",
+                  "飲みます"
+               ],
+               "terjemahan": [
+                  "Saya minum obat dua kali sehari",
+                  "Aku minum obat dua kali sehari"
+               ]
+            },
+            {
+               "kalimat": "私は一か月に一回映画を見ます",
+               "kalimat_susun": [
+                  "私",
+                  "は",
+                  "一か月",
+                  "に",
+                  "一",
+                  "回",
+                  "映画",
+                  "を",
+                  "見ます"
+               ],
+               "terjemahan": [
+                  "Saya menonton film sekali sebulan",
+                  "Aku menonton film sekali sebulan"
+               ]
+            }
+         ]
+      },
+      {
+         "id": 47,
+         "pola": "～ だけ",
+         "arti": "hanya / cuma",
+         "penggunaan": "Digunakan untuk menyatakan bahwa jumlah atau sesuatu terbatas hanya pada hal tersebut saja. Kata だけ menekankan bahwa tidak ada yang lain selain yang disebutkan.",
+         "catatan": "だけ diletakkan setelah kata benda, kata kerja bentuk kamus, atau kata sifat. Menunjukkan pembatasan “hanya itu saja”. Struktur umum: [K.Benda] だけ. [K.Kerja] だけ",
+         "contoh": [
+            {
+               "kalimat": "私は水だけ飲みます",
+               "kalimat_susun": [
+                  "私",
+                  "は",
+                  "水",
+                  "だけ",
+                  "飲みます"
+               ],
+               "terjemahan": [
+                  "Saya hanya minum air",
+                  "Aku cuma minum air"
+               ]
+            },
+            {
+               "kalimat": "今日は日本語だけ勉強します",
+               "kalimat_susun": [
+                  "今",
+                  "日",
+                  "は",
+                  "日本",
+                  "語",
+                  "だけ",
+                  "勉強",
+                  "します"
+               ],
+               "terjemahan": [
+                  "Hari ini hanya belajar bahasa Jepang",
+                  "Hari ini aku cuma belajar bahasa Jepang"
+               ]
+            },
+            {
+               "kalimat": "りんごを一つだけ食べました",
+               "kalimat_susun": [
+                  "りんご",
+                  "を",
+                  "一つ",
+                  "だけ",
+                  "食べました"
+               ],
+               "terjemahan": [
+                  "Hanya makan satu apel",
+                  "Aku cuma makan satu apel"
+               ]
+            }
+         ]
+      },
+      {
+         "id": 48,
+         "pola": "K.Sifat い (Waktu Positif / Negatif)",
+         "arti": "menyatakan sifat dalam waktu sekarang atau lampau (positif / negatif)",
+         "penggunaan": "Digunakan untuk menyatakan keadaan atau sifat dengan kata sifat い dalam bentuk sekarang, negatif, lampau, dan lampau negatif.",
+         "catatan": "Perubahan bentuk kata sifat い: Positif sekarang : ～いです. Negatif sekarang : ～くないです. Positif lampau : ～かったです. Negatif lampau : ～くなかったです. Struktur umum: [K.Benda] は [K.Sifat い] です.",
+         "contoh": [
+            {
+               "kalimat": "この本は面白いです",
+               "kalimat_susun": [
+                  "この",
+                  "本は",
+                  "面白い",
+                  "です"
+               ],
+               "terjemahan": [
+                  "Buku ini menarik",
+                  "Buku ini seru"
+               ]
+            },
+            {
+               "kalimat": "この料理はおいしくないです",
+               "kalimat_susun": [
+                  "この",
+                  "料理",
+                  "は",
+                  "おいしくない",
+                  "です"
+               ],
+               "terjemahan": [
+                  "Masakan ini tidak enak",
+                  "Makanan ini tidak enak"
+               ]
+            },
+            {
+               "kalimat": "昨日の映画は面白かったです",
+               "kalimat_susun": [
+                  "昨日",
+                  "の",
+                  "映画",
+                  "は",
+                  "面白かった",
+                  "です"
+               ],
+               "terjemahan": [
+                  "Film kemarin menarik",
+                  "Film kemarin seru"
+               ]
+            },
+            {
+               "kalimat": "昨日は暑くなかったです",
+               "kalimat_susun": [
+                  "昨日",
+                  "は",
+                  "暑くなかった",
+                  "です"
+               ],
+               "terjemahan": [
+                  "Kemarin tidak panas",
+                  "Kemarin tidak terasa panas"
+               ]
+            }
+         ]
+      },
+      {
+         "id": 49,
+         "pola": "K.Sifat な (Waktu Positif / Negatif)",
+         "arti": "menyatakan sifat dalam waktu sekarang atau lampau (positif / negatif)",
+         "penggunaan": "Digunakan untuk menyatakan keadaan atau sifat dengan kata sifat な dalam bentuk sekarang, negatif, lampau, dan lampau negatif dengan bentuk sopan.",
+         "catatan": "Perubahan bentuk kata sifat な: Positif sekarang : ～です. Negatif sekarang : ～ではありません. Positif lampau : ～でした. Negatif lampau : ～ではありませんでした.Struktur umum: [K.Benda] は [K.Sifat な] です.",
+         "contoh": [
+            {
+               "kalimat": "この町は静かです",
+               "kalimat_susun": [
+                  "この",
+                  "町",
+                  "は",
+                  "静か",
+                  "です"
+               ],
+               "terjemahan": [
+                  "Kota ini tenang",
+                  "Kota ini sunyi"
+               ]
+            },
+            {
+               "kalimat": "この部屋はきれいではありません",
+               "kalimat_susun": [
+                  "この",
+                  "部屋",
+                  "は",
+                  "きれい",
+                  "ではありません"
+               ],
+               "terjemahan": [
+                  "Kamar ini tidak bersih",
+                  "Kamar ini tidak rapi"
+               ]
+            },
+            {
+               "kalimat": "昨日の公園はにぎやかでした",
+               "kalimat_susun": [
+                  "昨日",
+                  "の",
+                  "公園",
+                  "は",
+                  "にぎやか",
+                  "でした"
+               ],
+               "terjemahan": [
+                  "Taman kemarin ramai",
+                  "Kemarin taman itu ramai"
+               ]
+            },
+            {
+               "kalimat": "その町は便利ではありませんでした",
+               "kalimat_susun": [
+                  "その",
+                  "町",
+                  "は",
+                  "便利",
+                  "ではありませんでした"
+               ],
+               "terjemahan": [
+                  "Kota itu tidak praktis",
+                  "Kota itu tidak begitu nyaman"
+               ]
+            }
+         ]
+      },
+      {
+         "id": 50,
+         "pola": "K.Benda1 は K.Benda2 より K.Sifat です",
+         "arti": "… lebih … daripada …",
+         "penggunaan": "Digunakan untuk membandingkan dua benda/orang, dimana K.Benda1 memiliki sifat lebih dibanding K.Benda2. Partikel より berarti “daripada”.",
+         "catatan": "K.Benda1 adalah yang dibandingkan dan memiliki tingkat sifat lebih tinggi. より menunjukkan objek pembanding. Bisa digunakan dengan kata sifat い maupun な. Struktur umum: [K.Benda1] は [K.Benda2] より [K.Sifat] です.",
+         "contoh": [
+            {
+               "kalimat": "日本はインドネシアより寒いです",
+               "kalimat_susun": [
+                  "日本",
+                  "は",
+                  "インドネシア",
+                  "より",
+                  "寒いです"
+               ],
+               "terjemahan": [
+                  "Jepang lebih dingin daripada Indonesia",
+                  "Jepang lebih dingin dibanding Indonesia"
+               ]
+            },
+            {
+               "kalimat": "この本はその本より面白いです",
+               "kalimat_susun": [
+                  "この",
+                  "本",
+                  "は",
+                  "その",
+                  "本",
+                  "より",
+                  "面白い",
+                  "です"
+               ],
+               "terjemahan": [
+                  "Buku ini lebih menarik daripada buku itu",
+                  "Buku ini lebih seru dibanding buku itu"
+               ]
+            },
+            {
+               "kalimat": "東京はこの町よりにぎやかです",
+               "kalimat_susun": [
+                  "東京",
+                  "は",
+                  "この",
+                  "町",
+                  "より",
+                  "にぎやか",
+                  "です"
+               ],
+               "terjemahan": [
+                  "Tokyo lebih ramai daripada kota ini",
+                  "Tokyo lebih ramai dibanding kota ini"
+               ]
+            }
+         ]
       }
    ]
 }
