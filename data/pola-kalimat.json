@@ -3255,6 +3255,278 @@
                   ]
                }
             ]
+         },
+         {
+            "id": 61,
+            "pola": "K.Benda が K.Kerja",
+            "arti": "K.Benda melakukan … / K.Benda terjadi …",
+            "penggunaan": "Digunakan ketika kata benda menjadi subjek yang melakukan suatu tindakan atau mengalami suatu kejadian. Pada pola ini partikel が digunakan untuk menandai subjek dalam kalimat.",
+            "catatan": "が menandai subjek yang melakukan atau mengalami tindakan. Pola ini sering digunakan ketika menyatakan fakta, kejadian, atau informasi baru. Struktur umum: K.Benda が K.Kerja.",
+            "contoh": [
+               {
+                  "kalimat": "雨が降ります",
+                  "kalimat_susun": [
+                     "雨",
+                     "が",
+                     "降ります"
+                  ],
+                  "terjemahan": [
+                     "Hujan turun",
+                     "Sedang turun hujan"
+                  ]
+               },
+               {
+                  "kalimat": "猫が来ました",
+                  "kalimat_susun": [
+                     "猫",
+                     "が",
+                     "来ました"
+                  ],
+                  "terjemahan": [
+                     "Seekor kucing datang",
+                     "Kucing datang"
+                  ]
+               },
+               {
+                  "kalimat": "電車が来ます",
+                  "kalimat_susun": [
+                     "電車",
+                     "が",
+                     "来ます"
+                  ],
+                  "terjemahan": [
+                     "Kereta datang",
+                     "Kereta akan datang"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 62,
+            "pola": "K.Kerja ~て + も + いいですか",
+            "arti": "bolehkah … / apakah boleh …",
+            "penggunaan": "Digunakan untuk meminta izin melakukan suatu tindakan. Pola ini dibuat dengan mengubah kata kerja ke bentuk て, lalu ditambahkan もいいですか.",
+            "catatan": "Digunakan ketika ingin meminta izin secara sopan. Bentuk ini sering dipakai dalam percakapan sehari-hari atau situasi formal ringan. Struktur umum: [Objek] を K.Kerja(て) も いいですか.",
+            "contoh": [
+               {
+                  "kalimat": "ここで写真を撮ってもいいですか",
+                  "kalimat_susun": [
+                     "ここ",
+                     "で",
+                     "写真",
+                     "を",
+                     "撮って",
+                     "も",
+                     "いい",
+                     "です",
+                     "か"
+                  ],
+                  "terjemahan": [
+                     "Bolehkah mengambil foto di sini?",
+                     "Boleh foto di sini?"
+                  ]
+               },
+               {
+                  "kalimat": "窓を開けてもいいですか",
+                  "kalimat_susun": [
+                     "窓",
+                     "を",
+                     "開けて",
+                     "も",
+                     "いい",
+                     "です",
+                     "か"
+                  ],
+                  "terjemahan": [
+                     "Bolehkah membuka jendela?",
+                     "Boleh buka jendela?"
+                  ]
+               },
+               {
+                  "kalimat": "この本を借りてもいいですか",
+                  "kalimat_susun": [
+                     "この",
+                     "本",
+                     "を",
+                     "借りて",
+                     "も",
+                     "いい",
+                     "です",
+                     "か"
+                  ],
+                  "terjemahan": [
+                     "Bolehkah meminjam buku ini?",
+                     "Boleh pinjam buku ini?"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 63,
+            "pola": "K.Kerja ~て + は + いけません",
+            "arti": "tidak boleh … / dilarang …",
+            "penggunaan": "Digunakan untuk menyatakan larangan melakukan suatu tindakan. Pola ini dibuat dengan mengubah kata kerja ke bentuk て, lalu ditambahkan は いけません.",
+            "catatan": "Digunakan untuk menyatakan aturan atau larangan dengan sopan tetapi tegas. Dalam percakapan sehari-hari kadang disingkat menjadi ちゃいけません (bentuk informal). Struktur umum: [Objek] を K.Kerja(て) は いけません.",
+            "contoh": [
+               {
+                  "kalimat": "ここでタバコを吸ってはいけません",
+                  "kalimat_susun": [
+                     "ここ",
+                     "で",
+                     "タバコ",
+                     "を",
+                     "吸って",
+                     "は",
+                     "いけません"
+                  ],
+                  "terjemahan": [
+                     "Tidak boleh merokok disini",
+                     "Dilarang merokok disini"
+                  ]
+               },
+               {
+                  "kalimat": "授業中に携帯電話を使ってはいけません",
+                  "kalimat_susun": [
+                     "授業",
+                     "中",
+                     "に",
+                     "携帯電話",
+                     "を",
+                     "使って",
+                     "は",
+                     "いけません"
+                  ],
+                  "terjemahan": [
+                     "Tidak boleh menggunakan handphone saat pelajaran",
+                     "Dilarang memakai HP saat kelas"
+                  ]
+               },
+               {
+                  "kalimat": "ここに入ってはいけません",
+                  "kalimat_susun": [
+                     "ここ",
+                     "に",
+                     "入って",
+                     "は",
+                     "いけません"
+                  ],
+                  "terjemahan": [
+                     "Tidak boleh masuk ke sini",
+                     "Dilarang masuk ke sini"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 64,
+            "pola": "K.Kerja ~て + います (kebiasaan)",
+            "arti": "melakukan … (sebagai kebiasaan)",
+            "penggunaan": "Digunakan untuk menyatakan kegiatan yang dilakukan secara rutin atau kebiasaan sehari-hari. Pola ini dibuat dengan mengubah kata kerja ke bentuk て, lalu ditambahkan います.",
+            "catatan": "Selain menyatakan kegiatan yang sedang berlangsung, pola 〜ています juga bisa menunjukkan kebiasaan atau rutinitas. Biasanya sering digunakan bersama kata keterangan seperti よく (sering), 毎日 (setiap hari), 毎週 (setiap minggu), dan sebagainya. Struktur umum: [Subjek] は [Objek] を K.Kerja(て) います.",
+            "contoh": [
+               {
+                  "kalimat": "私は毎日日本語を勉強しています",
+                  "kalimat_susun": [
+                     "私",
+                     "は",
+                     "毎",
+                     "日",
+                     "日本",
+                     "語",
+                     "を",
+                     "勉強して",
+                     "います"
+                  ],
+                  "terjemahan": [
+                     "Saya setiap hari belajar bahasa Jepang",
+                     "Aku setiap hari belajar bahasa Jepang"
+                  ]
+               },
+               {
+                  "kalimat": "父は毎朝コーヒーを飲んでいます",
+                  "kalimat_susun": [
+                     "父",
+                     "は",
+                     "毎",
+                     "朝",
+                     "コーヒー",
+                     "を",
+                     "飲んで",
+                     "います"
+                  ],
+                  "terjemahan": [
+                     "Ayah setiap pagi minum kopi",
+                     "Ayah tiap pagi minum kopi"
+                  ]
+               },
+               {
+                  "kalimat": "彼はよく音楽を聞いています",
+                  "kalimat_susun": [
+                     "彼",
+                     "は",
+                     "よく",
+                     "音楽",
+                     "を",
+                     "聞いて",
+                     "います"
+                  ],
+                  "terjemahan": [
+                     "Dia sering mendengarkan musik",
+                     "Dia sering dengar musik"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 65,
+            "pola": "K.Benda1 に K.Benda2 を K.Kerja",
+            "arti": "melakukan … pada / di …",
+            "penggunaan": "Digunakan ketika melakukan suatu tindakan terhadap objek pada tempat atau sasaran tertentu. Pada pola ini に menunjukkan tempat atau sasaran tindakan, sedangkan を menunjukkan objek yang dikenai tindakan.",
+            "catatan": "に menunjukkan tempat atau tujuan tindakan dilakukan. を menunjukkan objek yang menerima tindakan. Struktur umum: K.Benda1 に K.Benda2 を K.Kerja.",
+            "contoh": [
+               {
+                  "kalimat": "紙に名前を書きます",
+                  "kalimat_susun": [
+                     "紙",
+                     "に",
+                     "名前",
+                     "を",
+                     "書きます"
+                  ],
+                  "terjemahan": [
+                     "Menulis nama di kertas",
+                     "Tulis nama di kertas"
+                  ]
+               },
+               {
+                  "kalimat": "黒板に漢字を書きます",
+                  "kalimat_susun": [
+                     "黒板",
+                     "に",
+                     "漢字",
+                     "を",
+                     "書きます"
+                  ],
+                  "terjemahan": [
+                     "Menulis kanji di papan tulis",
+                     "Menulis kanji di papan"
+                  ]
+               },
+               {
+                  "kalimat": "ノートに文を書きます",
+                  "kalimat_susun": [
+                     "ノート",
+                     "に",
+                     "文",
+                     "を",
+                     "書きます"
+                  ],
+                  "terjemahan": [
+                     "Menulis kalimat di buku catatan",
+                     "Menulis kalimat di notebook"
+                  ]
+               }
+            ]
          }
       ]
    }
