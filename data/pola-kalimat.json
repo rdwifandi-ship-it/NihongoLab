@@ -2997,6 +2997,264 @@
                   ]
                }
             ]
+         },
+         {
+            "id": 56,
+            "pola": "Tempat へ K.Kerja (ます) / K.Benda に 行きます / 来ます / 帰ります",
+            "arti": "pergi / datang / pulang ke … untuk …",
+            "penggunaan": "Digunakan untuk menyatakan tujuan pergi, datang, atau pulang ke suatu tempat untuk melakukan kegiatan tertentu. Jika tujuannya kata kerja, gunakan Tempat へ + K.Kerja bentuk ます tanpa ます + に + 行きます / 来ます / 帰ります\nJika tujuannya kata benda (kegiatan), gunakan Tempat へ + K.Benda + に + 行きます / 来ます / 帰ります.",
+            "catatan": "へ menunjukkan arah atau tujuan tempat. に menunjukkan tujuan kegiatan yang akan dilakukan.",
+            "contoh": [
+               {
+                  "kalimat": "私は図書館へ勉強に行きます",
+                  "kalimat_susun": [
+                     "私",
+                     "は",
+                     "図書館",
+                     "へ",
+                     "勉強",
+                     "に",
+                     "行きます"
+                  ],
+                  "terjemahan": [
+                     "Saya pergi ke perpustakaan untuk belajar",
+                     "Aku pergi ke perpustakaan untuk belajar"
+                  ]
+               },
+               {
+                  "kalimat": "友達は日本へ旅行に行きます",
+                  "kalimat_susun": [
+                     "友達",
+                     "は",
+                     "日本",
+                     "へ",
+                     "旅行",
+                     "に",
+                     "行きます"
+                  ],
+                  "terjemahan": [
+                     "Teman pergi ke Jepang untuk berlibur",
+                     "Temanku pergi ke Jepang untuk liburan"
+                  ]
+               },
+               {
+                  "kalimat": "私はデパートへ買い物に行きます",
+                  "kalimat_susun": [
+                     "私",
+                     "は",
+                     "デパート",
+                     "へ",
+                     "買い物",
+                     "に",
+                     "行きます"
+                  ],
+                  "terjemahan": [
+                     "Saya pergi ke department store untuk berbelanja",
+                     "Aku pergi ke mall untuk belanja"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 57,
+            "pola": "どこか / 何か",
+            "arti": "suatu tempat / sesuatu",
+            "penggunaan": "Digunakan untuk menyatakan tempat atau benda yang tidak ditentukan secara spesifik. どこか digunakan untuk menyatakan suatu tempat yang tidak diketahui atau tidak disebutkan dengan jelas.\n何か (なにか) digunakan untuk menyatakan sesuatu / suatu benda yang tidak diketahui atau tidak disebutkan secara spesifik.",
+            "catatan": "Kata ini sering digunakan dalam kalimat tanya atau pernyataan yang tidak pasti. Dalam kalimat tanya biasanya digunakan dengan partikel へ / に / を sesuai fungsi dalam kalimat.",
+            "contoh": [
+               {
+                  "kalimat": "どこかへ行きますか",
+                  "kalimat_susun": [
+                     "どこか",
+                     "へ",
+                     "行きます",
+                     "か"
+                  ],
+                  "terjemahan": [
+                     "Apakah pergi ke suatu tempat?",
+                     "Mau pergi ke suatu tempat?"
+                  ]
+               },
+               {
+                  "kalimat": "何か食べますか",
+                  "kalimat_susun": [
+                     "何か",
+                     "食べます",
+                     "か"
+                  ],
+                  "terjemahan": [
+                     "Apakah makan sesuatu?",
+                     "Mau makan sesuatu?"
+                  ]
+               },
+               {
+                  "kalimat": "私は何か飲みたいです",
+                  "kalimat_susun": [
+                     "私",
+                     "は",
+                     "何か",
+                     "飲みたい",
+                     "です"
+                  ],
+                  "terjemahan": [
+                     "Saya ingin minum sesuatu",
+                     "Aku ingin minum sesuatu"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 58,
+            "pola": "K.Kerja ~て + ください",
+            "arti": "tolong lakukan … / silakan …",
+            "penggunaan": "Digunakan untuk meminta seseorang melakukan suatu tindakan dengan sopan. Pola ini dibuat dengan mengubah kata kerja ke bentuk て, lalu ditambahkan ください.",
+            "catatan": "Digunakan ketika meminta bantuan atau memberi instruksi dengan sopan. Sering dipakai dalam percakapan sehari-hari, kelas, atau pelayanan. Struktur umum: [Objek] を K.Kerja(て) ください.",
+            "contoh": [
+               {
+                  "kalimat": "ここに名前を書いてください",
+                  "kalimat_susun": [
+                     "ここ",
+                     "に",
+                     "名前",
+                     "を",
+                     "書いて",
+                     "ください"
+                  ],
+                  "terjemahan": [
+                     "Tolong tulis nama di sini",
+                     "Silakan tulis nama di sini"
+                  ]
+               },
+               {
+                  "kalimat": "ドアを閉めてください",
+                  "kalimat_susun": [
+                     "ドア",
+                     "を",
+                     "閉めて",
+                     "ください"
+                  ],
+                  "terjemahan": [
+                     "Tolong tutup pintu",
+                     "Silakan tutup pintunya"
+                  ]
+               },
+               {
+                  "kalimat": "ゆっくり話してください",
+                  "kalimat_susun": [
+                     "ゆっくり",
+                     "話して",
+                     "ください"
+                  ],
+                  "terjemahan": [
+                     "Tolong berbicara pelan-pelan",
+                     "Silakan bicara lebih pelan"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 59,
+            "pola": "K.Kerja ~て + います",
+            "arti": "sedang melakukan … / dalam keadaan …",
+            "penggunaan": "Digunakan untuk menyatakan suatu kegiatan yang sedang berlangsung atau suatu keadaan yang terjadi akibat suatu tindakan. Pola ini dibuat dengan mengubah kata kerja ke bentuk て, lalu ditambahkan います.",
+            "catatan": "Untuk kegiatan yang sedang berlangsung, artinya sedang melakukan sesuatu. Untuk beberapa kata kerja, pola ini juga menunjukkan keadaan atau hasil dari suatu tindakan. Struktur umum: [Subjek] は [Objek] を K.Kerja(て) います.",
+            "contoh": [
+               {
+                  "kalimat": "私は日本語を勉強しています",
+                  "kalimat_susun": [
+                     "私",
+                     "は",
+                     "日本",
+                     "語",
+                     "を",
+                     "勉強して",
+                     "います"
+                  ],
+                  "terjemahan": [
+                     "Saya sedang belajar bahasa Jepang",
+                     "Aku sedang belajar bahasa Jepang"
+                  ]
+               },
+               {
+                  "kalimat": "友達は音楽を聞いています",
+                  "kalimat_susun": [
+                     "友達",
+                     "は",
+                     "音楽",
+                     "を",
+                     "聞いて",
+                     "います"
+                  ],
+                  "terjemahan": [
+                     "Teman sedang mendengarkan musik",
+                     "Temanku sedang dengar musik"
+                  ]
+               },
+               {
+                  "kalimat": "先生は本を読んでいます",
+                  "kalimat_susun": [
+                     "先生",
+                     "は",
+                     "本",
+                     "を",
+                     "読んで",
+                     "います"
+                  ],
+                  "terjemahan": [
+                     "Guru sedang membaca buku",
+                     "Sensei sedang membaca buku"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 60,
+            "pola": "K.Kerja (ます) + ましょうか",
+            "arti": "bolehkah saya … / bagaimana kalau saya …",
+            "penggunaan": "Digunakan untuk menawarkan bantuan atau mengusulkan melakukan sesuatu untuk orang lain. Pola ini dibuat dari kata kerja bentuk ます, lalu diganti menjadi ましょうか.",
+            "catatan": "Digunakan ketika ingin membantu seseorang atau menawarkan melakukan sesuatu. Biasanya digunakan dalam situasi sopan atau formal. Struktur umum: [Objek] を K.Kerja(ます) ましょうか.",
+            "contoh": [
+               {
+                  "kalimat": "荷物を持ちましょうか",
+                  "kalimat_susun": [
+                     "荷物",
+                     "を",
+                     "持ち",
+                     "ましょう",
+                     "か"
+                  ],
+                  "terjemahan": [
+                     "Bolehkah saya membawa barangnya?",
+                     "Perlu aku bawakan barangnya?"
+                  ]
+               },
+               {
+                  "kalimat": "ドアを開けましょうか",
+                  "kalimat_susun": [
+                     "ドア",
+                     "を",
+                     "開け",
+                     "ましょう",
+                     "か"
+                  ],
+                  "terjemahan": [
+                     "Bolehkah saya membuka pintunya?",
+                     "Mau aku bukakan pintunya?"
+                  ]
+               },
+               {
+                  "kalimat": "手伝いましょうか",
+                  "kalimat_susun": [
+                     "手伝い",
+                     "ましょう",
+                     "か"
+                  ],
+                  "terjemahan": [
+                     "Bolehkah saya membantu?",
+                     "Perlu aku bantu?"
+                  ]
+               }
+            ]
          }
       ]
    }
