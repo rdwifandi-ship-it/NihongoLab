@@ -3527,6 +3527,265 @@
                   ]
                }
             ]
+         },
+         {
+            "id": 66,
+            "pola": "K.Kerja ~て、K.Kerja ~て、K.Kerja",
+            "arti": "melakukan … lalu … lalu …",
+            "penggunaan": "Digunakan untuk menghubungkan beberapa kegiatan yang dilakukan secara berurutan dalam satu kalimat. Kata kerja pertama dan kedua diubah ke bentuk て, sedangkan kata kerja terakhir tetap dalam bentuk biasa (misalnya ます).",
+            "catatan": "Menunjukkan urutan kegiatan yang dilakukan oleh subjek yang sama. Biasanya digunakan untuk menjelaskan aktivitas sehari-hari atau langkah-langkah kegiatan. Struktur umum: K.Kerja(て)、K.Kerja(て)、K.Kerja.",
+            "contoh": [
+               {
+                  "kalimat": "朝ごはんを食べて、学校へ行きます",
+                  "kalimat_susun": [
+                     "朝",
+                     "ごはん",
+                     "を",
+                     "食べて",
+                     "、",
+                     "学校",
+                     "へ",
+                     "行きます"
+                  ],
+                  "terjemahan": [
+                     "Makan sarapan lalu pergi ke sekolah",
+                     "Sarapan lalu pergi ke sekolah"
+                  ]
+               },
+               {
+                  "kalimat": "家へ帰って、宿題をして、寝ます",
+                  "kalimat_susun": [
+                     "家",
+                     "へ",
+                     "帰って",
+                     "、",
+                     "宿題",
+                     "を",
+                     "して",
+                     "、",
+                     "寝ます"
+                  ],
+                  "terjemahan": [
+                     "Pulang ke rumah, mengerjakan PR, lalu tidur",
+                     "Pulang, kerjakan PR, lalu tidur"
+                  ]
+               },
+               {
+                  "kalimat": "スーパーへ行って、パンを買って、食べます",
+                  "kalimat_susun": [
+                     "スーパー",
+                     "へ",
+                     "行って",
+                     "、",
+                     "パン",
+                     "を",
+                     "買って",
+                     "、",
+                     "食べます"
+                  ],
+                  "terjemahan": [
+                     "Pergi ke supermarket, membeli roti, lalu makan",
+                     "Pergi ke supermarket, beli roti, lalu makan"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 67,
+            "pola": "K.Sifat い (い → くて)",
+            "arti": "… dan … / karena …",
+            "penggunaan": "Digunakan untuk menghubungkan dua kata sifat い dalam satu kalimat atau untuk menyatakan alasan. Cara membuatnya adalah dengan mengubah akhiran い menjadi くて.",
+            "catatan": "Bentuk 〜くて dapat digunakan untuk menyambung sifat dengan sifat lain atau dengan kalimat berikutnya. Struktur umum: K.Sifatい(〜くて)、K.Sifat / Kalimat.",
+            "contoh": [
+               {
+                  "kalimat": "この本は面白くて安いです",
+                  "kalimat_susun": [
+                     "この",
+                     "本",
+                     "は",
+                     "面白くて",
+                     "安いです"
+                  ],
+                  "terjemahan": [
+                     "Buku ini menarik dan murah",
+                     "Buku ini seru dan murah"
+                  ]
+               },
+               {
+                  "kalimat": "この料理は辛くておいしいです",
+                  "kalimat_susun": [
+                     "この",
+                     "料理",
+                     "は",
+                     "辛くて",
+                     "おいしい",
+                     "です"
+                  ],
+                  "terjemahan": [
+                     "Masakan ini pedas dan enak",
+                     "Makanan ini pedas dan lezat"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 68,
+            "pola": "K.Sifat な (な → で)",
+            "arti": "… dan … / karena …",
+            "penggunaan": "Digunakan untuk menghubungkan dua kata sifat な dalam satu kalimat atau untuk menyatakan alasan. Cara membuatnya adalah dengan mengganti な menjadi で.",
+            "catatan": "Bentuk 〜で digunakan untuk menyambung sifat dengan sifat lain atau dengan kalimat berikutnya. Struktur umum: K.Sifatな(〜で)、K.Sifat / Kalimat.",
+            "contoh": [
+               {
+                  "kalimat": "この町は静かできれいです",
+                  "kalimat_susun": [
+                     "この",
+                     "町",
+                     "は",
+                     "静か",
+                     "で",
+                     "きれい",
+                     "です"
+                  ],
+                  "terjemahan": [
+                     "Kota ini tenang dan bersih",
+                     "Kota ini sepi dan bersih"
+                  ]
+               },
+               {
+                  "kalimat": "彼は親切で有名です",
+                  "kalimat_susun": [
+                     "彼",
+                     "は",
+                     "親切",
+                     "で",
+                     "有名",
+                     "です"
+                  ],
+                  "terjemahan": [
+                     "Dia baik hati dan terkenal",
+                     "Dia ramah dan terkenal"
+                  ]
+               },
+               {
+                  "kalimat": "この公園は静かで広いです",
+                  "kalimat_susun": [
+                     "この",
+                     "公園",
+                     "は",
+                     "静か",
+                     "で",
+                     "広い",
+                     "です"
+                  ],
+                  "terjemahan": [
+                     "Taman ini tenang dan luas",
+                     "Taman ini sepi dan luas"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 69,
+            "pola": "K.Benda + で (penghubung)",
+            "arti": "… dan … / karena … (penghubung kata benda)",
+            "penggunaan": "Digunakan untuk menghubungkan dua kata benda dalam satu kalimat atau untuk menyatakan alasan yang berasal dari kata benda. Bentuk ini menggunakan で sebagai penghubung.",
+            "catatan": "Mirip dengan fungsi 〜くて (K.Sifatい) dan 〜で (K.Sifatな) untuk menghubungkan kalimat. Kata benda pertama dihubungkan dengan で, lalu diikuti keterangan atau kalimat berikutnya. Struktur umum: K.Benda1 で、K.Benda2 / Kalimat.",
+            "contoh": [
+               {
+                  "kalimat": "私は学生で、妹は高校生です",
+                  "kalimat_susun": [
+                     "私",
+                     "は",
+                     "学生",
+                     "で",
+                     "、",
+                     "妹",
+                     "は",
+                     "高校生",
+                     "です"
+                  ],
+                  "terjemahan": [
+                     "Saya seorang pelajar dan adik perempuan saya siswa SMA",
+                     "Aku pelajar dan adikku anak SMA"
+                  ]
+               },
+               {
+                  "kalimat": "彼は日本人で、先生です",
+                  "kalimat_susun": [
+                     "彼",
+                     "は",
+                     "日本",
+                     "人",
+                     "で",
+                     "、",
+                     "先生",
+                     "です"
+                  ],
+                  "terjemahan": [
+                     "Dia orang Jepang dan seorang guru",
+                     "Dia orang Jepang dan guru"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 70,
+            "pola": "K.Kerja1 ~て から、K.Kerja2",
+            "arti": "setelah … lalu …",
+            "penggunaan": "Digunakan untuk menyatakan suatu kegiatan yang dilakukan terlebih dahulu, kemudian baru melakukan kegiatan berikutnya. Kata kerja pertama diubah ke bentuk て, lalu ditambahkan から sebelum kegiatan kedua.",
+            "catatan": "Menunjukkan urutan kegiatan yang jelas. Kegiatan kedua dilakukan setelah kegiatan pertama selesai. Struktur umum: K.Kerja1(て) から、K.Kerja2.",
+            "contoh": [
+               {
+                  "kalimat": "ご飯を食べてから、勉強します",
+                  "kalimat_susun": [
+                     "ご飯",
+                     "を",
+                     "食べて",
+                     "から",
+                     "、",
+                     "勉強",
+                     "します"
+                  ],
+                  "terjemahan": [
+                     "Setelah makan, lalu belajar",
+                     "Habis makan lalu belajar"
+                  ]
+               },
+               {
+                  "kalimat": "シャワーを浴びてから、寝ます",
+                  "kalimat_susun": [
+                     "シャワー",
+                     "を",
+                     "浴びて",
+                     "から",
+                     "、",
+                     "寝ます"
+                  ],
+                  "terjemahan": [
+                     "Setelah mandi, lalu tidur",
+                     "Habis mandi lalu tidur"
+                  ]
+               },
+               {
+                  "kalimat": "日本へ行ってから、日本語を勉強します",
+                  "kalimat_susun": [
+                     "日本",
+                     "へ",
+                     "行って",
+                     "から",
+                     "、",
+                     "日本",
+                     "語",
+                     "を",
+                     "勉強",
+                     "します"
+                  ],
+                  "terjemahan": [
+                     "Setelah pergi ke Jepang, lalu belajar bahasa Jepang",
+                     "Setelah ke Jepang baru belajar bahasa Jepang"
+                  ]
+               }
+            ]
          }
       ]
    }
