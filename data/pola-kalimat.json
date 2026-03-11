@@ -3786,6 +3786,555 @@
                   ]
                }
             ]
+         },
+         {
+            "id": 71,
+            "pola": "K.Benda1 は K.Benda2 が K.Sifat です",
+            "arti": "… memiliki … yang … / … itu …nya …",
+            "penggunaan": "Digunakan untuk menyatakan sifat atau karakteristik dari bagian atau hal yang dimiliki oleh subjek. Pada pola ini は menunjukkan topik, sedangkan が menandai bagian atau hal yang memiliki sifat tersebut.",
+            "catatan": "K.Benda1 = topik utama. K.Benda2 = bagian / hal yang dimiliki oleh K.Benda1. が digunakan untuk menandai bagian yang memiliki sifat. Struktur umum: K.Benda1 は K.Benda2 が K.Sifat です.",
+            "contoh": [
+               {
+                  "kalimat": "私は目が大きいです",
+                  "kalimat_susun": [
+                     "私",
+                     "は",
+                     "目",
+                     "が",
+                     "大きい",
+                     "です"
+                  ],
+                  "terjemahan": [
+                     "Saya memiliki mata yang besar",
+                     "Mataku besar"
+                  ]
+               },
+               {
+                  "kalimat": "この町は人が多いです",
+                  "kalimat_susun": [
+                     "この",
+                     "町",
+                     "は",
+                     "人",
+                     "が",
+                     "多い",
+                     "です"
+                  ],
+                  "terjemahan": [
+                     "Kota ini memiliki banyak orang",
+                     "Kota ini ramai"
+                  ]
+               },
+               {
+                  "kalimat": "日本は食べ物がおいしいです",
+                  "kalimat_susun": [
+                     "日本",
+                     "は",
+                     "食べ物",
+                     "が",
+                     "おいしい",
+                     "です"
+                  ],
+                  "terjemahan": [
+                     "Jepang memiliki makanan yang enak",
+                     "Makanan di Jepang enak"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 72,
+            "pola": "K.Benda を K.Kerja",
+            "arti": "meninggalkan / keluar dari …",
+            "penggunaan": "Digunakan ketika partikel を menunjukkan tempat yang menjadi titik keberangkatan atau titik awal suatu pergerakan. Biasanya dipakai dengan kata kerja yang menunjukkan bergerak meninggalkan suatu tempat seperti 出ます, 出ます, 卒業します, など.",
+            "catatan": "Dalam pola ini を tidak menunjukkan objek, tetapi tempat yang ditinggalkan. Sering digunakan dengan kata kerja seperti 出ます (keluar), 出発します (berangkat), 卒業します (lulus). Struktur umum: Tempat を K.Kerja.",
+            "contoh": [
+               {
+                  "kalimat": "私は家を出ます",
+                  "kalimat_susun": [
+                     "私",
+                     "は",
+                     "家",
+                     "を",
+                     "出ます"
+                  ],
+                  "terjemahan": [
+                     "Saya keluar dari rumah",
+                     "Aku keluar dari rumah"
+                  ]
+               },
+               {
+                  "kalimat": "毎朝七時に家を出ます",
+                  "kalimat_susun": [
+                     "毎",
+                     "朝",
+                     "七",
+                     "時",
+                     "に",
+                     "家",
+                     "を",
+                     "出ます"
+                  ],
+                  "terjemahan": [
+                     "Setiap pagi jam tujuh saya keluar dari rumah",
+                     "Tiap pagi jam tujuh aku berangkat dari rumah"
+                  ]
+               },
+               {
+                  "kalimat": "彼は大学を卒業しました",
+                  "kalimat_susun": [
+                     "彼",
+                     "は",
+                     "大学",
+                     "を",
+                     "卒業",
+                     "しました"
+                  ],
+                  "terjemahan": [
+                     "Dia lulus dari universitas",
+                     "Dia telah lulus dari universitas"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 73,
+            "pola": "どうやって",
+            "arti": "bagaimana / dengan cara apa",
+            "penggunaan": "Digunakan untuk menanyakan cara atau metode melakukan suatu tindakan. Biasanya digunakan bersama kata kerja untuk menanyakan bagaimana suatu kegiatan dilakukan.",
+            "catatan": "Digunakan dalam kalimat tanya.\nSering dipakai untuk menanyakan cara pergi, cara membuat sesuatu, atau metode melakukan sesuatu. Struktur umum: どうやって + K.Kerja か.",
+            "contoh": [
+               {
+                  "kalimat": "学校へどうやって行きますか",
+                  "kalimat_susun": [
+                     "学校",
+                     "へ",
+                     "どうやって",
+                     "行きます",
+                     "か"
+                  ],
+                  "terjemahan": [
+                     "Bagaimana pergi ke sekolah",
+                     "Pergi ke sekolah bagaimana"
+                  ]
+               },
+               {
+                  "kalimat": "この料理はどうやって作りますか",
+                  "kalimat_susun": [
+                     "この",
+                     "料理",
+                     "は",
+                     "どうやって",
+                     "作ります",
+                     "か"
+                  ],
+                  "terjemahan": [
+                     "Bagaimana membuat masakan ini",
+                     "Masakan ini dibuat bagaimana"
+                  ]
+               },
+               {
+                  "kalimat": "日本語をどうやって勉強しますか",
+                  "kalimat_susun": [
+                     "日本",
+                     "語",
+                     "を",
+                     "どうやって",
+                     "勉強",
+                     "します",
+                     "か"
+                  ],
+                  "terjemahan": [
+                     "Bagaimana belajar bahasa Jepang",
+                     "Belajar bahasa Jepang bagaimana"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 74,
+            "pola": "K.Kerja ~ない + で ください",
+            "arti": "tolong jangan …",
+            "penggunaan": "Digunakan untuk meminta seseorang agar tidak melakukan suatu tindakan dengan cara yang sopan. Pola ini dibuat dengan mengubah kata kerja ke bentuk negatif (ない) lalu menambahkan でください.",
+            "catatan": "Digunakan untuk permintaan larangan secara sopan, tidak sekeras 〜てはいけません. Struktur umum: K.Kerja(ない) + で ください.",
+            "contoh": [
+               {
+                  "kalimat": "ここで写真を撮らないでください",
+                  "kalimat_susun": [
+                     "ここ",
+                     "で",
+                     "写真",
+                     "を",
+                     "撮らない",
+                     "で",
+                     "ください"
+                  ],
+                  "terjemahan": [
+                     "Tolong jangan mengambil foto di sini",
+                     "Mohon jangan foto di sini"
+                  ]
+               },
+               {
+                  "kalimat": "大きい声で話さないでください",
+                  "kalimat_susun": [
+                     "大きい",
+                     "声",
+                     "で",
+                     "話さない",
+                     "で",
+                     "ください"
+                  ],
+                  "terjemahan": [
+                     "Tolong jangan berbicara dengan suara keras",
+                     "Mohon jangan bicara keras"
+                  ]
+               },
+               {
+                  "kalimat": "ここに入らないでください",
+                  "kalimat_susun": [
+                     "ここ",
+                     "に",
+                     "入らない",
+                     "で",
+                     "ください"
+                  ],
+                  "terjemahan": [
+                     "Tolong jangan masuk ke sini",
+                     "Mohon jangan masuk ke ke sini"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 75,
+            "pola": "K.Kerja ~ない → なければ なりません",
+            "arti": "harus …",
+            "penggunaan": "Digunakan untuk menyatakan kewajiban atau keharusan melakukan suatu tindakan. Pola ini dibuat dengan mengubah kata kerja bentuk negatif (ない) menjadi なければ, lalu ditambahkan なりません.",
+            "catatan": "Digunakan untuk menyatakan sesuatu yang harus dilakukan karena aturan, kewajiban, atau keadaan. Bentuk ini berasal dari bentuk negatif (ない) dari kata kerja. Struktur umum: K.Kerja(ない → なければ) + なりません.",
+            "contoh": [
+               {
+                  "kalimat": "毎日日本語を勉強しなければなりません",
+                  "kalimat_susun": [
+                     "毎日",
+                     "日本",
+                     "語",
+                     "を",
+                     "勉強しな",
+                     "ければ",
+                     "なりません"
+                  ],
+                  "terjemahan": [
+                     "Harus belajar bahasa Jepang setiap hari",
+                     "Saya harus belajar bahasa Jepang setiap hari"
+                  ]
+               },
+               {
+                  "kalimat": "明日早く起きなければなりません",
+                  "kalimat_susun": [
+                     "明日",
+                     "早く",
+                     "起きな",
+                     "ければ",
+                     "なりません"
+                  ],
+                  "terjemahan": [
+                     "Besok harus bangun pagi",
+                     "Saya harus bangun pagi besok"
+                  ]
+               },
+               {
+                  "kalimat": "薬を飲まなければなりません",
+                  "kalimat_susun": [
+                     "薬",
+                     "を",
+                     "飲まな",
+                     "ければ",
+                     "なりません"
+                  ],
+                  "terjemahan": [
+                     "Harus minum obat",
+                     "Saya harus minum obat"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 76,
+            "pola": "K.Kerja ~ない → なくても いいです",
+            "arti": "tidak perlu … / tidak harus …",
+            "penggunaan": "Digunakan untuk menyatakan bahwa suatu tindakan tidak wajib dilakukan atau boleh tidak dilakukan. Pola ini dibuat dengan mengubah kata kerja bentuk negatif (ない) menjadi なくて, lalu ditambahkan もいいです.",
+            "catatan": "Menunjukkan bahwa tidak ada kewajiban melakukan tindakan tersebut. Merupakan kebalikan dari pola 〜なければなりません (harus). Struktur umum: K.Kerja(ない → なくて) + もいいです.",
+            "contoh": [
+               {
+                  "kalimat": "明日学校へ行かなくてもいいです",
+                  "kalimat_susun": [
+                     "明日",
+                     "学校",
+                     "へ",
+                     "行かな",
+                     "くて",
+                     "も",
+                     "いい",
+                     "です"
+                  ],
+                  "terjemahan": [
+                     "Besok tidak perlu pergi ke sekolah",
+                     "Besok tidak harus pergi ke sekolah"
+                  ]
+               },
+               {
+                  "kalimat": "今日は勉強しなくてもいいです",
+                  "kalimat_susun": [
+                     "今日",
+                     "は",
+                     "勉強しな",
+                     "くて",
+                     "も",
+                     "いい",
+                     "です"
+                  ],
+                  "terjemahan": [
+                     "Hari ini tidak perlu belajar",
+                     "Hari ini tidak harus belajar"
+                  ]
+               },
+               {
+                  "kalimat": "靴を脱がなくてもいいです",
+                  "kalimat_susun": [
+                     "靴",
+                     "を",
+                     "脱がな",
+                     "くて",
+                     "も",
+                     "いい",
+                     "です"
+                  ],
+                  "terjemahan": [
+                     "Tidak perlu melepas sepatu",
+                     "Tidak harus melepas sepatu"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 77,
+            "pola": "Waktu までに K.Kerja",
+            "arti": "sebelum / paling lambat sampai …",
+            "penggunaan": "Digunakan untuk menyatakan batas waktu suatu tindakan harus sudah selesai dilakukan sebelum waktu yang disebutkan.",
+            "catatan": "までに menunjukkan batas waktu terakhir suatu tindakan harus selesai. Berbeda dengan まで yang menunjukkan durasi, sedangkan までに menekankan deadline. Struktur umum: Waktu + までに + K.Kerja.",
+            "contoh": [
+               {
+                  "kalimat": "九時までに学校へ行きます",
+                  "kalimat_susun": [
+                     "九",
+                     "時",
+                     "まで",
+                     "に",
+                     "学校",
+                     "へ",
+                     "行きます"
+                  ],
+                  "terjemahan": [
+                     "Pergi ke sekolah sebelum jam sembilan",
+                     "Harus sampai sekolah sebelum jam sembilan"
+                  ]
+               },
+               {
+                  "kalimat": "金曜日までに宿題を出します",
+                  "kalimat_susun": [
+                     "金曜日",
+                     "まで",
+                     "に",
+                     "宿題",
+                     "を",
+                     "出します"
+                  ],
+                  "terjemahan": [
+                     "Mengumpulkan PR sebelum hari Jumat",
+                     "PR dikumpulkan paling lambat hari Jumat"
+                  ]
+               },
+               {
+                  "kalimat": "七時までに家へ帰ります",
+                  "kalimat_susun": [
+                     "七",
+                     "時",
+                     "まで",
+                     "に",
+                     "家",
+                     "へ",
+                     "帰ります"
+                  ],
+                  "terjemahan": [
+                     "Pulang ke rumah sebelum jam tujuh",
+                     "Harus pulang sebelum jam tujuh"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 78,
+            "pola": "K.Benda が できます",
+            "arti": "bisa / dapat …",
+            "penggunaan": "Digunakan untuk menyatakan kemampuan melakukan sesuatu. Kata benda yang menunjukkan kegiatan atau kemampuan ditandai dengan partikel が, lalu diikuti kata kerja できます (bisa / dapat).",
+            "catatan": "Biasanya digunakan dengan kata benda yang menunjukkan aktivitas atau keterampilan, seperti スポーツ, 日本語, 料理, dll. Partikel が menandai hal yang bisa dilakukan. Struktur umum:\nK.Benda + が + できます.",
+            "contoh": [
+               {
+                  "kalimat": "私は日本語ができます",
+                  "kalimat_susun": [
+                     "私",
+                     "は",
+                     "日本",
+                     "語",
+                     "が",
+                     "できます"
+                  ],
+                  "terjemahan": [
+                     "Saya bisa bahasa Jepang",
+                     "Aku bisa bahasa Jepang"
+                  ]
+               },
+               {
+                  "kalimat": "田中さんは料理ができます",
+                  "kalimat_susun": [
+                     "田中さん",
+                     "は",
+                     "料理",
+                     "が",
+                     "できます"
+                  ],
+                  "terjemahan": [
+                     "Tanaka bisa memasak",
+                     "Tanaka pandai memasak"
+                  ]
+               },
+               {
+                  "kalimat": "兄はサッカーができます",
+                  "kalimat_susun": [
+                     "兄",
+                     "は",
+                     "サッカー",
+                     "が",
+                     "できます"
+                  ],
+                  "terjemahan": [
+                     "Kakak laki-laki saya bisa bermain sepak bola",
+                     "Kakak saya bisa sepak bola"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 79,
+            "pola": "K.Kerja (kamus) + こと が できます",
+            "arti": "bisa / dapat melakukan …",
+            "penggunaan": "Digunakan untuk menyatakan kemampuan melakukan suatu tindakan. Kata kerja yang digunakan harus dalam bentuk kamus, kemudian diikuti ことができます.",
+            "catatan": "Pola ini digunakan untuk menyatakan kemampuan melakukan suatu aktivitas secara lebih jelas dibandingkan hanya menggunakan kata benda. こと berfungsi mengubah kata kerja menjadi kata benda (nominalisasi). Struktur umum: K.Kerja(kamus) + こと が できます.",
+            "contoh": [
+               {
+                  "kalimat": "私は日本語を話すことができます",
+                  "kalimat_susun": [
+                     "私",
+                     "は",
+                     "日本",
+                     "語",
+                     "を",
+                     "話す",
+                     "こと",
+                     "が",
+                     "できます"
+                  ],
+                  "terjemahan": [
+                     "Saya bisa berbicara bahasa Jepang",
+                     "Aku bisa bicara bahasa Jepang"
+                  ]
+               },
+               {
+                  "kalimat": "彼は泳ぐことができます",
+                  "kalimat_susun": [
+                     "彼",
+                     "は",
+                     "泳ぐ",
+                     "こと",
+                     "が",
+                     "できます"
+                  ],
+                  "terjemahan": [
+                     "Dia bisa berenang"
+                  ]
+               },
+               {
+                  "kalimat": "私は漢字を読むことができます",
+                  "kalimat_susun": [
+                     "私",
+                     "は",
+                     "漢字",
+                     "を",
+                     "読む",
+                     "こと",
+                     "が",
+                     "できます"
+                  ],
+                  "terjemahan": [
+                     "Saya bisa membaca kanji",
+                     "Aku bisa membaca kanji"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 80,
+            "pola": "私 の 趣味 は K.Benda です",
+            "arti": "hobi saya adalah …",
+            "penggunaan": "Digunakan untuk menyatakan hobi atau kegemaran seseorang. Kata 趣味 (しゅみ) berarti hobi, lalu diikuti kata benda yang menunjukkan kegemaran tersebut.",
+            "catatan": "趣味 berarti hobi / kegemaran. Biasanya diikuti kata benda yang menunjukkan aktivitas atau bidang tertentu. Struktur umum: 私 の 趣味 は K.Benda です.",
+            "contoh": [
+               {
+                  "kalimat": "私の趣味はサッカーです",
+                  "kalimat_susun": [
+                     "私",
+                     "の",
+                     "趣味",
+                     "は",
+                     "サッカー",
+                     "です"
+                  ],
+                  "terjemahan": [
+                     "Hobi saya adalah sepak bola",
+                     "Hobiku sepak bola"
+                  ]
+               },
+               {
+                  "kalimat": "私の趣味は音楽です",
+                  "kalimat_susun": [
+                     "私",
+                     "の",
+                     "趣味",
+                     "は",
+                     "音楽",
+                     "です"
+                  ],
+                  "terjemahan": [
+                     "Hobi saya adalah musik",
+                     "Hobiku musik"
+                  ]
+               },
+               {
+                  "kalimat": "私の趣味は映画です",
+                  "kalimat_susun": [
+                     "私",
+                     "の",
+                     "趣味",
+                     "は",
+                     "映画",
+                     "です"
+                  ],
+                  "terjemahan": [
+                     "Hobi saya adalah film",
+                     "Hobiku film"
+                  ]
+               }
+            ]
          }
       ]
    }
