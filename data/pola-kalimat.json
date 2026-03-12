@@ -4883,6 +4883,531 @@
                   ]
                }
             ]
+         },
+         {
+            "id": 91,
+            "pola": "K.Benda に なります",
+            "arti": "menjadi … / berubah menjadi …",
+            "penggunaan": "Digunakan untuk menyatakan perubahan keadaan dari suatu hal menjadi kata benda tertentu. Kata benda diikuti partikel に lalu なります untuk menunjukkan perubahan keadaan.",
+            "catatan": "Digunakan ketika sesuatu berubah menjadi status, profesi, atau keadaan baru. Struktur umum: K.Benda は K.Benda に なります.",
+            "contoh": [
+               {
+                  "kalimat": "弟は医者になりました",
+                  "kalimat_susun": [
+                     "弟",
+                     "は",
+                     "医者",
+                     "に",
+                     "なりました"
+                  ],
+                  "terjemahan": [
+                     "Adik laki-laki menjadi dokter",
+                     "Adik saya menjadi dokter"
+                  ]
+               },
+               {
+                  "kalimat": "来年先生になります",
+                  "kalimat_susun": [
+                     "来年",
+                     "先生",
+                     "に",
+                     "なります"
+                  ],
+                  "terjemahan": [
+                     "Tahun depan menjadi guru",
+                     "Tahun depan saya menjadi guru"
+                  ]
+               },
+               {
+                  "kalimat": "私は二十歳になりました",
+                  "kalimat_susun": [
+                     "私",
+                     "は",
+                     "二十",
+                     "歳",
+                     "に",
+                     "なりました"
+                  ],
+                  "terjemahan": [
+                     "Saya menjadi 20 tahun",
+                     "Saya berusia 20 tahun"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 92,
+            "pola": "～けど",
+            "arti": "tetapi / tapi / namun",
+            "penggunaan": "Digunakan untuk menghubungkan dua kalimat yang memiliki hubungan berlawanan atau kontras. Pola ini mirip dengan が, tetapi lebih sering digunakan dalam percakapan sehari-hari.",
+            "catatan": "Digunakan setelah kata kerja, kata sifat い, kata sifat な, dan kata benda. Untuk kata sifat な dan kata benda biasanya ditambah だ sebelum けど. Sering digunakan dalam percakapan untuk memberi nuansa lebih lembut dibanding が.",
+            "contoh": [
+               {
+                  "kalimat": "この店は安いけど、おいしいです",
+                  "kalimat_susun": [
+                     "この",
+                     "店",
+                     "は",
+                     "安い",
+                     "けど",
+                     "、",
+                     "おいしい",
+                     "です"
+                  ],
+                  "terjemahan": [
+                     "Toko ini murah tapi enak",
+                     "Tempat ini murah tetapi makanannya enak"
+                  ]
+               },
+               {
+                  "kalimat": "今日は忙しいけど、行きます",
+                  "kalimat_susun": [
+                     "今日",
+                     "は",
+                     "忙しい",
+                     "けど",
+                     "、",
+                     "行きます"
+                  ],
+                  "terjemahan": [
+                     "Hari ini sibuk tapi pergi",
+                     "Hari ini saya sibuk tetapi tetap pergi"
+                  ]
+               },
+               {
+                  "kalimat": "この町は静かだけど、便利です",
+                  "kalimat_susun": [
+                     "この",
+                     "町",
+                     "は",
+                     "静か",
+                     "だ",
+                     "けど",
+                     "、",
+                     "便利",
+                     "です"
+                  ],
+                  "terjemahan": [
+                     "Kota ini tenang tapi praktis",
+                     "Kota ini tenang tetapi nyaman"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 93,
+            "pola": "K.Kerja (Kamus) と 思います",
+            "arti": "saya pikir … / saya rasa …",
+            "penggunaan": "Digunakan untuk menyatakan pendapat atau pikiran seseorang tentang suatu tindakan atau kejadian. Kata kerja menggunakan bentuk kamus, lalu diikuti と 思います.",
+            "catatan": "Digunakan untuk menyatakan pendapat pribadi.\nKata kerja menggunakan bentuk kamus sebelum と. Struktur umum: Kalimat + と 思います.",
+            "contoh": [
+               {
+                  "kalimat": "彼は来ると思います",
+                  "kalimat_susun": [
+                     "彼",
+                     "は",
+                     "来る",
+                     "と",
+                     "思います"
+                  ],
+                  "terjemahan": [
+                     "Saya pikir dia akan datang",
+                     "Saya rasa dia akan datang"
+                  ]
+               },
+               {
+                  "kalimat": "明日雨が降ると思います",
+                  "kalimat_susun": [
+                     "明日",
+                     "雨",
+                     "が",
+                     "降る",
+                     "と",
+                     "思います"
+                  ],
+                  "terjemahan": [
+                     "Saya pikir besok akan hujan",
+                     "Saya rasa besok hujan"
+                  ]
+               },
+               {
+                  "kalimat": "彼は日本へ行くと思います",
+                  "kalimat_susun": [
+                     "彼",
+                     "は",
+                     "日本",
+                     "へ",
+                     "行く",
+                     "と",
+                     "思います"
+                  ],
+                  "terjemahan": [
+                     "Saya pikir dia akan pergi ke Jepang",
+                     "Saya rasa dia pergi ke Jepang"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 94,
+            "pola": "Kalimat (bentuk kamus) と 言います",
+            "arti": "mengatakan bahwa … / berkata bahwa …",
+            "penggunaan": "Digunakan untuk menyampaikan perkataan atau informasi yang dikatakan seseorang. Kalimat menggunakan bentuk biasa (bentuk kamus) lalu diikuti と 言います.",
+            "catatan": "Digunakan untuk melaporkan ucapan seseorang. Kata kerja dalam kalimat biasanya menggunakan bentuk biasa (bentuk kamus). Struktur umum: [Orang] は 「Kalimat」 と 言います atau [Orang] は Kalimat と 言います.",
+            "contoh": [
+               {
+                  "kalimat": "先生は明日テストがあると言いました",
+                  "kalimat_susun": [
+                     "先生",
+                     "は",
+                     "明日",
+                     "テスト",
+                     "が",
+                     "ある",
+                     "と",
+                     "言いました"
+                  ],
+                  "terjemahan": [
+                     "Guru mengatakan bahwa besok ada ujian",
+                     "Guru berkata besok ada tes"
+                  ]
+               },
+               {
+                  "kalimat": "彼は日本へ行くと言いました",
+                  "kalimat_susun": [
+                     "彼",
+                     "は",
+                     "日本",
+                     "へ",
+                     "行く",
+                     "と",
+                     "言いました"
+                  ],
+                  "terjemahan": [
+                     "Dia mengatakan bahwa dia akan pergi ke Jepang",
+                     "Dia berkata akan pergi ke Jepang"
+                  ]
+               },
+               {
+                  "kalimat": "友達は来ると言いました",
+                  "kalimat_susun": [
+                     "友達",
+                     "は",
+                     "来る",
+                     "と",
+                     "言いました"
+                  ],
+                  "terjemahan": [
+                     "Teman mengatakan bahwa dia akan datang",
+                     "Teman berkata akan datang"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 95,
+            "pola": "～でしょう",
+            "arti": "mungkin … / sepertinya … / kemungkinan …",
+            "penggunaan": "Digunakan untuk menyatakan dugaan atau perkiraan pembicara tentang suatu hal dengan tingkat keyakinan yang cukup tinggi.",
+            "catatan": "Digunakan setelah kata kerja, kata sifat い, kata sifat な, dan kata benda. Untuk kata sifat な dan kata benda biasanya ditambah だ sebelum でしょう dalam bentuk biasa. Struktur umum: Kalimat + でしょう.",
+            "contoh": [
+               {
+                  "kalimat": "明日雨が降るでしょう",
+                  "kalimat_susun": [
+                     "明日",
+                     "雨",
+                     "が",
+                     "降る",
+                     "でしょう"
+                  ],
+                  "terjemahan": [
+                     "Besok mungkin akan hujan",
+                     "Sepertinya besok hujan"
+                  ]
+               },
+               {
+                  "kalimat": "彼は来るでしょう",
+                  "kalimat_susun": [
+                     "彼",
+                     "は",
+                     "来る",
+                     "でしょう"
+                  ],
+                  "terjemahan": [
+                     "Dia mungkin akan datang",
+                     "Sepertinya dia datang"
+                  ]
+               },
+               {
+                  "kalimat": "この町は静かでしょう",
+                  "kalimat_susun": [
+                     "この",
+                     "町",
+                     "は",
+                     "静か",
+                     "でしょう"
+                  ],
+                  "terjemahan": [
+                     "Kota ini mungkin tenang",
+                     "Sepertinya kota ini tenang"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 96,
+            "pola": "Tempat で K.Benda が あります",
+            "arti": "di (tempat) ada / di (tempat) berlangsung …",
+            "penggunaan": "Digunakan untuk menyatakan bahwa suatu kejadian, acara, atau peristiwa berlangsung di suatu tempat. Partikel で menunjukkan tempat terjadinya kejadian, dan あります digunakan untuk menyatakan adanya peristiwa atau kegiatan.",
+            "catatan": "Biasanya K.Benda yang digunakan adalah kata benda yang menunjukkan acara atau kejadian, seperti: 会議 (rapat), 試験 (ujian), パーティー (pesta), お祭り (festival). Partikel で menunjukkan tempat berlangsungnya kejadian. Struktur umum: Tempat で K.Benda が あります.",
+            "contoh": [
+               {
+                  "kalimat": "学校で試験があります",
+                  "kalimat_susun": [
+                     "学校",
+                     "で",
+                     "試験",
+                     "が",
+                     "あります"
+                  ],
+                  "terjemahan": [
+                     "Di sekolah ada ujian",
+                     "Di sekolah ada tes"
+                  ]
+               },
+               {
+                  "kalimat": "公園でお祭りがあります",
+                  "kalimat_susun": [
+                     "公園",
+                     "で",
+                     "お祭り",
+                     "が",
+                     "あります"
+                  ],
+                  "terjemahan": [
+                     "Di taman ada festival",
+                     "Di taman ada acara festival"
+                  ]
+               },
+               {
+                  "kalimat": "会社で会議があります",
+                  "kalimat_susun": [
+                     "会社",
+                     "で",
+                     "会議",
+                     "が",
+                     "あります"
+                  ],
+                  "terjemahan": [
+                     "Di perusahaan ada rapat",
+                     "Di kantor ada rapat"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 97,
+            "pola": "K.Benda でも K.Kerja",
+            "arti": "bahkan … pun … / … saja juga …",
+            "penggunaan": "Digunakan untuk menyatakan bahwa bahkan sesuatu yang dianggap kecil, sederhana, atau tidak terduga pun dilakukan atau terjadi. Partikel でも memberi nuansa penekanan “bahkan” atau “setidaknya”.",
+            "catatan": "でも dapat berarti “bahkan” atau “meskipun hanya”. Digunakan untuk menunjukkan bahwa hal yang sederhana saja tetap dilakukan. Struktur umum: K.Benda でも K.Kerja.",
+            "contoh": [
+               {
+                  "kalimat": "水でも飲みます",
+                  "kalimat_susun": [
+                     "水",
+                     "でも",
+                     "飲みます"
+                  ],
+                  "terjemahan": [
+                     "Minum air saja",
+                     "Saya minum air saja dulu"
+                  ]
+               },
+               {
+                  "kalimat": "日本語の本でも読みます",
+                  "kalimat_susun": [
+                     "日本",
+                     "語",
+                     "の",
+                     "本",
+                     "でも",
+                     "読みます"
+                  ],
+                  "terjemahan": [
+                     "Saya membaca buku bahasa Jepang saja",
+                     "Saya membaca buku Jepang saja dulu"
+                  ]
+               },
+               {
+                  "kalimat": "コーヒーでも飲みましょう",
+                  "kalimat_susun": [
+                     "コーヒー",
+                     "でも",
+                     "飲みましょう"
+                  ],
+                  "terjemahan": [
+                     "Mari minum kopi saja",
+                     "Ayo minum kopi dulu"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 98,
+            "pola": "K.Kerja (ない) ないと",
+            "arti": "kalau tidak … maka … / harus …",
+            "penggunaan": "Digunakan untuk menyatakan bahwa jika suatu tindakan tidak dilakukan maka akan ada akibat atau masalah. Oleh karena itu pola ini sering memberi nuansa kewajiban atau sesuatu yang harus dilakukan.",
+            "catatan": "Dibuat dari bentuk negatif (ない) lalu ditambah と. Sering dipakai dalam percakapan untuk menyatakan keharusan secara informal. Struktur umum: K.Kerja (ない) + と いけません / 困ります / だめです. Atau kadang dipakai sendiri dalam percakapan.",
+            "contoh": [
+               {
+                  "kalimat": "勉強しないといけません",
+                  "kalimat_susun": [
+                     "勉強",
+                     "しない",
+                     "と",
+                     "いけません"
+                  ],
+                  "terjemahan": [
+                     "Kalau tidak belajar tidak boleh",
+                     "Saya harus belajar"
+                  ]
+               },
+               {
+                  "kalimat": "早く行かないとだめです",
+                  "kalimat_susun": [
+                     "早く",
+                     "行かない",
+                     "と",
+                     "だめです"
+                  ],
+                  "terjemahan": [
+                     "Kalau tidak pergi cepat tidak boleh",
+                     "Harus pergi cepat"
+                  ]
+               },
+               {
+                  "kalimat": "宿題をしないと困ります",
+                  "kalimat_susun": [
+                     "宿題",
+                     "を",
+                     "しない",
+                     "と",
+                     "困ります"
+                  ],
+                  "terjemahan": [
+                     "Kalau tidak mengerjakan PR akan bermasalah",
+                     "Harus mengerjakan PR"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 99,
+            "pola": "Anak Kalimat",
+            "arti": "klausa / kalimat yang menjelaskan kata benda",
+            "penggunaan": "Digunakan untuk menjelaskan atau menerangkan kata benda dengan menggunakan kalimat sebelum kata benda tersebut. Dalam bahasa Jepang, anak kalimat diletakkan sebelum kata benda yang dijelaskan.",
+            "catatan": "Pola umum: Kalimat + K.Benda\nKata kerja yang digunakan biasanya bentuk biasa (kamus / た / ない). Dalam anak kalimat tidak memakai partikel は, biasanya memakai が. Anak kalimat berfungsi seperti kata sifat yang menerangkan kata benda.",
+            "contoh": [
+               {
+                  "kalimat": "私が昨日買った本です",
+                  "kalimat_susun": [
+                     "私",
+                     "が",
+                     "昨日",
+                     "買った",
+                     "本",
+                     "です"
+                  ],
+                  "terjemahan": [
+                     "Ini buku yang saya beli kemarin",
+                     "Ini adalah buku yang saya beli kemarin"
+                  ]
+               },
+               {
+                  "kalimat": "彼が住んでいる町です",
+                  "kalimat_susun": [
+                     "彼",
+                     "が",
+                     "住んで",
+                     "いる",
+                     "町",
+                     "です"
+                  ],
+                  "terjemahan": [
+                     "Ini kota tempat dia tinggal",
+                     "Ini adalah kota yang dia tinggali"
+                  ]
+               },
+               {
+                  "kalimat": "先生が書いた手紙です",
+                  "kalimat_susun": [
+                     "先生",
+                     "が",
+                     "書いた",
+                     "手紙",
+                     "です"
+                  ],
+                  "terjemahan": [
+                     "Ini surat yang ditulis guru",
+                     "Ini adalah surat yang guru tulis"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 100,
+            "pola": "K.Kerja (Kamus) 時間 / 約束 / 用事",
+            "arti": "waktu untuk … / janji untuk … / urusan untuk …",
+            "penggunaan": "Digunakan untuk menyatakan waktu, janji, atau urusan yang berkaitan dengan suatu kegiatan. Kata kerja menggunakan bentuk kamus lalu diikuti 時間, 約束, atau 用事.",
+            "catatan": "時間 → waktu yang digunakan untuk melakukan suatu kegiatan. 約束 → janji untuk melakukan suatu kegiatan dengan seseorang. 用事 → urusan atau keperluan yang harus dilakukan. Struktur umum: K.Kerja (kamus) + 時間 / 約束 / 用事.",
+            "contoh": [
+               {
+                  "kalimat": "本を読む時間があります",
+                  "kalimat_susun": [
+                     "本",
+                     "を",
+                     "読む",
+                     "時間",
+                     "が",
+                     "あります"
+                  ],
+                  "terjemahan": [
+                     "Ada waktu untuk membaca buku",
+                     "Saya punya waktu membaca buku"
+                  ]
+               },
+               {
+                  "kalimat": "友達に会う約束があります",
+                  "kalimat_susun": [
+                     "友達",
+                     "に",
+                     "会う",
+                     "約束",
+                     "が",
+                     "あります"
+                  ],
+                  "terjemahan": [
+                     "Ada janji bertemu teman",
+                     "Saya punya janji bertemu teman"
+                  ]
+               },
+               {
+                  "kalimat": "銀行へ行く用事があります",
+                  "kalimat_susun": [
+                     "銀行",
+                     "へ",
+                     "行く",
+                     "用事",
+                     "が",
+                     "あります"
+                  ],
+                  "terjemahan": [
+                     "Ada urusan pergi ke bank",
+                     "Saya punya urusan ke ban"
+                  ]
+               }
+            ]
          }
       ]
    }
