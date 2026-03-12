@@ -4335,6 +4335,554 @@
                   ]
                }
             ]
+         },
+         {
+            "id": 81,
+            "pola": "私 の 趣味 は K.Kerja (kamus) こと です",
+            "arti": "hobi saya adalah … (melakukan …)",
+            "penggunaan": "Digunakan untuk menyatakan hobi berupa aktivitas. Kata kerja yang digunakan harus dalam bentuk kamus, lalu ditempatkan sebelum です untuk menjelaskan aktivitas yang menjadi hobi.",
+            "catatan": "Digunakan ketika hobi berupa kegiatan atau tindakan. Kata kerja digunakan dalam bentuk kamus (辞書形). Struktur umum: 私 の 趣味 は K.Kerja(kamus) こと です. Dalam bahasa Jepang, biasanya ditambahkan こと agar kata kerja dapat berfungsi sebagai kata benda dalam kalimat.",
+            "contoh": [
+               {
+                  "kalimat": "私の趣味は本を読むことです",
+                  "kalimat_susun": [
+                     "私",
+                     "の",
+                     "趣味",
+                     "は",
+                     "本",
+                     "を",
+                     "読む",
+                     "こと",
+                     "です"
+                  ],
+                  "terjemahan": [
+                     "Hobi saya adalah membaca buku",
+                     "Hobiku membaca buku"
+                  ]
+               },
+               {
+                  "kalimat": "私の趣味は音楽を聞くことです",
+                  "kalimat_susun": [
+                     "私",
+                     "の",
+                     "趣味",
+                     "は",
+                     "音楽",
+                     "を",
+                     "聞く",
+                     "こと",
+                     "です"
+                  ],
+                  "terjemahan": [
+                     "Hobi saya adalah mendengarkan musik",
+                     "Hobiku mendengarkan musik"
+                  ]
+               },
+               {
+                  "kalimat": "私の趣味は映画を見ることです",
+                  "kalimat_susun": [
+                     "私",
+                     "の",
+                     "趣味",
+                     "は",
+                     "映画",
+                     "を",
+                     "見る",
+                     "こと",
+                     "です"
+                  ],
+                  "terjemahan": [
+                     "Hobi saya adalah menonton film",
+                     "Hobiku menonton film"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 82,
+            "pola": "K.Kerja1 (kamus) まえに K.Kerja2",
+            "arti": "sebelum … lalu …",
+            "penggunaan": "Digunakan untuk menyatakan bahwa kegiatan kedua dilakukan sebelum kegiatan pertama terjadi. Kata kerja pertama harus dalam bentuk kamus, kemudian diikuti まえに.",
+            "catatan": "まえに berarti sebelum. Kata kerja sebelum まえに harus dalam bentuk kamus. Struktur umum: K.Kerja1(kamus) + まえに、K.Kerja2.",
+            "contoh": [
+               {
+                  "kalimat": "寝るまえに本を読みます",
+                  "kalimat_susun": [
+                     "寝る",
+                     "まえ",
+                     "に",
+                     "本",
+                     "を",
+                     "読みます"
+                  ],
+                  "terjemahan": [
+                     "Sebelum tidur membaca buku",
+                     "Sebelum tidur aku membaca buku"
+                  ]
+               },
+               {
+                  "kalimat": "ご飯を食べるまえに手を洗います",
+                  "kalimat_susun": [
+                     "ご飯",
+                     "を",
+                     "食べる",
+                     "まえ",
+                     "に",
+                     "手",
+                     "を",
+                     "洗います"
+                  ],
+                  "terjemahan": [
+                     "Sebelum makan mencuci tangan",
+                     "Sebelum makan aku mencuci tangan"
+                  ]
+               },
+               {
+                  "kalimat": "日本へ行くまえに日本語を勉強します",
+                  "kalimat_susun": [
+                     "日本",
+                     "へ",
+                     "行く",
+                     "まえ",
+                     "に",
+                     "日本",
+                     "語",
+                     "を",
+                     "勉強",
+                     "します"
+                  ],
+                  "terjemahan": [
+                     "Sebelum pergi ke Jepang belajar bahasa Jepang",
+                     "Sebelum ke Jepang aku belajar bahasa Jepang"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 83,
+            "pola": "K.Benda の まえ に K.Kerja",
+            "arti": "sebelum …",
+            "penggunaan": "Digunakan untuk menyatakan suatu kegiatan dilakukan sebelum suatu waktu atau peristiwa yang dinyatakan dengan kata benda. Kata benda dihubungkan dengan の sebelum まえに.",
+            "catatan": "Digunakan jika sebelum kata まえ adalah kata benda (waktu atau peristiwa). Jika menggunakan kata kerja, bentuknya menjadi K.Kerja(kamus) + まえに. Struktur umum: K.Benda + の + まえに + K.Kerja.",
+            "contoh": [
+               {
+                  "kalimat": "食事のまえに手を洗います",
+                  "kalimat_susun": [
+                     "食事",
+                     "の",
+                     "まえ",
+                     "に",
+                     "手",
+                     "を",
+                     "洗います"
+                  ],
+                  "terjemahan": [
+                     "Mencuci tangan sebelum makan",
+                     "Cuci tangan sebelum makan"
+                  ]
+               },
+               {
+                  "kalimat": "授業のまえに日本語を勉強します",
+                  "kalimat_susun": [
+                     "授業",
+                     "の",
+                     "まえ",
+                     "に",
+                     "日本",
+                     "語",
+                     "を",
+                     "勉強",
+                     "します"
+                  ],
+                  "terjemahan": [
+                     "Belajar bahasa Jepang sebelum pelajaran",
+                     "Belajar Jepang sebelum kelas"
+                  ]
+               },
+               {
+                  "kalimat": "会議のまえに資料を読みます",
+                  "kalimat_susun": [
+                     "会議",
+                     "の",
+                     "まえ",
+                     "に",
+                     "資料",
+                     "を",
+                     "読みます"
+                  ],
+                  "terjemahan": [
+                     "Membaca dokumen sebelum rapat",
+                     "Baca dokumen sebelum rapat"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 84,
+            "pola": "Jangka Waktu まえ に K.Kerja",
+            "arti": "… yang lalu / … sebelum sekarang",
+            "penggunaan": "Digunakan untuk menyatakan suatu tindakan yang terjadi beberapa waktu yang lalu dari sekarang. Biasanya menggunakan jangka waktu seperti １時間, ２日, ３年, dll sebelum まえに.",
+            "catatan": "Digunakan untuk menunjukkan waktu di masa lalu relatif terhadap sekarang. Berbeda dengan 〜のまえに yang berarti sebelum suatu peristiwa. Struktur umum: Jangka Waktu + まえに + K.Kerja.",
+            "contoh": [
+               {
+                  "kalimat": "三時間まえに家へ帰りました",
+                  "kalimat_susun": [
+                     "三",
+                     "時間",
+                     "まえ",
+                     "に",
+                     "家",
+                     "へ",
+                     "帰りました"
+                  ],
+                  "terjemahan": [
+                     "Pulang ke rumah tiga jam yang lalu",
+                     "Aku pulang tiga jam yang lalu"
+                  ]
+               },
+               {
+                  "kalimat": "二日前に日本語を勉強しました",
+                  "kalimat_susun": [
+                     "二日前",
+                     "に",
+                     "日本",
+                     "語",
+                     "を",
+                     "勉強",
+                     "しました"
+                  ],
+                  "terjemahan": [
+                     "Belajar bahasa Jepang dua hari yang lalu",
+                     "Aku belajar bahasa Jepang dua hari lalu"
+                  ]
+               },
+               {
+                  "kalimat": "一年前に日本へ行きました",
+                  "kalimat_susun": [
+                     "一年前",
+                     "に",
+                     "日本",
+                     "へ",
+                     "行きました"
+                  ],
+                  "terjemahan": [
+                     "Pergi ke Jepang satu tahun yang lalu",
+                     "Aku pergi ke Jepang setahun yang lalu"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 85,
+            "pola": "なかなか",
+            "arti": "tidak mudah / cukup / sangat (tergantung bentuk kalimat)",
+            "penggunaan": "Digunakan bersama kata kerja bentuk negatif untuk menyatakan bahwa sesuatu tidak mudah terjadi atau sulit dilakukan. Selain itu, dalam kalimat positif dapat berarti cukup / lumayan untuk menyatakan sesuatu lebih baik dari yang diperkirakan.",
+            "catatan": "なかなか + K.Kerja (ない) → sulit / tidak mudah. なかなか + K.Sifat / kalimat positif → cukup / lumayan / sangat. Struktur umum: なかなか + K.Kerja(ない). なかなか + K.Sifat.",
+            "contoh": [
+               {
+                  "kalimat": "日本語はなかなか覚えません",
+                  "kalimat_susun": [
+                     "日本",
+                     "語",
+                     "は",
+                     "なかなか",
+                     "覚えません"
+                  ],
+                  "terjemahan": [
+                     "Bahasa Jepang tidak mudah diingat",
+                     "Bahasa Jepang sulit diingat"
+                  ]
+               },
+               {
+                  "kalimat": "彼はなかなか来ません",
+                  "kalimat_susun": [
+                     "彼",
+                     "は",
+                     "なかなか",
+                     "来ません"
+                  ],
+                  "terjemahan": [
+                     "Dia tidak kunjung datang",
+                     "Dia lama sekali tidak datang"
+                  ]
+               },
+               {
+                  "kalimat": "この料理はなかなかおいしいです",
+                  "kalimat_susun": [
+                     "この",
+                     "料理",
+                     "は",
+                     "なかなか",
+                     "おいしい",
+                     "です"
+                  ],
+                  "terjemahan": [
+                     "Masakan ini cukup enak",
+                     "Masakan ini lumayan enak"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 86,
+            "pola": "ぜひ",
+            "arti": "pasti / tentu saja / sangat ingin",
+            "penggunaan": "Digunakan untuk menyatakan keinginan kuat atau harapan agar sesuatu dilakukan. Biasanya digunakan bersama ungkapan permintaan, ajakan, atau keinginan seperti ～てください, ～ましょう, ～たいです.",
+            "catatan": "Menunjukkan keinginan yang kuat atau ajakan dengan sungguh-sungguh. Sering dipakai ketika mengundang atau menganjurkan seseorang melakukan sesuatu. Struktur umum: ぜひ + Kalimat.",
+            "contoh": [
+               {
+                  "kalimat": "ぜひ来てください",
+                  "kalimat_susun": [
+                     "ぜひ",
+                     "来て",
+                     "ください"
+                  ],
+                  "terjemahan": [
+                     "Tolong pasti datang",
+                     "Silakan datang ya"
+                  ]
+               },
+               {
+                  "kalimat": "ぜひ日本へ行きたいです",
+                  "kalimat_susun": [
+                     "ぜひ",
+                     "日本",
+                     "へ",
+                     "行きたい",
+                     "です"
+                  ],
+                  "terjemahan": [
+                     "Saya sangat ingin pergi ke Jepang",
+                     "Aku benar-benar ingin ke Jepang"
+                  ]
+               },
+               {
+                  "kalimat": "ぜひ一緒に行きましょう",
+                  "kalimat_susun": [
+                     "ぜひ",
+                     "一緒",
+                     "に",
+                     "行きましょう"
+                  ],
+                  "terjemahan": [
+                     "Ayo pasti pergi bersama",
+                     "Ayo kita pergi bersama"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 87,
+            "pola": "K.Kerja ~た + こと が あります",
+            "arti": "pernah …",
+            "penggunaan": "Digunakan untuk menyatakan pengalaman yang pernah dilakukan di masa lalu. Kata kerja diubah ke bentuk lampau (た) lalu diikuti ことがあります.",
+            "catatan": "Menunjukkan pengalaman sekali atau beberapa kali dalam hidup. Biasanya digunakan bersama keterangan waktu seperti 一度 (sekali), 二回 (dua kali), dll. Struktur umum: K.Kerja(た) + こと が あります.",
+            "contoh": [
+               {
+                  "kalimat": "私は日本へ行ったことがあります",
+                  "kalimat_susun": [
+                     "私",
+                     "は",
+                     "日本",
+                     "へ",
+                     "行った",
+                     "こと",
+                     "が",
+                     "あります"
+                  ],
+                  "terjemahan": [
+                     "Saya pernah pergi ke Jepang",
+                     "Aku pernah ke Jepang"
+                  ]
+               },
+               {
+                  "kalimat": "私は寿司を食べたことがあります",
+                  "kalimat_susun": [
+                     "私",
+                     "は",
+                     "寿司",
+                     "を",
+                     "食べた",
+                     "こと",
+                     "が",
+                     "あります"
+                  ],
+                  "terjemahan": [
+                     "Saya pernah makan sushi",
+                     "Aku pernah makan sushi"
+                  ]
+               },
+               {
+                  "kalimat": "私は富士山を見たことがあります",
+                  "kalimat_susun": [
+                     "私",
+                     "は",
+                     "富士山",
+                     "を",
+                     "見た",
+                     "こと",
+                     "が",
+                     "あります"
+                  ],
+                  "terjemahan": [
+                     "Saya pernah melihat Gunung Fuji",
+                     "Aku pernah melihat Gunung Fuji"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 88,
+            "pola": "K.Kerja1 (た) り、K.Kerja2 (た) り します",
+            "arti": "melakukan hal seperti … dan … / kadang … kadang …",
+            "penggunaan": "Digunakan untuk menyebutkan beberapa aktivitas sebagai contoh dari beberapa kegiatan yang dilakukan. Kata kerja diubah ke bentuk た, lalu ditambah り, dan biasanya diakhiri dengan します.",
+            "catatan": "Menunjukkan beberapa kegiatan dari banyak kemungkinan kegiatan (tidak semuanya disebutkan). Kata kerja harus diubah ke bentuk lampau (た) sebelum り. Biasanya diakhiri dengan します. Struktur umum: K.Kerja1(た)り、K.Kerja2(た)り します.",
+            "contoh": [
+               {
+                  "kalimat": "日曜日にテレビを見たり、本を読んだりします",
+                  "kalimat_susun": [
+                     "日曜日",
+                     "に",
+                     "テレビ",
+                     "を",
+                     "見たり",
+                     "、",
+                     "本",
+                     "を",
+                     "読んだり",
+                     "します"
+                  ],
+                  "terjemahan": [
+                     "Pada hari Minggu saya melakukan hal seperti menonton TV dan membaca buku",
+                     "Hari Minggu saya kadang menonton TV dan membaca buku"
+                  ]
+               },
+               {
+                  "kalimat": "休みに映画を見たり、音楽を聞いたりします",
+                  "kalimat_susun": [
+                     "休み",
+                     "に",
+                     "映画",
+                     "を",
+                     "見たり",
+                     "、",
+                     "音楽",
+                     "を",
+                     "聞いたり",
+                     "します"
+                  ],
+                  "terjemahan": [
+                     "Saat libur saya melakukan hal seperti menonton film dan mendengarkan musik",
+                     "Saat libur saya menonton film dan mendengarkan musik"
+                  ]
+               },
+               {
+                  "kalimat": "家で勉強したり、ゲームをしたりします",
+                  "kalimat_susun": [
+                     "家",
+                     "で",
+                     "勉強したり",
+                     "、",
+                     "ゲーム",
+                     "を",
+                     "したり",
+                     "します"
+                  ],
+                  "terjemahan": [
+                     "Di rumah saya melakukan hal seperti belajar dan bermain game",
+                     "Di rumah saya kadang belajar dan bermain game"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 89,
+            "pola": "K.Sifat (い) い → く なります",
+            "arti": "menjadi … / berubah menjadi …",
+            "penggunaan": "Digunakan untuk menyatakan perubahan keadaan pada kata sifat い. Huruf い pada kata sifat dihilangkan lalu diganti く, kemudian ditambah なります untuk menunjukkan perubahan keadaan.",
+            "catatan": "Digunakan untuk menunjukkan perubahan kondisi atau keadaan. Bentuk perubahan: K.Sifat(い) → ~い dihapus + く なります. Struktur umum: K.Benda は K.Sifat(い)く なります.",
+            "contoh": [
+               {
+                  "kalimat": "天気は寒くなりました",
+                  "kalimat_susun": [
+                     "天気",
+                     "は",
+                     "寒く",
+                     "なりました"
+                  ],
+                  "terjemahan": [
+                     "Cuaca menjadi dingin",
+                     "Cuaca berubah menjadi dingin"
+                  ]
+               },
+               {
+                  "kalimat": "日本語は難しくなります",
+                  "kalimat_susun": [
+                     "日本",
+                     "語",
+                     "は",
+                     "難しく",
+                     "なります"
+                  ],
+                  "terjemahan": [
+                     "Bahasa Jepang menjadi sulit",
+                     "Bahasa Jepang menjadi lebih sulit"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 90,
+            "pola": "K.Sifat (な) ~な → に なります",
+            "arti": "menjadi … / berubah menjadi …",
+            "penggunaan": "Digunakan untuk menyatakan perubahan keadaan pada kata sifat な. Huruf な dihilangkan lalu diganti に, kemudian diikuti なります untuk menunjukkan perubahan keadaan.",
+            "catatan": "Digunakan untuk menunjukkan perubahan kondisi atau keadaan. Bentuk perubahan: K.Sifat(な) → ~な dihapus + に なります. Struktur umum: K.Benda は K.Sifat(な) に なります.",
+            "contoh": [
+               {
+                  "kalimat": "町は静かになりました",
+                  "kalimat_susun": [
+                     "町",
+                     "は",
+                     "静か",
+                     "に",
+                     "なりました"
+                  ],
+                  "terjemahan": [
+                     "Kota menjadi tenang",
+                     "Kota berubah menjadi sepi"
+                  ]
+               },
+               {
+                  "kalimat": "この町は便利になります",
+                  "kalimat_susun": [
+                     "この",
+                     "町",
+                     "は",
+                     "便利",
+                     "に",
+                     "なります"
+                  ],
+                  "terjemahan": [
+                     "Kota ini menjadi praktis",
+                     "Kota ini menjadi lebih nyaman"
+                  ]
+               },
+               {
+                  "kalimat": "ここはきれいになりました",
+                  "kalimat_susun": [
+                     "ここ",
+                     "は",
+                     "きれい",
+                     "に",
+                     "なりました"
+                  ],
+                  "terjemahan": [
+                     "Tempat ini menjadi bersih",
+                     "Tempat ini menjadi lebih bersih"
+                  ]
+               }
+            ]
          }
       ]
    }
