@@ -9,14 +9,19 @@
       "arti": "makan",
       "grup": "2",
       "konjugasi": [
-        { "label": "Kamus",         "jp": "食べる",   "romaji": "taberu" },
-        { "label": "Sopan",         "jp": "食べます",  "romaji": "tabemasu" },
-        { "label": "Negatif",       "jp": "食べない",  "romaji": "tabenai" },
-        { "label": "Negatif Sopan", "jp": "食べません", "romaji": "tabemasen" },
-        { "label": "Lampau",        "jp": "食べた",   "romaji": "tabeta" },
-        { "label": "Lampau Sopan",  "jp": "食べました", "romaji": "tabemashita" },
-        { "label": "Bentuk て",     "jp": "食べて",   "romaji": "tabete" },
-        { "label": "Keinginan",     "jp": "食べたい",  "romaji": "tabetai" }
+        { "label": "Kamus",          "jp": "食べる",        "romaji": "taberu" },
+        { "label": "Lampau",         "jp": "食べた",        "romaji": "tabeta" },
+        { "label": "Negatif",        "jp": "食べない",       "romaji": "tabenai" },
+        { "label": "Sopan",          "jp": "食べます",       "romaji": "tabemasu" },
+        { "label": "て",             "jp": "食べて",        "romaji": "tabete" },
+        { "label": "Potensi",        "jp": "食べられる",     "romaji": "taberareru" },
+        { "label": "Pasif",          "jp": "食べられる",     "romaji": "taberareru" },
+        { "label": "Kausatif",       "jp": "食べさせる",     "romaji": "tabesaseru" },
+        { "label": "Kausatif Pasif", "jp": "食べさせられる", "romaji": "tabesaserareru" },
+        { "label": "Bersyarat",      "jp": "食べれば",       "romaji": "tabereba" },
+        { "label": "Imperatif",      "jp": "食べろ",        "romaji": "tabero" },
+        { "label": "Kemauan",        "jp": "食べよう",       "romaji": "tabeyou" },
+        { "label": "Larangan",       "jp": "食べるな",       "romaji": "taberu na" }
       ],
       "contoh": [
         {
@@ -38,14 +43,19 @@
       "arti": "minum",
       "grup": "1",
       "konjugasi": [
-        { "label": "Kamus",         "jp": "飲む",    "romaji": "nomu" },
-        { "label": "Sopan",         "jp": "飲みます",  "romaji": "nomimasu" },
-        { "label": "Negatif",       "jp": "飲まない",  "romaji": "nomanai" },
-        { "label": "Negatif Sopan", "jp": "飲みません", "romaji": "nomimasen" },
-        { "label": "Lampau",        "jp": "飲んだ",   "romaji": "nonda" },
-        { "label": "Lampau Sopan",  "jp": "飲みました", "romaji": "nomimashita" },
-        { "label": "Bentuk て",     "jp": "飲んで",   "romaji": "nonde" },
-        { "label": "Keinginan",     "jp": "飲みたい",  "romaji": "nomitai" }
+        { "label": "Kamus",          "jp": "飲む",         "romaji": "nomu" },
+        { "label": "Lampau",         "jp": "飲んだ",        "romaji": "nonda" },
+        { "label": "Negatif",        "jp": "飲まない",       "romaji": "nomanai" },
+        { "label": "Sopan",          "jp": "飲みます",       "romaji": "nomimasu" },
+        { "label": "て",             "jp": "飲んで",        "romaji": "nonde" },
+        { "label": "Potensi",        "jp": "飲める",        "romaji": "nomeru" },
+        { "label": "Pasif",          "jp": "飲まれる",       "romaji": "nomareru" },
+        { "label": "Kausatif",       "jp": "飲ませる",       "romaji": "nomaseru" },
+        { "label": "Kausatif Pasif", "jp": "飲まされる",     "romaji": "nomasareru" },
+        { "label": "Bersyarat",      "jp": "飲めば",        "romaji": "nomeba" },
+        { "label": "Imperatif",      "jp": "飲め",          "romaji": "nome" },
+        { "label": "Kemauan",        "jp": "飲もう",        "romaji": "nomou" },
+        { "label": "Larangan",       "jp": "飲むな",        "romaji": "nomu na" }
       ],
       "contoh": [
         {
