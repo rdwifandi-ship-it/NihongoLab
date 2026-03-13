@@ -5408,6 +5408,687 @@
                   ]
                }
             ]
+         },
+         {
+            "id": 101,
+            "pola": "K.Kerja (ます) ましょうか",
+            "arti": "bagaimana kalau saya … / boleh saya … ? / mau saya … ?",
+            "penggunaan": "Digunakan untuk menawarkan bantuan atau melakukan sesuatu untuk orang lain. Bentuk ini menunjukkan bahwa pembicara menawarkan diri untuk melakukan suatu tindakan.",
+            "catatan": "Dibentuk dari kata kerja bentuk ます → ganti ます menjadi ましょうか. Digunakan ketika menawarkan bantuan atau tindakan kepada lawan bicara. Struktur umum: K.Kerja (ます) + ましょうか.",
+            "contoh": [
+               {
+                  "kalimat": "荷物を持ちましょうか",
+                  "kalimat_susun": [
+                     "荷物",
+                     "を",
+                     "持ち",
+                     "ましょう",
+                     "か"
+                  ],
+                  "terjemahan": [
+                     "Bolehkah saya membawa barangnya",
+                     "Mau saya bawakan barangnya"
+                  ]
+               },
+               {
+                  "kalimat": "窓を開けましょうか",
+                  "kalimat_susun": [
+                     "窓",
+                     "を",
+                     "開け",
+                     "ましょう",
+                     "か"
+                  ],
+                  "terjemahan": [
+                     "Bolehkah saya membuka jendela",
+                     "Mau saya buka jendelanya"
+                  ]
+               },
+               {
+                  "kalimat": "駅まで案内しましょうか",
+                  "kalimat_susun": [
+                     "駅",
+                     "まで",
+                     "案内",
+                     "しましょう",
+                     "か"
+                  ],
+                  "terjemahan": [
+                     "Bolehkah saya mengantar sampai stasiun",
+                     "Mau saya antar ke stasiun"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 102,
+            "pola": "～ とき、K.Pokok",
+            "arti": "ketika … / saat …",
+            "penggunaan": "Digunakan untuk menyatakan waktu terjadinya suatu kegiatan atau keadaan. Bagian sebelum とき menjelaskan situasi atau keadaan waktu, lalu diikuti kalimat utama.",
+            "catatan": "Bentuk sebelum とき bisa berupa: K.Kerja (kamus), K.Kerja (ない), K.Sifat い, K.Sifat な + な,  K.Benda + の. Struktur umum: [Penjelas waktu] とき、K.Pokok.",
+            "contoh": [
+               {
+                  "kalimat": "日本へ行くとき、お土産を買います",
+                  "kalimat_susun": [
+                     "日本",
+                     "へ",
+                     "行く",
+                     "とき",
+                     "、",
+                     "お土産",
+                     "を",
+                     "買います"
+                  ],
+                  "terjemahan": [
+                     "Ketika pergi ke Jepang saya membeli oleh-oleh",
+                     "Saat pergi ke Jepang saya membeli oleh-oleh"
+                  ]
+               },
+               {
+                  "kalimat": "お金がないとき、友達に借ります",
+                  "kalimat_susun": [
+                     "お金",
+                     "が",
+                     "ない",
+                     "とき",
+                     "、",
+                     "友達",
+                     "に",
+                     "借ります"
+                  ],
+                  "terjemahan": [
+                     "Ketika tidak punya uang saya meminjam dari teman",
+                     "Saat tidak ada uang saya meminjam kepada teman"
+                  ]
+               },
+               {
+                  "kalimat": "忙しいとき、音楽を聞きません",
+                  "kalimat_susun": [
+                     "忙しい",
+                     "とき",
+                     "、",
+                     "音楽",
+                     "を",
+                     "聞きません"
+                  ],
+                  "terjemahan": [
+                     "Ketika sibuk saya tidak mendengarkan musik",
+                     "Saat sibuk saya tidak mendengar musik"
+                  ]
+               },
+               {
+                  "kalimat": "暇なとき、本を読みます",
+                  "kalimat_susun": [
+                     "暇",
+                     "な",
+                     "とき",
+                     "、",
+                     "本",
+                     "を",
+                     "読みます"
+                  ],
+                  "terjemahan": [
+                     "Ketika senggang saya membaca buku",
+                     "Saat waktu luang saya membaca buku"
+                  ]
+               },
+               {
+                  "kalimat": "子供のとき、日本に住んでいました",
+                  "kalimat_susun": [
+                     "子供",
+                     "の",
+                     "とき",
+                     "、",
+                     "日本",
+                     "に",
+                     "住んで",
+                     "いました"
+                  ],
+                  "terjemahan": [
+                     "Ketika masih anak-anak saya tinggal di Jepang",
+                     "Saat kecil saya tinggal di Jepang"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 103,
+            "pola": "K.Kerja ~た とき、K.Pokok",
+            "arti": "ketika sudah … / saat … (setelah terjadi)",
+            "penggunaan": "Digunakan untuk menyatakan waktu ketika suatu tindakan sudah terjadi atau sudah selesai, lalu pada waktu itu terjadi kegiatan lain pada kalimat utama. Kata kerja sebelum とき menggunakan bentuk た.",
+            "catatan": "Kata kerja sebelum とき menggunakan bentuk lampau (た). Menunjukkan situasi setelah atau ketika tindakan tersebut sudah terjadi. Struktur umum: K.Kerja (た) + とき、K.Pokok.",
+            "contoh": [
+               {
+                  "kalimat": "日本へ行ったとき、寿司を食べました",
+                  "kalimat_susun": [
+                     "日本",
+                     "へ",
+                     "行った",
+                     "とき",
+                     "、",
+                     "寿司",
+                     "を",
+                     "食べました"
+                  ],
+                  "terjemahan": [
+                     "Ketika pergi ke Jepang saya makan sushi",
+                     "Saat saya pergi ke Jepang saya makan sushi"
+                  ]
+               },
+               {
+                  "kalimat": "家に帰ったとき、友達がいました",
+                  "kalimat_susun": [
+                     "家",
+                     "に",
+                     "帰った",
+                     "とき",
+                     "、",
+                     "友達",
+                     "が",
+                     "いました"
+                  ],
+                  "terjemahan": [
+                     "Ketika pulang ke rumah ada teman",
+                     "Saat saya pulang ke rumah teman ada di sana"
+                  ]
+               },
+               {
+                  "kalimat": "店に入ったとき、音楽が聞こえました",
+                  "kalimat_susun": [
+                     "店",
+                     "に",
+                     "入った",
+                     "とき",
+                     "、",
+                     "音楽",
+                     "が",
+                     "聞こえました"
+                  ],
+                  "terjemahan": [
+                     "Ketika masuk toko terdengar musik",
+                     "Saat masuk toko saya mendengar musik"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 104,
+            "pola": "K.Kerja (kamus) と、K.Pokok",
+            "arti": "jika … maka … / setiap kali … maka …",
+            "penggunaan": "Digunakan untuk menyatakan hubungan sebab-akibat atau hasil yang selalu terjadi secara otomatis ketika suatu tindakan dilakukan. Ketika kegiatan pada bagian pertama terjadi, maka kegiatan pada kalimat utama pasti terjadi.",
+            "catatan": "Kata kerja sebelum と menggunakan bentuk kamus. Biasanya digunakan untuk hasil yang alami, kebiasaan, atau sesuatu yang selalu terjadi. Biasanya tidak digunakan untuk keinginan, perintah, atau ajakan pada kalimat utama. Struktur umum: K.Kerja (kamus) + と、K.Pokok.",
+            "contoh": [
+               {
+                  "kalimat": "このボタンを押すと、ドアが開きます",
+                  "kalimat_susun": [
+                     "この",
+                     "ボタン",
+                     "を",
+                     "押す",
+                     "と",
+                     "、",
+                     "ドア",
+                     "が",
+                     "開きます"
+                  ],
+                  "terjemahan": [
+                     "Jika menekan tombol ini pintu akan terbuka",
+                     "Kalau tekan tombol ini pintunya terbuka"
+                  ]
+               },
+               {
+                  "kalimat": "春になると、桜が咲きます",
+                  "kalimat_susun": [
+                     "春",
+                     "に",
+                     "なる",
+                     "と",
+                     "、",
+                     "桜",
+                     "が",
+                     "咲きます"
+                  ],
+                  "terjemahan": [
+                     "Jika menjadi musim semi bunga sakura mekar",
+                     "Saat musim semi sakura mekar"
+                  ]
+               },
+               {
+                  "kalimat": "この道をまっすぐ行くと、駅があります",
+                  "kalimat_susun": [
+                     "この",
+                     "道",
+                     "を",
+                     "まっすぐ",
+                     "行く",
+                     "と",
+                     "、",
+                     "駅",
+                     "が",
+                     "あります"
+                  ],
+                  "terjemahan": [
+                     "Jika lurus lewat jalan ini ada stasiun",
+                     "Kalau jalan lurus di jalan ini ada stasiun"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 105,
+            "pola": "K.Benda を K.Kerja (gerakan berpindah)",
+            "arti": "melewati / melalui / keluar dari …",
+            "penggunaan": "Digunakan untuk menyatakan tempat yang dilewati atau titik awal suatu gerakan berpindah. Partikel を menunjukkan tempat yang dilalui atau ditinggalkan oleh subjek saat bergerak.",
+            "catatan": "Biasanya digunakan dengan kata kerja yang menunjukkan gerakan berpindah, seperti: 歩きます (berjalan), 渡ります (menyeberang), 出ます (keluar), 通ります (melewati). Partikel を di sini bukan objek langsung, tetapi menunjukkan tempat yang dilewati atau ditinggalkan. Struktur umum: K.Benda (tempat) を K.Kerja (gerakan).",
+            "contoh": [
+               {
+                  "kalimat": "公園を歩きます",
+                  "kalimat_susun": [
+                     "公園",
+                     "を",
+                     "歩きます"
+                  ],
+                  "terjemahan": [
+                     "Berjalan melewati taman",
+                     "Saya berjalan melalui taman"
+                  ]
+               },
+               {
+                  "kalimat": "橋を渡ります",
+                  "kalimat_susun": [
+                     "橋",
+                     "を",
+                     "渡ります"
+                  ],
+                  "terjemahan": [
+                     "Menyeberangi jembatan",
+                     "Saya menyeberang jembatan"
+                  ]
+               },
+               {
+                  "kalimat": "駅を出ます",
+                  "kalimat_susun": [
+                     "駅",
+                     "を",
+                     "出ます"
+                  ],
+                  "terjemahan": [
+                     "Keluar dari stasiun",
+                     "Saya keluar dari stasiun"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 106,
+            "pola": "K.Kerja ~て あげます",
+            "arti": "melakukan sesuatu untuk orang lain / membantu seseorang melakukan sesuatu",
+            "penggunaan": "Digunakan untuk menyatakan bahwa subjek melakukan suatu tindakan untuk orang lain sebagai bantuan atau kebaikan.",
+            "catatan": "Dibentuk dari kata kerja bentuk て + あげます. Biasanya digunakan ketika pembicara atau pihak dekat pembicara melakukan sesuatu untuk orang lain. Orang yang menerima bantuan biasanya memakai partikel に. Struktur umum: [Pemberi bantuan] は [Penerima] に K.Kerja ~て あげます.",
+            "contoh": [
+               {
+                  "kalimat": "私は友達に本を貸してあげました",
+                  "kalimat_susun": [
+                     "私",
+                     "は",
+                     "友達",
+                     "に",
+                     "本",
+                     "を",
+                     "貸して",
+                     "あげました"
+                  ],
+                  "terjemahan": [
+                     "Saya meminjamkan buku kepada teman",
+                     "Saya meminjamkan buku untuk teman"
+                  ]
+               },
+               {
+                  "kalimat": "私は妹に宿題を教えてあげます",
+                  "kalimat_susun": [
+                     "私",
+                     "は",
+                     "妹",
+                     "に",
+                     "宿題",
+                     "を",
+                     "教えて",
+                     "あげます"
+                  ],
+                  "terjemahan": [
+                     "Saya mengajarkan PR kepada adik",
+                     "Saya membantu adik mengerjakan PR"
+                  ]
+               },
+               {
+                  "kalimat": "私は友達に道を教えてあげました",
+                  "kalimat_susun": [
+                     "私",
+                     "は",
+                     "友達",
+                     "に",
+                     "道",
+                     "を",
+                     "教えて",
+                     "あげました"
+                  ],
+                  "terjemahan": [
+                     "Saya memberi tahu jalan kepada teman",
+                     "Saya membantu teman menunjukkan jalan"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 107,
+            "pola": "K.Kerja ~て もらいます",
+            "arti": "menerima bantuan untuk … / dibantu melakukan …",
+            "penggunaan": "Digunakan untuk menyatakan bahwa subjek menerima bantuan dari seseorang untuk melakukan suatu tindakan.",
+            "catatan": "Dibentuk dari kata kerja bentuk て + もらいます. Orang yang memberikan bantuan biasanya memakai partikel に. Subjek adalah orang yang menerima bantuan. Struktur umum: [Penerima bantuan] は [Pemberi bantuan] に K.Kerja ~て もらいます.",
+            "contoh": [
+               {
+                  "kalimat": "私は友達に本を貸してもらいました",
+                  "kalimat_susun": [
+                     "私",
+                     "は",
+                     "友達",
+                     "に",
+                     "本",
+                     "を",
+                     "貸して",
+                     "もらいました"
+                  ],
+                  "terjemahan": [
+                     "Saya dipinjami buku oleh teman",
+                     "Saya menerima bantuan teman untuk meminjam buku"
+                  ]
+               },
+               {
+                  "kalimat": "私は先生に日本語を教えてもらいました",
+                  "kalimat_susun": [
+                     "私",
+                     "は",
+                     "先生",
+                     "に",
+                     "日本",
+                     "語",
+                     "を",
+                     "教えて",
+                     "もらいました"
+                  ],
+                  "terjemahan": [
+                     "Saya diajari bahasa Jepang oleh guru",
+                     "Saya mendapat bantuan guru belajar bahasa Jepang"
+                  ]
+               },
+               {
+                  "kalimat": "私は友達に道を教えてもらいました",
+                  "kalimat_susun": [
+                     "私",
+                     "は",
+                     "友達",
+                     "に",
+                     "道",
+                     "を",
+                     "教えて",
+                     "もらいました"
+                  ],
+                  "terjemahan": [
+                     "Saya diberi tahu jalan oleh teman",
+                     "Saya mendapat bantuan teman untuk mengetahui jalan"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 108,
+            "pola": "K.Kerja ~て くれます",
+            "arti": "seseorang melakukan sesuatu untuk saya / untuk kelompok saya",
+            "penggunaan": "Digunakan untuk menyatakan bahwa seseorang melakukan suatu tindakan sebagai bantuan untuk saya atau orang yang dekat dengan saya (kelompok saya).",
+            "catatan": "Dibentuk dari kata kerja bentuk て + くれます. Orang yang memberi bantuan biasanya menjadi subjek. Penerima bantuan biasanya 私 atau orang dari kelompok saya, dan memakai partikel に. Struktur umum: [Pemberi bantuan] は [私 / orang kelompok saya] に K.Kerja ~て くれます.",
+            "contoh": [
+               {
+                  "kalimat": "友達は私に本を貸してくれました",
+                  "kalimat_susun": [
+                     "友達",
+                     "は",
+                     "私",
+                     "に",
+                     "本",
+                     "を",
+                     "貸して",
+                     "くれました"
+                  ],
+                  "terjemahan": [
+                     "Teman meminjamkan buku kepada saya",
+                     "Teman saya meminjamkan buku untuk saya"
+                  ]
+               },
+               {
+                  "kalimat": "先生は私に日本語を教えてくれました",
+                  "kalimat_susun": [
+                     "先生",
+                     "は",
+                     "私",
+                     "に",
+                     "日本",
+                     "語",
+                     "を",
+                     "教えて",
+                     "くれました"
+                  ],
+                  "terjemahan": [
+                     "Guru mengajari saya bahasa Jepang",
+                     "Guru membantu saya belajar bahasa Jepang"
+                  ]
+               },
+               {
+                  "kalimat": "友達は私に道を教えてくれました",
+                  "kalimat_susun": [
+                     "友達",
+                     "は",
+                     "私",
+                     "に",
+                     "道",
+                     "を",
+                     "教えて",
+                     "くれました"
+                  ],
+                  "terjemahan": [
+                     "Teman memberi tahu saya jalan",
+                     "Teman saya membantu memberi tahu jalan"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 109,
+            "pola": "Bentuk Biasa Lampau + ら、K.Pokok",
+            "arti": "jika / ketika sudah … maka …",
+            "penggunaan": "Digunakan untuk menyatakan kondisi atau situasi setelah suatu tindakan terjadi, kemudian terjadi hal lain pada kalimat utama. Bagian sebelum ら menggunakan bentuk biasa lampau (た / だった).",
+            "catatan": "Dibentuk dari bentuk lampau + ら. Digunakan untuk menyatakan kondisi, kemungkinan, atau situasi setelah sesuatu terjadi. Bisa digunakan untuk kejadian yang tidak selalu pasti. Struktur umum: Bentuk biasa lampau + ら、K.Pokok.",
+            "contoh": [
+               {
+                  "kalimat": "家に帰ったら、宿題をします",
+                  "kalimat_susun": [
+                     "家",
+                     "に",
+                     "帰ったら",
+                     "、",
+                     "宿題",
+                     "を",
+                     "します"
+                  ],
+                  "terjemahan": [
+                     "Jika sudah pulang ke rumah saya akan mengerjakan PR",
+                     "Ketika pulang ke rumah saya mengerjakan PR"
+                  ]
+               },
+               {
+                  "kalimat": "時間があったら、本を読みます",
+                  "kalimat_susun": [
+                     "時間",
+                     "が",
+                     "あったら",
+                     "、",
+                     "本",
+                     "を",
+                     "読みます"
+                  ],
+                  "terjemahan": [
+                     "Jika ada waktu saya membaca buku",
+                     "Kalau punya waktu saya membaca buku"
+                  ]
+               },
+               {
+                  "kalimat": "雨だったら、行きません",
+                  "kalimat_susun": [
+                     "雨",
+                     "だったら",
+                     "、",
+                     "行きません"
+                  ],
+                  "terjemahan": [
+                     "Jika hujan saya tidak pergi",
+                     "Kalau hujan saya tidak pergi"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 110,
+            "pola": "K.Kerja ~たら、K.Pokok",
+            "arti": "kalau sudah … maka …",
+            "penggunaan": "Digunakan untuk menyatakan bahwa setelah suatu tindakan selesai dilakukan, maka tindakan lain akan dilakukan pada kalimat utama.",
+            "catatan": "Dibentuk dari kata kerja bentuk た + ら. Menunjukkan urutan waktu: setelah selesai melakukan sesuatu, baru melakukan hal lain. Sering dipakai untuk rencana atau tindakan berikutnya. Struktur umum: K.Kerja (た) + ら、K.Pokok.",
+            "contoh": [
+               {
+                  "kalimat": "ご飯を食べたら、勉強します",
+                  "kalimat_susun": [
+                     "ご飯",
+                     "を",
+                     "食べたら",
+                     "、",
+                     "勉強",
+                     "します"
+                  ],
+                  "terjemahan": [
+                     "Kalau sudah makan saya belajar",
+                     "Setelah makan saya akan belajar"
+                  ]
+               },
+               {
+                  "kalimat": "仕事が終わったら、帰ります",
+                  "kalimat_susun": [
+                     "仕事",
+                     "が",
+                     "終わったら",
+                     "、",
+                     "帰ります"
+                  ],
+                  "terjemahan": [
+                     "Kalau pekerjaan sudah selesai saya pulang",
+                     "Setelah pekerjaan selesai saya pulan"
+                  ]
+               },
+               {
+                  "kalimat": "日本へ行ったら、寿司を食べたいです",
+                  "kalimat_susun": [
+                     "日本",
+                     "へ",
+                     "行ったら",
+                     "、",
+                     "寿司",
+                     "を",
+                     "食べたい",
+                     "です"
+                  ],
+                  "terjemahan": [
+                     "Kalau sudah pergi ke Jepang saya ingin makan sushi",
+                     "Kalau nanti ke Jepang saya ingin makan sushi"
+                  ]
+               }
+            ]
+         },
+         {
+            "id": 111,
+            "pola": "～ も、K.Pokok",
+            "arti": "walaupun … tetap … / meskipun … tetap …",
+            "penggunaan": "Digunakan untuk menyatakan bahwa walaupun suatu kondisi terjadi, hasil pada kalimat utama tetap terjadi atau tidak berubah. Pola ini sering digunakan untuk menunjukkan hasil yang bertentangan dengan dugaan.",
+            "catatan": "Bentuk sebelum も dapat berupa: K.Kerja ~て も, K.Kerja ~ない で も, K.Sifat い + くても, K.Sifat な + でも, K.Benda + でも. Struktur umum: [Keadaan / kondisi] も、K.Pokok.",
+            "contoh": [
+               {
+                  "kalimat": "薬を飲んでも、まだ頭が痛いです",
+                  "kalimat_susun": [
+                     "薬",
+                     "を",
+                     "飲んで",
+                     "も",
+                     "、",
+                     "まだ",
+                     "頭",
+                     "が",
+                     "痛いです"
+                  ],
+                  "terjemahan": [
+                     "Walaupun minum obat kepala masih sakit",
+                     "Meskipun sudah minum obat kepala saya masih sakit"
+                  ]
+               },
+               {
+                  "kalimat": "勉強しないでも、分かります",
+                  "kalimat_susun": [
+                     "勉強",
+                     "しない",
+                     "でも",
+                     "、",
+                     "分かります"
+                  ],
+                  "terjemahan": [
+                     "Walaupun tidak belajar saya mengerti",
+                     "Meskipun tidak belajar saya tetap mengerti"
+                  ]
+               },
+               {
+                  "kalimat": "高くても、買います",
+                  "kalimat_susun": [
+                     "高く",
+                     "ても",
+                     "、",
+                     "買います"
+                  ],
+                  "terjemahan": [
+                     "Walaupun mahal saya membeli",
+                     "Meskipun mahal saya akan membeli"
+                  ]
+               },
+               {
+                  "kalimat": "暇でも、出かけません",
+                  "kalimat_susun": [
+                     "暇",
+                     "でも",
+                     "、",
+                     "出かけません"
+                  ],
+                  "terjemahan": [
+                     "Walaupun senggang saya tidak pergi keluar",
+                     "Meskipun ada waktu luang saya tidak keluar"
+                  ]
+               },
+               {
+                  "kalimat": "雨でも、行きます",
+                  "kalimat_susun": [
+                     "雨",
+                     "でも",
+                     "、",
+                     "行きます"
+                  ],
+                  "terjemahan": [
+                     "Walaupun hujan saya pergi",
+                     "Meskipun hujan saya tetap pergi"
+                  ]
+               }
+            ]
          }
       ]
    }
