@@ -1,0 +1,59 @@
+{
+  "judul": "Kata Kerja",
+  "judul_jp": "動詞",
+  "data": [
+    {
+      "id": 1,
+      "jp": "食べる",
+      "romaji": "taberu",
+      "arti": "makan",
+      "grup": "2",
+      "konjugasi": [
+        { "label": "Kamus",         "jp": "食べる",   "romaji": "taberu" },
+        { "label": "Sopan",         "jp": "食べます",  "romaji": "tabemasu" },
+        { "label": "Negatif",       "jp": "食べない",  "romaji": "tabenai" },
+        { "label": "Negatif Sopan", "jp": "食べません", "romaji": "tabemasen" },
+        { "label": "Lampau",        "jp": "食べた",   "romaji": "tabeta" },
+        { "label": "Lampau Sopan",  "jp": "食べました", "romaji": "tabemashita" },
+        { "label": "Bentuk て",     "jp": "食べて",   "romaji": "tabete" },
+        { "label": "Keinginan",     "jp": "食べたい",  "romaji": "tabetai" }
+      ],
+      "contoh": [
+        {
+          "kalimat": "毎日ご飯を食べます",
+          "romaji": "Mainichi gohan wo tabemasu",
+          "terjemahan": ["Saya makan nasi setiap hari", "Tiap hari aku makan nasi"]
+        },
+        {
+          "kalimat": "寿司を食べたいです",
+          "romaji": "Sushi wo tabetai desu",
+          "terjemahan": ["Saya ingin makan sushi", "Pengen banget makan sushi"]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "jp": "飲む",
+      "romaji": "nomu",
+      "arti": "minum",
+      "grup": "1",
+      "konjugasi": [
+        { "label": "Kamus",         "jp": "飲む",    "romaji": "nomu" },
+        { "label": "Sopan",         "jp": "飲みます",  "romaji": "nomimasu" },
+        { "label": "Negatif",       "jp": "飲まない",  "romaji": "nomanai" },
+        { "label": "Negatif Sopan", "jp": "飲みません", "romaji": "nomimasen" },
+        { "label": "Lampau",        "jp": "飲んだ",   "romaji": "nonda" },
+        { "label": "Lampau Sopan",  "jp": "飲みました", "romaji": "nomimashita" },
+        { "label": "Bentuk て",     "jp": "飲んで",   "romaji": "nonde" },
+        { "label": "Keinginan",     "jp": "飲みたい",  "romaji": "nomitai" }
+      ],
+      "contoh": [
+        {
+          "kalimat": "水を飲みます",
+          "romaji": "Mizu wo nomimasu",
+          "terjemahan": ["Saya minum air", "Aku minum air putih"]
+        }
+      ]
+    }
+  ]
+}
