@@ -664,7 +664,7 @@
     }).join('');
 
     // Contoh
-    const contohHtml = item.contoh.map(c => `
+    const contohHtml = item.contoh && item.contoh.length > 0 ? item.contoh.map(c => `
       <div class="contoh-item">
         <div class="contoh-jp">${c.kalimat}</div>
         <div class="contoh-romaji">${c.romaji}</div>
@@ -672,7 +672,7 @@
           ${c.terjemahan.map(t => `<span class="terjemahan-chip">${t}</span>`).join('')}
         </div>
       </div>
-    `).join('');
+    `).join('') : '';
 
     // Nav
     const prev = index > 0 ? appData.data[index - 1] : null;
@@ -707,10 +707,11 @@
           <div class="section-block-title">Konjugasi</div>
           <div class="konjugasi-grid">${konjugasiHtml}</div>
         </div>
+        ${contohHtml ? `
         <div class="section-block">
           <div class="section-block-title">Contoh Kalimat</div>
           ${contohHtml}
-        </div>
+        </div>` : ''}
         ${navHtml}
       </div>
     `;
